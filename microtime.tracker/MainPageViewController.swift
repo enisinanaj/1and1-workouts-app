@@ -37,7 +37,9 @@ class MainPageViewController: UIViewController {
         minutes = 0
         seconds = 0
         hours = 0
-        timeLabel.text = "00:00"
+        timeLabel.text = "00"
+        minutesHand.text = "00"
+        secondsHand.text = "00"
         running = false
         
         stopButton.isHidden = true
