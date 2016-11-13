@@ -18,6 +18,8 @@
 		5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */; };
 		5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */; };
 		5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */; };
+		A13267B81DD91EB700FF43F0 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13267B61DD91EB700FF43F0 /* TimeTableViewCell.xib */; };
+		A18782E11DD927A100A595A8 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18782E01DD927A100A595A8 /* TimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.release.xcconfig"; sourceTree = "<group>"; };
 		932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A13267B61DD91EB700FF43F0 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		A18782E01DD927A100A595A8 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
 		ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microtime_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,9 +76,11 @@
 		5F8E10671DC4E1270061A226 /* microtime.tracker */ = {
 			isa = PBXGroup;
 			children = (
-				A13267B41DD8DECB00FF43F0 /* Views */,
-				A13267B31DD8DEC300FF43F0 /* Controllers */,
 				A13267B21DD8DEA400FF43F0 /* Application */,
+				A13267B91DD9269B00FF43F0 /* Cells */,
+				A13267B31DD8DEC300FF43F0 /* Controllers */,
+				5F8E10741DC4E1270061A226 /* Info.plist */,
+				A13267B41DD8DECB00FF43F0 /* Views */,
 			);
 			path = microtime.tracker;
 			sourceTree = "<group>";
@@ -82,13 +88,12 @@
 		A13267B21DD8DEA400FF43F0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E10741DC4E1270061A226 /* Info.plist */,
 				5F8E10681DC4E1270061A226 /* AppDelegate.swift */,
 				5F8E106C1DC4E1270061A226 /* Main.storyboard */,
 				5F8E106F1DC4E1270061A226 /* Assets.xcassets */,
 				5F8E10711DC4E1270061A226 /* LaunchScreen.storyboard */,
 			);
-			name = Application;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		A13267B31DD8DEC300FF43F0 /* Controllers */ = {
@@ -98,16 +103,25 @@
 				5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */,
 				5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A13267B41DD8DECB00FF43F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A13267B61DD91EB700FF43F0 /* TimeTableViewCell.xib */,
 				5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */,
 				5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */,
 			);
-			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A13267B91DD9269B00FF43F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A18782E01DD927A100A595A8 /* TimeTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		B6A1548380B550279E829EFF /* Pods */ = {
@@ -195,6 +209,7 @@
 				5F8E10701DC4E1270061A226 /* Assets.xcassets in Resources */,
 				5F8E106E1DC4E1270061A226 /* Main.storyboard in Resources */,
 				5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */,
+				A13267B81DD91EB700FF43F0 /* TimeTableViewCell.xib in Resources */,
 				5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +271,7 @@
 			files = (
 				5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */,
 				5F8E107C1DC4E7DB0061A226 /* AllEntriesViewController.swift in Sources */,
+				A18782E11DD927A100A595A8 /* TimeTableViewCell.swift in Sources */,
 				5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */,
 				5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */,
 			);

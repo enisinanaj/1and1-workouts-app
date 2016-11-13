@@ -18,6 +18,11 @@ class AllEntriesViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(UINib.init(nibName: "TimeTableViewCell", bundle: nil) , forCellReuseIdentifier: "timeCell")
+        
+        // no lines where there aren't cells
+        tableView.tableFooterView = UIView(frame: .zero)
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,10 +50,16 @@ extension AllEntriesViewController: UITableViewDelegate {
 
 extension AllEntriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as? TimeTableViewCell else {
+            return UITableViewCell()
+        }
+    
+        tableViewCell.timeLabel.text = "10:54:00"
+        
+        return tableViewCell
     }
 }
