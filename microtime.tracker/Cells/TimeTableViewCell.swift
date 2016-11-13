@@ -16,6 +16,10 @@ class TimeTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        self.backgroundColor = .clear
+        self.contentView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
+        self.backgroundView = UIView();
+        self.selectedBackgroundView = UIView();
         
     }
 
