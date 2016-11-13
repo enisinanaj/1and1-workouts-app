@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FC392A4EF07C76D20BDCE3E /* Pods_microtime_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DEEFE69D26D08A4D485D384 /* Pods_microtime_tracker.framework */; };
+		5CA89FC956A7C7860D6B7238 /* Pods_microtime_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */; };
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E10681DC4E1270061A226 /* AppDelegate.swift */; };
 		5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E106A1DC4E1270061A226 /* ViewController.swift */; };
@@ -35,7 +35,7 @@
 		5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.release.xcconfig"; sourceTree = "<group>"; };
 		932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.debug.xcconfig"; sourceTree = "<group>"; };
-		9DEEFE69D26D08A4D485D384 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microtime_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microtime_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */,
-				0FC392A4EF07C76D20BDCE3E /* Pods_microtime_tracker.framework in Frameworks */,
+				5CA89FC956A7C7860D6B7238 /* Pods_microtime_tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,18 +72,42 @@
 		5F8E10671DC4E1270061A226 /* microtime.tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A13267B41DD8DECB00FF43F0 /* Views */,
+				A13267B31DD8DEC300FF43F0 /* Controllers */,
+				A13267B21DD8DEA400FF43F0 /* Application */,
+			);
+			path = microtime.tracker;
+			sourceTree = "<group>";
+		};
+		A13267B21DD8DEA400FF43F0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				5F8E10741DC4E1270061A226 /* Info.plist */,
 				5F8E10681DC4E1270061A226 /* AppDelegate.swift */,
-				5F8E106A1DC4E1270061A226 /* ViewController.swift */,
 				5F8E106C1DC4E1270061A226 /* Main.storyboard */,
 				5F8E106F1DC4E1270061A226 /* Assets.xcassets */,
 				5F8E10711DC4E1270061A226 /* LaunchScreen.storyboard */,
-				5F8E10741DC4E1270061A226 /* Info.plist */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		A13267B31DD8DEC300FF43F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F8E106A1DC4E1270061A226 /* ViewController.swift */,
 				5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */,
-				5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */,
 				5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A13267B41DD8DECB00FF43F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */,
 				5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */,
 			);
-			path = microtime.tracker;
+			name = Views;
 			sourceTree = "<group>";
 		};
 		B6A1548380B550279E829EFF /* Pods */ = {
@@ -99,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */,
-				9DEEFE69D26D08A4D485D384 /* Pods_microtime_tracker.framework */,
+				ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -139,7 +163,7 @@
 				TargetAttributes = {
 					5F8E10641DC4E1270061A226 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E3VDZ95J76;
+						DevelopmentTeam = 6M95A8XHH3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -299,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -343,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -357,7 +381,7 @@
 			baseConfigurationReference = 932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E3VDZ95J76;
+				DEVELOPMENT_TEAM = 6M95A8XHH3;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";
@@ -371,7 +395,7 @@
 			baseConfigurationReference = 7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = E3VDZ95J76;
+				DEVELOPMENT_TEAM = 6M95A8XHH3;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";
