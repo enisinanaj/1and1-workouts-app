@@ -42,6 +42,8 @@ class MainPageViewController: UIViewController {
         secondsHand.text = "00"
         running = false
         
+        // TODO: save current section in local database
+        
         stopButton.isHidden = true
         startButton.isHidden = false
     }

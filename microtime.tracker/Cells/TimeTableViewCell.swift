@@ -14,8 +14,7 @@ class TimeTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
+        // Initialization 
         self.backgroundColor = .clear
         self.contentView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
         self.backgroundView = UIView();

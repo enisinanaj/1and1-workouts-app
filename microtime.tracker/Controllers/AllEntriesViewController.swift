@@ -58,6 +58,7 @@ extension AllEntriesViewController: UITableViewDataSource {
             return UITableViewCell()
         }
     
+        // TODO: get data from local database
         tableViewCell.timeLabel.text = "10:54:00"
         
         return tableViewCell
