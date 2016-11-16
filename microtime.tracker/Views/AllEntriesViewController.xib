@@ -22,18 +22,18 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="History" translatesAutoresizingMaskIntoConstraints="NO" id="6UU-oo-j96">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="redBg" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-sz-Nd3">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="redBg" translatesAutoresizingMaskIntoConstraints="NO" id="ZFF-sz-Nd3">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-sE-iCn">
-                    <rect key="frame" x="0.0" y="133" width="320" height="435"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="TCo-sE-iCn">
+                    <rect key="frame" x="16" y="133" width="288" height="435"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    <color key="separatorColor" red="0.064916917254507323" green="0.44075753541139506" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="separatorColor" red="0.91656488180160522" green="0.30581730604171753" blue="0.36716151237487793" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-cQ-g9M">
-                    <rect key="frame" x="107" y="55" width="106" height="45"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-cQ-g9M">
+                    <rect key="frame" x="107" y="70" width="106" height="45"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="37"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -41,14 +41,19 @@
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="TCo-sE-iCn" secondAttribute="bottom" id="BHQ-Jt-zus"/>
+                <constraint firstItem="4Xh-cQ-g9M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="HkX-zI-LVZ"/>
                 <constraint firstItem="4Xh-cQ-g9M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IMS-XN-IRl"/>
                 <constraint firstItem="ZFF-sz-Nd3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K8v-a3-JI0"/>
                 <constraint firstAttribute="bottom" secondItem="ZFF-sz-Nd3" secondAttribute="bottom" id="KXS-Y4-Db1"/>
                 <constraint firstAttribute="bottom" secondItem="6UU-oo-j96" secondAttribute="bottom" id="VwU-sZ-n5c"/>
                 <constraint firstAttribute="trailing" secondItem="6UU-oo-j96" secondAttribute="trailing" id="Wml-B5-wc5"/>
                 <constraint firstItem="ZFF-sz-Nd3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YyK-Ny-N6q"/>
+                <constraint firstAttribute="trailing" secondItem="TCo-sE-iCn" secondAttribute="trailing" constant="16" id="dD6-y1-7GF"/>
                 <constraint firstItem="6UU-oo-j96" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f0Q-SF-VRH"/>
                 <constraint firstItem="6UU-oo-j96" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gUa-2d-nWR"/>
+                <constraint firstItem="TCo-sE-iCn" firstAttribute="top" secondItem="4Xh-cQ-g9M" secondAttribute="bottom" constant="18" id="h5o-xk-Xra"/>
+                <constraint firstItem="TCo-sE-iCn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="raN-6G-z6j"/>
                 <constraint firstAttribute="trailing" secondItem="ZFF-sz-Nd3" secondAttribute="trailing" id="u00-rK-zFO"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
