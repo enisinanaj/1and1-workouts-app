@@ -18,6 +18,7 @@
 		5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */; };
 		5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */; };
 		5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */; };
+		A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B44A1DE1C9D900CA60B5 /* SQLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.release.xcconfig"; sourceTree = "<group>"; };
 		932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A162B44A1DE1C9D900CA60B5 /* SQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
 		ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microtime_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		5F8E10671DC4E1270061A226 /* microtime.tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A162B4491DE1C9A900CA60B5 /* Classes */,
 				A13267B41DD8DECB00FF43F0 /* Views */,
 				A13267B31DD8DEC300FF43F0 /* Controllers */,
 				A13267B21DD8DEA400FF43F0 /* Application */,
@@ -108,6 +111,14 @@
 				5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		A162B4491DE1C9A900CA60B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A162B44A1DE1C9D900CA60B5 /* SQLite.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		B6A1548380B550279E829EFF /* Pods */ = {
@@ -255,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */,
+				A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */,
 				5F8E107C1DC4E7DB0061A226 /* AllEntriesViewController.swift in Sources */,
 				5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */,
 				5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */,
