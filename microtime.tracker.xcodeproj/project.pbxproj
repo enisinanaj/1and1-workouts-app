@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5CA89FC956A7C7860D6B7238 /* Pods_microtime_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */; };
+		5F2722B31DE39B84000784BE /* SaveEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2722B11DE39B84000784BE /* SaveEntryViewController.swift */; };
+		5F2722B41DE39B84000784BE /* SaveEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2722B21DE39B84000784BE /* SaveEntryViewController.xib */; };
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E10681DC4E1270061A226 /* AppDelegate.swift */; };
 		5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E106A1DC4E1270061A226 /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F2722B11DE39B84000784BE /* SaveEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewController.swift; sourceTree = "<group>"; };
+		5F2722B21DE39B84000784BE /* SaveEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SaveEntryViewController.xib; path = ../Controllers/SaveEntryViewController.xib; sourceTree = "<group>"; };
 		5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5F8E10651DC4E1270061A226 /* microtime.tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microtime.tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8E10681DC4E1270061A226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				5F8E106A1DC4E1270061A226 /* ViewController.swift */,
 				5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */,
 				5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */,
+				5F2722B11DE39B84000784BE /* SaveEntryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				A13267B61DD91EB700FF43F0 /* TimeTableViewCell.xib */,
 				5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */,
 				5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */,
+				5F2722B21DE39B84000784BE /* SaveEntryViewController.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +214,7 @@
 				5F8E10731DC4E1270061A226 /* LaunchScreen.storyboard in Resources */,
 				5F8E10701DC4E1270061A226 /* Assets.xcassets in Resources */,
 				5F8E106E1DC4E1270061A226 /* Main.storyboard in Resources */,
+				5F2722B41DE39B84000784BE /* SaveEntryViewController.xib in Resources */,
 				5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */,
 				A13267B81DD91EB700FF43F0 /* TimeTableViewCell.xib in Resources */,
 				5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */,
@@ -269,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F2722B31DE39B84000784BE /* SaveEntryViewController.swift in Sources */,
 				5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */,
 				5F8E107C1DC4E7DB0061A226 /* AllEntriesViewController.swift in Sources */,
 				A18782E11DD927A100A595A8 /* TimeTableViewCell.swift in Sources */,

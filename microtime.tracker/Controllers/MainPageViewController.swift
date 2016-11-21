@@ -21,12 +21,17 @@ class MainPageViewController: UIViewController {
     var hours = 0
     var timer: Timer!
     
+    var startMillis: Double = 0.0
+    var sectionMillis: Double = 0.0
+    
     var running: Bool!
     
     func startTime(_ sender: AnyObject) {
         running = true
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        
+        startMillis = CACurrentMediaTime()
         
         startButton.isHidden = true
         stopButton.isHidden = false
@@ -42,7 +47,10 @@ class MainPageViewController: UIViewController {
         secondsHand.text = "00"
         running = false
         
-        // TODO: save current section in local database
+        sectionMillis = startMillis - CACurrentMediaTime()
+        
+        let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
+        self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true
         startButton.isHidden = false
