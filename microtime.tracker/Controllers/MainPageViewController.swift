@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainPageViewController: UIViewController {
 
@@ -21,8 +22,8 @@ class MainPageViewController: UIViewController {
     var hours = 0
     var timer: Timer!
     
-    var startMillis: Double = 0.0
-    var sectionMillis: Double = 0.0
+    var startSeconds: Double = 0.0
+    var sectionSeconds: Double = 0.0
     
     var running: Bool!
     
@@ -31,7 +32,7 @@ class MainPageViewController: UIViewController {
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
         
-        startMillis = CACurrentMediaTime()
+        startSeconds = CACurrentMediaTime()
         
         startButton.isHidden = true
         stopButton.isHidden = false
@@ -47,7 +48,7 @@ class MainPageViewController: UIViewController {
         secondsHand.text = "00"
         running = false
         
-        sectionMillis = startMillis - CACurrentMediaTime()
+        sectionSeconds = getIntervalFromStartTime()
         
         let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
         self.present(saveEntryDialog, animated: true, completion: nil)
@@ -66,9 +67,36 @@ class MainPageViewController: UIViewController {
     
     func update() {
         incrementSeconds()
+        playBeep()
         timeLabel.text = getAsString(timePart: hours)
         minutesHand.text = getAsString(timePart: minutes)
         secondsHand.text = getAsString(timePart: seconds)
+    }
+    
+    func playBeep() {
+        let interval: Double = getIntervalFromStartTime()
+        
+        print("interval in seconds: " + String(interval))
+        
+        if (interval == 5) {
+            //TODO: play notification aufio every half an hour?
+        }
+    }
+    
+    func getIntervalFromStartTime() -> Double {
+        return CACurrentMediaTime() - startSeconds
+    }
+    
+    func prepareBeepAudio() {
+//        let path = Bundle.main.path(forResource: "notification", ofType: "mp3")
+//        
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+//            //(contentsOf: URL(fileURLWithPath: path!), error: nil)
+//            audioPlayer.prepareToPlay()
+//        } catch {
+//            print(error)
+//        }
     }
     
     func incrementMinutes() {
@@ -100,6 +128,7 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stopButton.isHidden = true
+        prepareBeepAudio()
     }
 
     override func didReceiveMemoryWarning() {

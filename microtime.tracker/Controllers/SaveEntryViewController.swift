@@ -10,17 +10,29 @@ import UIKit
 
 class SaveEntryViewController: UIViewController {
 
+    @IBOutlet weak var cancelButton: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func CancelClick(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
 
     /*
     // MARK: - Navigation
