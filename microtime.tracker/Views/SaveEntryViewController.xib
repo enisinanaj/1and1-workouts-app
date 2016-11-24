@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveEntryViewController" customModule="microtime_tracker" customModuleProvider="target">
             <connections>
+                <outlet property="areaTextField" destination="ssa-rJ-uxq" id="ucR-AN-rFf"/>
                 <outlet property="cancelButton" destination="fZZ-H5-tNn" id="MDf-Nu-o3F"/>
+                <outlet property="descriptionTextField" destination="fdK-g1-lqx" id="c63-RW-tHe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,6 +58,9 @@
                     <items>
                         <barButtonItem style="plain" systemItem="save" id="ofF-Ft-ojR">
                             <color key="tintColor" red="0.678610870960898" green="0.68688531091370564" blue="0.09577960190966732" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="saveAction:" destination="-1" id="kQ3-DM-f7s"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="gGk-Qe-u20"/>
                         <barButtonItem style="plain" systemItem="cancel" id="fZZ-H5-tNn">

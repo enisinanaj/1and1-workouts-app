@@ -51,6 +51,7 @@ class MainPageViewController: UIViewController {
         sectionSeconds = getIntervalFromStartTime()
         
         let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
+        saveEntryDialog.time = sectionSeconds
         self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite
 
 class AllEntriesViewController: UIViewController {
 
@@ -50,17 +51,21 @@ extension AllEntriesViewController: UITableViewDelegate {
 
 extension AllEntriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        let sql = SQLiteProxy()
+        sql.initDB()
+        
+        return sql.getRowCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as? TimeTableViewCell else {
+            
             return UITableViewCell()
         }
     
         // TODO: get data from local database
-        tableViewCell.timeLabel.text = "10:54:00"
-        
+        tableViewCell.id = Int64(indexPath.row)
+        tableViewCell.populate()
         return tableViewCell
     }
 }
