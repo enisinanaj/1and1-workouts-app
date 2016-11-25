@@ -40,10 +40,10 @@ class TimeTableViewCell: UITableViewCell {
         let duration = Expression<String?>("duration")
         let description = Expression<String?>("info")
         
-        let row: Row = sql.getTimeByID(filterId: self.id);
-        self.subject.text = row.get(description)
-        self.date.text = row.get(startTime)
-        self.timeLabel.text = row.get(duration)
+        let row: Row? = sql.getTimeByID(filterId: self.id);
+        self.subject.text = row!.get(description)
+        self.date.text = row!.get(startTime)
+        self.timeLabel.text = row!.get(duration)
         
         print(row)
     }

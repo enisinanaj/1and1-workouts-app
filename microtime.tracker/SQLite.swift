@@ -66,18 +66,19 @@ class SQLiteProxy {
         //get all times from db
     }
     
-    func getTimeByID(filterId: Int64) -> Row {
+    func getTimeByID(filterId: Int64) -> Row? {
         let times = Table("times")
-        let query = times.filter(id == filterId)
+        let query = times.filter(id == filterId + 1)
         let result = try! db!.pluck(query)
         
-        return result!
+        return result
+        //return nil
     }
     
     func getRowCount() -> Int {
         let times = Table("times")
         
-        return 2 //try! db!.scalar(times.count)
+        return try! db!.scalar(times.count)
     }
     
     func deleteRow(id: Int64) {
