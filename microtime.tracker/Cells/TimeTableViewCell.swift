@@ -44,8 +44,6 @@ class TimeTableViewCell: UITableViewCell {
         self.subject.text = row!.get(description)
         self.date.text = row!.get(startTime)
         self.timeLabel.text = row!.get(duration)
-        
-        print(row)
     }
     
 }
