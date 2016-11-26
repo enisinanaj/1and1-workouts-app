@@ -194,7 +194,7 @@
 				TargetAttributes = {
 					5F8E10641DC4E1270061A226 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6M95A8XHH3;
+						DevelopmentTeam = E3VDZ95J76;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -417,7 +417,7 @@
 			baseConfigurationReference = 932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M95A8XHH3;
+				DEVELOPMENT_TEAM = E3VDZ95J76;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";
@@ -431,7 +431,7 @@
 			baseConfigurationReference = 7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M95A8XHH3;
+				DEVELOPMENT_TEAM = E3VDZ95J76;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";
