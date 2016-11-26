@@ -30,9 +30,9 @@ class MainPageViewController: UIViewController {
     func startTime(_ sender: AnyObject) {
         running = true
         
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         
-        startSeconds = CACurrentMediaTime()
+        self.startSeconds = CACurrentMediaTime()
         
         startButton.isHidden = true
         stopButton.isHidden = false
@@ -51,6 +51,7 @@ class MainPageViewController: UIViewController {
         sectionSeconds = getIntervalFromStartTime()
         
         let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
+        saveEntryDialog.time = sectionSeconds
         self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true

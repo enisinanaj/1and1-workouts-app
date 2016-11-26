@@ -11,6 +11,10 @@ import UIKit
 class SaveEntryViewController: UIViewController {
 
     @IBOutlet weak var cancelButton: UIBarButtonItem!
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var areaTextField: UITextField!
+    
+    var time: Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +28,16 @@ class SaveEntryViewController: UIViewController {
     @IBAction func CancelClick(_ sender: UIBarButtonItem) {
         self.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func saveAction(_ sender: Any) {
+        let sql = SQLiteProxy();
+        
+        sql.initDB();
+        sql.insertData(startTime: String(time), duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
+        
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

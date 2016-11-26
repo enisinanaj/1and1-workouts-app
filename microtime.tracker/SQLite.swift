@@ -10,10 +10,21 @@ import Foundation
 import SQLite
 
 class SQLiteProxy {
-    let db = try! Connection("myDB")
+    var db: Connection? = nil
     var times: Table? = nil
     
+    let id = Expression<Int64>("id")
+    let startTime = Expression<String>("start_time")
+    let duration = Expression<Int64>("duration")
+    let info = Expression<String?>("info")
+    let category = Expression<String?>("category")
+    
     func initDB() {
+        let path = NSSearchPathForDirectoriesInDomains(
+            .documentDirectory, .userDomainMask, true
+            ).first!
+        
+        db = try! Connection("\(path)/db.sqlite3")
         
         if (nil == self.times) {
             createTable()
@@ -22,31 +33,57 @@ class SQLiteProxy {
     
     func createTable() {
         let times = Table("times")
-        let id = Expression<Int64>("id")
-        let startTime = Expression<Date>("start_time")
-        let duration = Expression<Int64>("duration")
-        let info = Expression<String?>("info")
         
-        try! db.run(times.create {t in
-            t.column(id, primaryKey: true)
+        try! db!.run(times.create(ifNotExists: true) {t in
+            t.column(id, primaryKey: .autoincrement)
             t.column(startTime)
             t.column(duration)
             t.column(info)
+            t.column(category)
         })
+        
     }
     
-    func insertData() {
-        if (nil == times) {
+    func insertData(startTime: String, duration: Int64, info: String, category: String) -> Int64 {
+        if (nil == self.times) {
             createTable()
         }
         
+        let times = Table("times")
+        
         // insert time duration
+        let insert = times.insert(self.startTime <- startTime, self.duration <- duration, self.info <- info, self.category <- category)
+        
+        return try! db!.run(insert)
     }
     
-    func getTimes() {
+    func getTimes() -> Array<Row> {
+        let times = Table("times")
         
+        let result = try! db!.prepare(times)
         
+        return Array(result)
         //get all times from db
     }
     
+    func getTimeByID(filterId: Int64) -> Row? {
+        let times = Table("times")
+        let query = times.filter(id == filterId + 1)
+        let result = try! db!.pluck(query)
+        
+        return result
+        //return nil
+    }
+    
+    func getRowCount() -> Int {
+        let times = Table("times")
+        
+        return try! db!.scalar(times.count)
+    }
+    
+    func deleteRow(id: Int64) {
+        let times = Table("times")
+        let row = times.filter(self.id == id)
+        _ = try! db!.run(row.delete())
+    }
 }
