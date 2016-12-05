@@ -40,18 +40,23 @@ class MainPageViewController: UIViewController {
     
     func stopTime(_ sender: AnyObject) {
         timer.invalidate()
+        running = false
+        
+        let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
+        saveEntryDialog.time = sectionSeconds
+        saveEntryDialog.timeAsText = (timeLabel!.text  ?? "").appending("H ")
+                .appending(minutesHand!.text  ?? "").appending("M ")
+                .appending(secondsHand?.text ?? "").appending("S")
+            
         minutes = 0
         seconds = 0
         hours = 0
         timeLabel.text = "00"
         minutesHand.text = "00"
         secondsHand.text = "00"
-        running = false
         
         sectionSeconds = getIntervalFromStartTime()
         
-        let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
-        saveEntryDialog.time = sectionSeconds
         self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true

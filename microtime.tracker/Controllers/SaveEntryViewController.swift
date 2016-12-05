@@ -15,6 +15,7 @@ class SaveEntryViewController: UIViewController {
     @IBOutlet weak var areaTextField: UITextField!
     
     var time: Double = 0
+    var timeAsText: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +34,9 @@ class SaveEntryViewController: UIViewController {
         let sql = SQLiteProxy();
         
         sql.initDB();
-        sql.insertData(startTime: String(time), duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
+        sql.insertData(startTime: timeAsText!, duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
         
-        
+        self.dismiss(animated: true, completion:  nil)
     }
     
     

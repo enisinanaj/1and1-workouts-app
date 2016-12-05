@@ -37,13 +37,13 @@ class TimeTableViewCell: UITableViewCell {
         sql.initDB()
         
         let startTime = Expression<String>("start_time")
-        let duration = Expression<String?>("duration")
+        let category = Expression<String?>("category")
         let description = Expression<String?>("info")
         
         let row: Row? = sql.getTimeByID(filterId: self.id);
-        self.subject.text = row!.get(description)
+        self.subject.text = row!.get(category)
         self.date.text = row!.get(startTime)
-        self.timeLabel.text = row!.get(duration)
+        self.timeLabel.text = row!.get(description)
     }
     
 }
