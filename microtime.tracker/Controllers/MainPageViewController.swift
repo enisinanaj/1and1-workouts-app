@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MainPageViewController: UIViewController {
 
@@ -21,12 +22,17 @@ class MainPageViewController: UIViewController {
     var hours = 0
     var timer: Timer!
     
+    var startSeconds: Double = 0.0
+    var sectionSeconds: Double = 0.0
+    
     var running: Bool!
     
     func startTime(_ sender: AnyObject) {
         running = true
         
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        
+        self.startSeconds = CACurrentMediaTime()
         
         startButton.isHidden = true
         stopButton.isHidden = false
@@ -34,13 +40,24 @@ class MainPageViewController: UIViewController {
     
     func stopTime(_ sender: AnyObject) {
         timer.invalidate()
+        running = false
+        
+        let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
+        saveEntryDialog.time = sectionSeconds
+        saveEntryDialog.timeAsText = (timeLabel!.text  ?? "").appending("H ")
+                .appending(minutesHand!.text  ?? "").appending("M ")
+                .appending(secondsHand?.text ?? "").appending("S")
+            
         minutes = 0
         seconds = 0
         hours = 0
         timeLabel.text = "00"
         minutesHand.text = "00"
         secondsHand.text = "00"
-        running = false
+        
+        sectionSeconds = getIntervalFromStartTime()
+        
+        self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true
         startButton.isHidden = false
@@ -56,9 +73,36 @@ class MainPageViewController: UIViewController {
     
     func update() {
         incrementSeconds()
+        playBeep()
         timeLabel.text = getAsString(timePart: hours)
         minutesHand.text = getAsString(timePart: minutes)
         secondsHand.text = getAsString(timePart: seconds)
+    }
+    
+    func playBeep() {
+        let interval: Double = getIntervalFromStartTime()
+        
+        print("interval in seconds: " + String(interval))
+        
+        if (interval == 5) {
+            //TODO: play notification aufio every half an hour?
+        }
+    }
+    
+    func getIntervalFromStartTime() -> Double {
+        return CACurrentMediaTime() - startSeconds
+    }
+    
+    func prepareBeepAudio() {
+//        let path = Bundle.main.path(forResource: "notification", ofType: "mp3")
+//        
+//        do {
+//            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
+//            //(contentsOf: URL(fileURLWithPath: path!), error: nil)
+//            audioPlayer.prepareToPlay()
+//        } catch {
+//            print(error)
+//        }
     }
     
     func incrementMinutes() {
@@ -90,6 +134,7 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         stopButton.isHidden = true
+        prepareBeepAudio()
     }
 
     override func didReceiveMemoryWarning() {

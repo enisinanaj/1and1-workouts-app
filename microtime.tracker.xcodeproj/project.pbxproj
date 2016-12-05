@@ -9,34 +9,46 @@
 /* Begin PBXBuildFile section */
 		5CA89FC956A7C7860D6B7238 /* Pods_microtime_tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */; };
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
-		5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E10681DC4E1270061A226 /* AppDelegate.swift */; };
-		5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E106A1DC4E1270061A226 /* ViewController.swift */; };
-		5F8E106E1DC4E1270061A226 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E106C1DC4E1270061A226 /* Main.storyboard */; };
-		5F8E10701DC4E1270061A226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E106F1DC4E1270061A226 /* Assets.xcassets */; };
-		5F8E10731DC4E1270061A226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E10711DC4E1270061A226 /* LaunchScreen.storyboard */; };
-		5F8E107C1DC4E7DB0061A226 /* AllEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */; };
-		5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */; };
-		5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */; };
-		5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */; };
+		5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */; };
+		5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */; };
+		A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558671DE3B52F000C4198 /* LaunchScreen.storyboard */; };
+		A155586C1DE3B52F000C4198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558691DE3B52F000C4198 /* Main.storyboard */; };
 		A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B44A1DE1C9D900CA60B5 /* SQLite.swift */; };
+		A1C9C79F1DE3B45D00354D15 /* AllEntriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9C79C1DE3B45D00354D15 /* AllEntriesViewController.xib */; };
+		A1C9C7A01DE3B45D00354D15 /* MainPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9C79D1DE3B45D00354D15 /* MainPageViewController.xib */; };
+		A1C9C7A11DE3B45D00354D15 /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9C79E1DE3B45D00354D15 /* TimeTableViewCell.xib */; };
+		A1C9C7A71DE3B47D00354D15 /* AllEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7A21DE3B47D00354D15 /* AllEntriesViewController.swift */; };
+		A1C9C7A81DE3B47D00354D15 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7A31DE3B47D00354D15 /* MainPageViewController.swift */; };
+		A1C9C7A91DE3B47D00354D15 /* SaveEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7A41DE3B47D00354D15 /* SaveEntryViewController.swift */; };
+		A1C9C7AB1DE3B47D00354D15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7A61DE3B47D00354D15 /* ViewController.swift */; };
+		A1C9C7AD1DE3B48800354D15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7AC1DE3B48800354D15 /* AppDelegate.swift */; };
+		A1C9C7AF1DE3B49000354D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1C9C7AE1DE3B49000354D15 /* Assets.xcassets */; };
+		A1C9C7B11DE3B4BD00354D15 /* SaveEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1C9C7B01DE3B4BD00354D15 /* SaveEntryViewController.xib */; };
+		A1C9C7B41DE3B4E000354D15 /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C9C7B31DE3B4E000354D15 /* TimeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = ../NotificationViewController.swift; sourceTree = "<group>"; };
+		5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		5F8E10651DC4E1270061A226 /* microtime.tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = microtime.tracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F8E10681DC4E1270061A226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F8E106A1DC4E1270061A226 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5F8E106D1DC4E1270061A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F8E106F1DC4E1270061A226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5F8E10721DC4E1270061A226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F8E10741DC4E1270061A226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEntriesViewController.swift; sourceTree = "<group>"; };
-		5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AllEntriesViewController.xib; sourceTree = "<group>"; };
-		5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainPageViewController.xib; sourceTree = "<group>"; };
 		7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.release.xcconfig"; sourceTree = "<group>"; };
 		932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-microtime.tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		A15558681DE3B52F000C4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Application/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A155586A1DE3B52F000C4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Application/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A162B44A1DE1C9D900CA60B5 /* SQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		A1C9C79C1DE3B45D00354D15 /* AllEntriesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AllEntriesViewController.xib; path = Views/AllEntriesViewController.xib; sourceTree = "<group>"; };
+		A1C9C79D1DE3B45D00354D15 /* MainPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainPageViewController.xib; path = Views/MainPageViewController.xib; sourceTree = "<group>"; };
+		A1C9C79E1DE3B45D00354D15 /* TimeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TimeTableViewCell.xib; path = Views/TimeTableViewCell.xib; sourceTree = "<group>"; };
+		A1C9C7A21DE3B47D00354D15 /* AllEntriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllEntriesViewController.swift; sourceTree = "<group>"; };
+		A1C9C7A31DE3B47D00354D15 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		A1C9C7A41DE3B47D00354D15 /* SaveEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveEntryViewController.swift; sourceTree = "<group>"; };
+		A1C9C7A61DE3B47D00354D15 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1C9C7AC1DE3B48800354D15 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Application/AppDelegate.swift; sourceTree = "<group>"; };
+		A1C9C7AE1DE3B49000354D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Application/Assets.xcassets; sourceTree = "<group>"; };
+		A1C9C7B01DE3B4BD00354D15 /* SaveEntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SaveEntryViewController.xib; path = Views/SaveEntryViewController.xib; sourceTree = "<group>"; };
+		A1C9C7B31DE3B4E000354D15 /* TimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeTableViewCell.swift; path = Cells/TimeTableViewCell.swift; sourceTree = "<group>"; };
 		ABE3E4299BF0D99DAB87D688 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_microtime_tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -74,6 +86,7 @@
 		5F8E10671DC4E1270061A226 /* microtime.tracker */ = {
 			isa = PBXGroup;
 			children = (
+				A1C9C7B21DE3B4D500354D15 /* Cells */,
 				A162B4491DE1C9A900CA60B5 /* Classes */,
 				A13267B41DD8DECB00FF43F0 /* Views */,
 				A13267B31DD8DEC300FF43F0 /* Controllers */,
@@ -85,11 +98,11 @@
 		A13267B21DD8DEA400FF43F0 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				A15558671DE3B52F000C4198 /* LaunchScreen.storyboard */,
+				A15558691DE3B52F000C4198 /* Main.storyboard */,
+				A1C9C7AC1DE3B48800354D15 /* AppDelegate.swift */,
 				5F8E10741DC4E1270061A226 /* Info.plist */,
-				5F8E10681DC4E1270061A226 /* AppDelegate.swift */,
-				5F8E106C1DC4E1270061A226 /* Main.storyboard */,
-				5F8E106F1DC4E1270061A226 /* Assets.xcassets */,
-				5F8E10711DC4E1270061A226 /* LaunchScreen.storyboard */,
+				A1C9C7AE1DE3B49000354D15 /* Assets.xcassets */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -97,18 +110,23 @@
 		A13267B31DD8DEC300FF43F0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E106A1DC4E1270061A226 /* ViewController.swift */,
-				5F8E107A1DC4E7DB0061A226 /* AllEntriesViewController.swift */,
-				5F8E107E1DC5299F0061A226 /* MainPageViewController.swift */,
+				5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */,
+				A1C9C7A21DE3B47D00354D15 /* AllEntriesViewController.swift */,
+				A1C9C7A31DE3B47D00354D15 /* MainPageViewController.swift */,
+				A1C9C7A41DE3B47D00354D15 /* SaveEntryViewController.swift */,
+				A1C9C7A61DE3B47D00354D15 /* ViewController.swift */,
 			);
-			name = Controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		A13267B41DD8DECB00FF43F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5F8E107B1DC4E7DB0061A226 /* AllEntriesViewController.xib */,
-				5F8E107F1DC5299F0061A226 /* MainPageViewController.xib */,
+				5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */,
+				A1C9C79C1DE3B45D00354D15 /* AllEntriesViewController.xib */,
+				A1C9C79D1DE3B45D00354D15 /* MainPageViewController.xib */,
+				A1C9C7B01DE3B4BD00354D15 /* SaveEntryViewController.xib */,
+				A1C9C79E1DE3B45D00354D15 /* TimeTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -119,6 +137,14 @@
 				A162B44A1DE1C9D900CA60B5 /* SQLite.swift */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		A1C9C7B21DE3B4D500354D15 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A1C9C7B31DE3B4E000354D15 /* TimeTableViewCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		B6A1548380B550279E829EFF /* Pods */ = {
@@ -174,7 +200,7 @@
 				TargetAttributes = {
 					5F8E10641DC4E1270061A226 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 6M95A8XHH3;
+						DevelopmentTeam = E3VDZ95J76;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -202,11 +228,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8E10731DC4E1270061A226 /* LaunchScreen.storyboard in Resources */,
-				5F8E10701DC4E1270061A226 /* Assets.xcassets in Resources */,
-				5F8E106E1DC4E1270061A226 /* Main.storyboard in Resources */,
-				5F8E107D1DC4E7DB0061A226 /* AllEntriesViewController.xib in Resources */,
-				5F8E10811DC5299F0061A226 /* MainPageViewController.xib in Resources */,
+				A155586C1DE3B52F000C4198 /* Main.storyboard in Resources */,
+				A1C9C79F1DE3B45D00354D15 /* AllEntriesViewController.xib in Resources */,
+				A1C9C7B11DE3B4BD00354D15 /* SaveEntryViewController.xib in Resources */,
+				A1C9C7A01DE3B45D00354D15 /* MainPageViewController.xib in Resources */,
+				A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */,
+				5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */,
+				A1C9C7AF1DE3B49000354D15 /* Assets.xcassets in Resources */,
+				A1C9C7A11DE3B45D00354D15 /* TimeTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,31 +294,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F8E10801DC5299F0061A226 /* MainPageViewController.swift in Sources */,
+				A1C9C7B41DE3B4E000354D15 /* TimeTableViewCell.swift in Sources */,
+				A1C9C7AB1DE3B47D00354D15 /* ViewController.swift in Sources */,
+				5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */,
+				A1C9C7A81DE3B47D00354D15 /* MainPageViewController.swift in Sources */,
+				A1C9C7A91DE3B47D00354D15 /* SaveEntryViewController.swift in Sources */,
+				A1C9C7A71DE3B47D00354D15 /* AllEntriesViewController.swift in Sources */,
+				A1C9C7AD1DE3B48800354D15 /* AppDelegate.swift in Sources */,
 				A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */,
-				5F8E107C1DC4E7DB0061A226 /* AllEntriesViewController.swift in Sources */,
-				5F8E106B1DC4E1270061A226 /* ViewController.swift in Sources */,
-				5F8E10691DC4E1270061A226 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5F8E106C1DC4E1270061A226 /* Main.storyboard */ = {
+		A15558671DE3B52F000C4198 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5F8E106D1DC4E1270061A226 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5F8E10711DC4E1270061A226 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F8E10721DC4E1270061A226 /* Base */,
+				A15558681DE3B52F000C4198 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A15558691DE3B52F000C4198 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A155586A1DE3B52F000C4198 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -393,7 +425,7 @@
 			baseConfigurationReference = 932B88942DD44F1002E6894C /* Pods-microtime.tracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M95A8XHH3;
+				DEVELOPMENT_TEAM = E3VDZ95J76;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";
@@ -407,7 +439,7 @@
 			baseConfigurationReference = 7845928BA028F26C1FFD285D /* Pods-microtime.tracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6M95A8XHH3;
+				DEVELOPMENT_TEAM = E3VDZ95J76;
 				INFOPLIST_FILE = microtime.tracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.newlinecode.microtime-tracker";

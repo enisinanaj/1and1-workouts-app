@@ -38,9 +38,10 @@ class ViewController: UIViewController {
         frame.origin.y = 0
         frame.size.width = self.view.frame.size.width
         frame.size.height = self.view.frame.size.height
+        
         allEntriesViewController.view.frame = frame
         
-        self.addChildViewController(allEntriesViewController)
+        self.addChildViewController(allEntriesViewController);
         self.scrollView.addSubview(allEntriesViewController.view)
         allEntriesViewController.didMove(toParentViewController: self)
         
