@@ -11,13 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
+    let allEntriesViewController = AllEntriesViewController(nibName: "AllEntriesViewController", bundle: nil)
+    let mainPage = MainPageViewController(nibName: "MainPageViewController", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.scrollView.frame.size.width = self.view.frame.size.width
-                
-        let mainPage = MainPageViewController(nibName: "MainPageViewController", bundle: nil)
         
         var frame = mainPage.view.frame
         frame.origin.x = 0
@@ -31,8 +31,6 @@ class ViewController: UIViewController {
         self.scrollView.addSubview(mainPage.view)
         mainPage.didMove(toParentViewController: self)
         
-        let allEntriesViewController = AllEntriesViewController(nibName: "AllEntriesViewController", bundle: nil)
-        
         frame = allEntriesViewController.view.frame
         frame.origin.x = self.view.frame.width
         frame.origin.y = 0
@@ -44,6 +42,8 @@ class ViewController: UIViewController {
         self.addChildViewController(allEntriesViewController);
         self.scrollView.addSubview(allEntriesViewController.view)
         allEntriesViewController.didMove(toParentViewController: self)
+        
+        self.mainPage.allEntriesDelegate = self.allEntriesViewController;
         
         self.scrollView.contentSize = CGSize(width:
             mainPage.view.frame.size.width + allEntriesViewController.view.frame.size.width

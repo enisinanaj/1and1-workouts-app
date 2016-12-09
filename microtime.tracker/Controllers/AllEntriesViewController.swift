@@ -25,6 +25,10 @@ class AllEntriesViewController: UIViewController {
         // no lines where there aren't cells
         tableView.tableFooterView = UIView(frame: .zero)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -45,7 +49,12 @@ class AllEntriesViewController: UIViewController {
 }
 
 extension AllEntriesViewController: UITableViewDelegate {
-    
+    func reloadData() {
+        DispatchQueue.main.async() {
+            print("reloading tableview data")
+            self.tableView.reloadData()
+        }
+    }
 }
 
 

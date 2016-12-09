@@ -17,6 +17,8 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    weak var allEntriesDelegate: AllEntriesViewController?
+    
     var minutes = 0
     var seconds = 0
     var hours = 0
@@ -47,7 +49,8 @@ class MainPageViewController: UIViewController {
         saveEntryDialog.timeAsText = (timeLabel!.text  ?? "").appending("H ")
                 .appending(minutesHand!.text  ?? "").appending("M ")
                 .appending(secondsHand?.text ?? "").appending("S")
-            
+        saveEntryDialog.allEntriesDelegate = self.allEntriesDelegate
+        
         minutes = 0
         seconds = 0
         hours = 0

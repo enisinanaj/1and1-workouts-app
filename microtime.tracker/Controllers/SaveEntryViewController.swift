@@ -16,6 +16,7 @@ class SaveEntryViewController: UIViewController {
     
     var time: Double = 0
     var timeAsText: String!
+    weak var allEntriesDelegate: AllEntriesViewController!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,8 @@ class SaveEntryViewController: UIViewController {
         
         sql.initDB();
         sql.insertData(startTime: timeAsText!, duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
+        
+        allEntriesDelegate.reloadData();
         
         self.dismiss(animated: true, completion:  nil)
     }
