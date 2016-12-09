@@ -12,18 +12,20 @@ import SQLite
 class AllEntriesViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var hintText: UILabel!
+    
+    var hintIndex : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.register(UINib.init(nibName: "TimeTableViewCell", bundle: nil) , forCellReuseIdentifier: "timeCell")
-        
-        // no lines where there aren't cells
         tableView.tableFooterView = UIView(frame: .zero)
+        
+        startHintAnimations()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,16 +37,34 @@ class AllEntriesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func startHintAnimations() {
+        self.hintText.text = getNewHint()
+        
+        // Fade out to set the text
+        UIView.animate(withDuration: 1.5, delay: 1.5, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.hintText.alpha = 1.0
+        }, completion: {
+            (finished: Bool) -> Void in
+            UIView.animate(withDuration: 1.5, delay: 2.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
+                self.hintText.alpha = 0.0
+            }, completion: {
+                (finished: Bool) -> Void in
+                self.startHintAnimations()
+            })
+        })
     }
-    */
+    
+    func getNewHint() -> String {
+        hintIndex = hintIndex + 1
+        if (hintIndex == 1) {
+            return "Shake to delete all entries"
+        } else if (hintIndex == 2) {
+            hintIndex = 0 // reset hintIndex
+            return "Swipe right to start a new section"
+        }
+        
+        return ""
+    }
 
 }
 

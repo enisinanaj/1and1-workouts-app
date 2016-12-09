@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllEntriesViewController" customModule="microtime_tracker" customModuleProvider="target">
             <connections>
+                <outlet property="hintText" destination="Jfp-AE-8pC" id="UmZ-gv-Yg3"/>
                 <outlet property="tableView" destination="TCo-sE-iCn" id="U7l-F6-K5Z"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,16 +34,23 @@
                     <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xh-cQ-g9M">
-                    <rect key="frame" x="107" y="70" width="106" height="45"/>
+                    <rect key="frame" x="107" y="35" width="106" height="45"/>
                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="37"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfp-AE-8pC">
+                    <rect key="frame" x="0.0" y="81" width="320" height="21"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="TCo-sE-iCn" secondAttribute="bottom" id="BHQ-Jt-zus"/>
-                <constraint firstItem="4Xh-cQ-g9M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="HkX-zI-LVZ"/>
+                <constraint firstItem="4Xh-cQ-g9M" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="HkX-zI-LVZ"/>
                 <constraint firstItem="4Xh-cQ-g9M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IMS-XN-IRl"/>
                 <constraint firstItem="ZFF-sz-Nd3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K8v-a3-JI0"/>
                 <constraint firstAttribute="bottom" secondItem="ZFF-sz-Nd3" secondAttribute="bottom" id="KXS-Y4-Db1"/>
@@ -52,7 +60,7 @@
                 <constraint firstAttribute="trailing" secondItem="TCo-sE-iCn" secondAttribute="trailing" constant="16" id="dD6-y1-7GF"/>
                 <constraint firstItem="6UU-oo-j96" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f0Q-SF-VRH"/>
                 <constraint firstItem="6UU-oo-j96" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gUa-2d-nWR"/>
-                <constraint firstItem="TCo-sE-iCn" firstAttribute="top" secondItem="4Xh-cQ-g9M" secondAttribute="bottom" constant="18" id="h5o-xk-Xra"/>
+                <constraint firstItem="TCo-sE-iCn" firstAttribute="top" secondItem="4Xh-cQ-g9M" secondAttribute="bottom" constant="53" id="h5o-xk-Xra"/>
                 <constraint firstItem="TCo-sE-iCn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="raN-6G-z6j"/>
                 <constraint firstAttribute="trailing" secondItem="ZFF-sz-Nd3" secondAttribute="trailing" id="u00-rK-zFO"/>
             </constraints>

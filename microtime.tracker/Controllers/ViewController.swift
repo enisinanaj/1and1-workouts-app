@@ -55,7 +55,30 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if (motion == .motionShake) {
+            let refreshAlert = UIAlertController(title: "Delete all entries",
+                                                 message: "Are you sure you want to delete all entries? This action is undoable and will result all data will be lost.",
+                                                 preferredStyle: UIAlertControllerStyle.alert)
+            
+            refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+                let sql = SQLiteProxy();
+                
+                sql.initDB();
+                sql.deleteAllRows();
+                
+                self.allEntriesViewController.reloadData()
+            }))
+            
+            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            present(refreshAlert, animated: true, completion: nil)
+        }
+    }
+    
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
 
 }
 

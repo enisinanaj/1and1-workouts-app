@@ -86,4 +86,10 @@ class SQLiteProxy {
         let row = times.filter(self.id == id)
         _ = try! db!.run(row.delete())
     }
+    
+    func deleteAllRows() {
+        let times = Table("times")
+        _ = try! db!.run(times.drop(ifExists: true))
+        self.times = nil
+    }
 }
