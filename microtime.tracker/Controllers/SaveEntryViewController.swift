@@ -35,7 +35,7 @@ class SaveEntryViewController: UIViewController {
         let sql = SQLiteProxy();
         
         sql.initDB();
-        sql.insertData(startTime: timeAsText!, duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
+        let _ = sql.insertData(startTime: timeAsText!, duration: Int64(time), info: descriptionTextField.text!, category: areaTextField.text!);
         
         allEntriesDelegate.reloadData();
         

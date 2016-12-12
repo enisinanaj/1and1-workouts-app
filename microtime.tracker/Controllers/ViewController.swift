@@ -17,27 +17,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(super.view.frame)
+        
         self.scrollView.frame.size.width = self.view.frame.size.width
+        self.scrollView.frame.size.height = self.view.frame.size.height
+        self.scrollView.contentOffset = CGPoint(x: 0, y: 0)
         
-        var frame = mainPage.view.frame
-        frame.origin.x = 0
-        frame.origin.y = 0
-        frame.size.width = self.view.frame.size.width
-        frame.size.height = self.view.frame.size.height
-        
-        mainPage.view.frame = frame
+        mainPage.view.frame.origin.x = 0
+        mainPage.view.frame.origin.y = 0
+        mainPage.view.frame.size.width = self.view.frame.size.width
+        mainPage.view.frame.size.height = self.view.frame.size.height
         
         self.addChildViewController(mainPage)
         self.scrollView.addSubview(mainPage.view)
         mainPage.didMove(toParentViewController: self)
         
-        frame = allEntriesViewController.view.frame
-        frame.origin.x = self.view.frame.width
-        frame.origin.y = 0
-        frame.size.width = self.view.frame.size.width
-        frame.size.height = self.view.frame.size.height
-        
-        allEntriesViewController.view.frame = frame
+        allEntriesViewController.view.frame.origin.x = self.view.frame.width
+        allEntriesViewController.view.frame.origin.y = 0
+        allEntriesViewController.view.frame.size.width = self.view.frame.size.width
+        allEntriesViewController.view.frame.size.height = self.view.frame.size.height
         
         self.addChildViewController(allEntriesViewController);
         self.scrollView.addSubview(allEntriesViewController.view)
