@@ -1,14 +1,17 @@
 PODS:
+  - PulsingHalo (0.2.3)
   - SQLite.swift (0.11.0):
     - SQLite.swift/standard (= 0.11.0)
   - SQLite.swift/standard (0.11.0)
 
 DEPENDENCIES:
+  - PulsingHalo
   - SQLite.swift (~> 0.11.0)
 
 SPEC CHECKSUMS:
+  PulsingHalo: f0fe19699182eb959e4bc333838a2609ef7f7d48
   SQLite.swift: 9a26273607d3077a2e5a8d33486e9989f8404c7d
 
-PODFILE CHECKSUM: 67fde3d92065d5885b9ccf5e3a38548c210225ec
+PODFILE CHECKSUM: 0c4246aa128a72d423230a41f507357691593dbf
 
 COCOAPODS: 1.1.1

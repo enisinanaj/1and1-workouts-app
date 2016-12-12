@@ -7,4 +7,5 @@ target 'microtime.tracker' do
 
   # Pods
   pod 'SQLite.swift', '~> 0.11.0'
+  pod 'PulsingHalo'
 end
