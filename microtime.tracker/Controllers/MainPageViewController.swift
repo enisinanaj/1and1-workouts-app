@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import Foundation
 
 class MainPageViewController: UIViewController {
 
@@ -24,8 +25,10 @@ class MainPageViewController: UIViewController {
     var hours = 0
     var timer: Timer!
     
+    var timeKeeper: Double = 0.0
     var startSeconds: Double = 0.0
     var sectionSeconds: Double = 0.0
+    var differenceInSecconds: Double = 0.0
     
     var running: Bool!
     
@@ -35,6 +38,8 @@ class MainPageViewController: UIViewController {
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
         
         self.startSeconds = CACurrentMediaTime()
+        self.differenceInSecconds = 0.0
+        self.resetTimerCounters()
         
         startButton.isHidden = true
         stopButton.isHidden = false
@@ -51,19 +56,22 @@ class MainPageViewController: UIViewController {
                 .appending(secondsHand?.text ?? "").appending("S")
         saveEntryDialog.allEntriesDelegate = self.allEntriesDelegate
         
-        minutes = 0
-        seconds = 0
-        hours = 0
-        timeLabel.text = "00"
-        minutesHand.text = "00"
-        secondsHand.text = "00"
-        
+        self.resetTimerCounters()
         sectionSeconds = getIntervalFromStartTime()
         
         self.present(saveEntryDialog, animated: true, completion: nil)
         
         stopButton.isHidden = true
         startButton.isHidden = false
+    }
+    
+    func resetTimerCounters() {
+        minutes = 0
+        seconds = 0
+        hours = 0
+        timeLabel.text = "00"
+        minutesHand.text = "00"
+        secondsHand.text = "00"
     }
     
     @IBAction func stopTimerAction(_ sender: AnyObject) {
@@ -75,6 +83,7 @@ class MainPageViewController: UIViewController {
     }
     
     func update() {
+        self.timeKeeper += 1
         incrementSeconds()
         playBeep()
         timeLabel.text = getAsString(timePart: hours)
@@ -94,18 +103,6 @@ class MainPageViewController: UIViewController {
     
     func getIntervalFromStartTime() -> Double {
         return CACurrentMediaTime() - startSeconds
-    }
-    
-    func prepareBeepAudio() {
-//        let path = Bundle.main.path(forResource: "notification", ofType: "mp3")
-//        
-//        do {
-//            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: path!))
-//            //(contentsOf: URL(fileURLWithPath: path!), error: nil)
-//            audioPlayer.prepareToPlay()
-//        } catch {
-//            print(error)
-//        }
     }
     
     func incrementMinutes() {
@@ -136,10 +133,37 @@ class MainPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: OperationQueue.main, using: self.reloadTimer)
+        
         stopButton.isHidden = true
-        prepareBeepAudio()
     }
-
+    
+    func reloadTimer(notification: Notification) {
+        differenceInSecconds = CACurrentMediaTime() - self.startSeconds
+        
+        let hoursD = floor(differenceInSecconds / (60.0 * 60.0))
+        
+        let divisorForMinutes = differenceInSecconds.truncatingRemainder(dividingBy: (60.0 * 60.0))
+        let minutesD = floor(divisorForMinutes / 60.0)
+        
+        let divisorForSeconds = divisorForMinutes.truncatingRemainder(dividingBy: 60.0)
+        let secondsD = ceil(divisorForSeconds)
+        
+        print ("application restored at: " + String(CACurrentMediaTime()))
+        print ("startTime: " + String(self.startSeconds))
+        print ("differenceInSeconds: " + String(CACurrentMediaTime() - self.startSeconds))
+        print ("hoursD: " + String(hoursD))
+        print ("minutesD: " + String(minutesD))
+        print ("secondsD: " + String(secondsD))
+        
+        if self.startSeconds > 0.0 {
+            self.seconds = Int(secondsD)
+            self.minutes = minutesD > 1 ? Int(minutesD) : self.minutes
+            self.hours = hoursD > 1 ? Int(hoursD) : self.hours
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
