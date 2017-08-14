@@ -10,6 +10,8 @@
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */; };
 		5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */; };
+		5FBB10731F42531800532914 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB10711F42531800532914 /* ExercisesTableViewController.swift */; };
+		5FBB107F1F425B4400532914 /* ExercisesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBB107E1F425B4400532914 /* ExercisesTableView.xib */; };
 		A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558671DE3B52F000C4198 /* LaunchScreen.storyboard */; };
 		A155586C1DE3B52F000C4198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558691DE3B52F000C4198 /* Main.storyboard */; };
 		A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B44A1DE1C9D900CA60B5 /* SQLite.swift */; };
@@ -35,6 +37,8 @@
 		5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		5F8E10651DC4E1270061A226 /* 1and1.workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1and1.workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8E10741DC4E1270061A226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FBB10711F42531800532914 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
+		5FBB107E1F425B4400532914 /* ExercisesTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExercisesTableView.xib; path = Views/ExercisesTableView.xib; sourceTree = "<group>"; };
 		609029F3E09845ED0A283DE5 /* Pods-1and1.workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1and1.workout.release.xcconfig"; path = "Pods/Target Support Files/Pods-1and1.workout/Pods-1and1.workout.release.xcconfig"; sourceTree = "<group>"; };
 		A15558681DE3B52F000C4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Application/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A155586A1DE3B52F000C4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Application/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 				A1C9C7A31DE3B47D00354D15 /* MainPageViewController.swift */,
 				A1C9C7A41DE3B47D00354D15 /* SaveEntryViewController.swift */,
 				A1C9C7A61DE3B47D00354D15 /* ViewController.swift */,
+				5FBB10711F42531800532914 /* ExercisesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				A1C9C79D1DE3B45D00354D15 /* MainPageViewController.xib */,
 				A1C9C7B01DE3B4BD00354D15 /* SaveEntryViewController.xib */,
 				A1C9C79E1DE3B45D00354D15 /* TimeTableViewCell.xib */,
+				5FBB107E1F425B4400532914 /* ExercisesTableView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				A1C9C79F1DE3B45D00354D15 /* AllEntriesViewController.xib in Resources */,
 				A1C9C7B11DE3B4BD00354D15 /* SaveEntryViewController.xib in Resources */,
 				A1C9C7A01DE3B45D00354D15 /* MainPageViewController.xib in Resources */,
+				5FBB107F1F425B4400532914 /* ExercisesTableView.xib in Resources */,
 				A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */,
 				5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */,
 				A1C9C7AF1DE3B49000354D15 /* Assets.xcassets in Resources */,
@@ -309,6 +316,7 @@
 				A1C9C7A91DE3B47D00354D15 /* SaveEntryViewController.swift in Sources */,
 				A1C9C7A71DE3B47D00354D15 /* AllEntriesViewController.swift in Sources */,
 				A1C9C7AD1DE3B48800354D15 /* AppDelegate.swift in Sources */,
+				5FBB10731F42531800532914 /* ExercisesTableViewController.swift in Sources */,
 				A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     let allEntriesViewController = AllEntriesViewController(nibName: "AllEntriesViewController", bundle: nil)
     let mainPage = MainPageViewController(nibName: "MainPageViewController", bundle: nil)
+    let exercisesPage = ExercisesTableViewController(nibName: "ExercisesTableView", bundle: nil)
+    
+    fileprivate func addExercisesListPage() {
+        exercisesPage.view.frame.origin.x = self.view.frame.width
+        exercisesPage.view.frame.origin.y = 0
+        exercisesPage.view.frame.size.width = self.view.frame.size.width
+        exercisesPage.view.frame.size.height = self.view.frame.size.height
+        
+        self.addChildViewController(exercisesPage)
+        self.scrollView.addSubview(exercisesPage.view)
+        exercisesPage.didMove(toParentViewController: self)
+    }
+    
+    fileprivate func addTimerPage() {
+        mainPage.view.frame.origin.x = self.view.frame.width * 2
+        mainPage.view.frame.origin.y = 0
+        mainPage.view.frame.size.width = self.view.frame.size.width
+        mainPage.view.frame.size.height = self.view.frame.size.height
+        
+        self.addChildViewController(mainPage)
+        self.scrollView.addSubview(mainPage.view)
+        mainPage.didMove(toParentViewController: self)
+    }
+    
+    fileprivate func addAllEntriesPage() {
+        allEntriesViewController.view.frame.origin.x = 0
+        allEntriesViewController.view.frame.origin.y = 0
+        allEntriesViewController.view.frame.size.width = self.view.frame.size.width
+        allEntriesViewController.view.frame.size.height = self.view.frame.size.height
+        
+        self.addChildViewController(allEntriesViewController);
+        self.scrollView.addSubview(allEntriesViewController.view)
+        allEntriesViewController.didMove(toParentViewController: self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,28 +57,16 @@ class ViewController: UIViewController {
         self.scrollView.frame.size.height = self.view.frame.size.height
         self.scrollView.contentOffset = CGPoint(x: self.view.frame.width, y: 0)
         
-        mainPage.view.frame.origin.x = self.view.frame.width
-        mainPage.view.frame.origin.y = 0
-        mainPage.view.frame.size.width = self.view.frame.size.width
-        mainPage.view.frame.size.height = self.view.frame.size.height
-        
-        self.addChildViewController(mainPage)
-        self.scrollView.addSubview(mainPage.view)
-        mainPage.didMove(toParentViewController: self)
-        
-        allEntriesViewController.view.frame.origin.x = 0
-        allEntriesViewController.view.frame.origin.y = 0
-        allEntriesViewController.view.frame.size.width = self.view.frame.size.width
-        allEntriesViewController.view.frame.size.height = self.view.frame.size.height
-        
-        self.addChildViewController(allEntriesViewController);
-        self.scrollView.addSubview(allEntriesViewController.view)
-        allEntriesViewController.didMove(toParentViewController: self)
+        addExercisesListPage()
+        addTimerPage()
+        addAllEntriesPage()
         
         self.mainPage.allEntriesDelegate = self.allEntriesViewController;
         
         self.scrollView.contentSize = CGSize(width:
-            mainPage.view.frame.size.width + allEntriesViewController.view.frame.size.width
+                mainPage.view.frame.size.width +
+                allEntriesViewController.view.frame.size.width +
+                exercisesPage.view.frame.size.width
             , height: self.scrollView.frame.size.height)
         
     }
