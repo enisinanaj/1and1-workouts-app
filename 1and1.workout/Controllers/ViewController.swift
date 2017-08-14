@@ -21,9 +21,9 @@ class ViewController: UIViewController {
         
         self.scrollView.frame.size.width = self.view.frame.size.width
         self.scrollView.frame.size.height = self.view.frame.size.height
-        self.scrollView.contentOffset = CGPoint(x: 0, y: 0)
+        self.scrollView.contentOffset = CGPoint(x: self.view.frame.width, y: 0)
         
-        mainPage.view.frame.origin.x = 0
+        mainPage.view.frame.origin.x = self.view.frame.width
         mainPage.view.frame.origin.y = 0
         mainPage.view.frame.size.width = self.view.frame.size.width
         mainPage.view.frame.size.height = self.view.frame.size.height
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         self.scrollView.addSubview(mainPage.view)
         mainPage.didMove(toParentViewController: self)
         
-        allEntriesViewController.view.frame.origin.x = self.view.frame.width
+        allEntriesViewController.view.frame.origin.x = 0
         allEntriesViewController.view.frame.origin.y = 0
         allEntriesViewController.view.frame.size.width = self.view.frame.size.width
         allEntriesViewController.view.frame.size.height = self.view.frame.size.height
