@@ -1,17 +1,27 @@
 PODS:
-  - PulsingHalo (0.2.3)
-  - SQLite.swift (0.11.0):
-    - SQLite.swift/standard (= 0.11.0)
-  - SQLite.swift/standard (0.11.0)
+  - PulsingHalo (0.2.7)
+  - SQLite.swift (0.11.3):
+    - SQLite.swift/standard (= 0.11.3)
+  - SQLite.swift/standard (0.11.3)
 
 DEPENDENCIES:
   - PulsingHalo
-  - SQLite.swift (~> 0.11.0)
+  - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`, branch `swift-4`)
+
+EXTERNAL SOURCES:
+  SQLite.swift:
+    :branch: swift-4
+    :git: https://github.com/stephencelis/SQLite.swift.git
+
+CHECKOUT OPTIONS:
+  SQLite.swift:
+    :commit: 6463eb13c021cba6de2ed4e8a76a5c03301de200
+    :git: https://github.com/stephencelis/SQLite.swift.git
 
 SPEC CHECKSUMS:
-  PulsingHalo: f0fe19699182eb959e4bc333838a2609ef7f7d48
-  SQLite.swift: 9a26273607d3077a2e5a8d33486e9989f8404c7d
+  PulsingHalo: cef238431ade844de848eae0c3452b7e1592a054
+  SQLite.swift: f5e183af7f267169a3e71cefc7c0a72e687c52a7
 
-PODFILE CHECKSUM: 0c4246aa128a72d423230a41f507357691593dbf
+PODFILE CHECKSUM: 5fd6545070e2ab0df437b81e73dd21b5e6766428
 
 COCOAPODS: 1.3.1

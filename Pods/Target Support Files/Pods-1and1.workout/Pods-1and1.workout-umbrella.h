@@ -10,9 +10,7 @@
 #endif
 #endif
 
-#import "SQLite.h"
-#import "SQLite-Bridging.h"
 
-FOUNDATION_EXPORT double SQLiteVersionNumber;
-FOUNDATION_EXPORT const unsigned char SQLiteVersionString[];
+FOUNDATION_EXPORT double Pods_1and1_workoutVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_1and1_workoutVersionString[];
 
