@@ -8,32 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		0956616BED390D4F23F8782AEB489A73 /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 82289CDEE01DCBBF3B6A8D077E381C62 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AD235E5B185E24392CD42FB3D6789CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
 		0EA04C2547A1E19D6C31023F41525C9D /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F5D616126F35F66E6303C4DAB599E4 /* Schema.swift */; };
 		1C45EFE13B6D737573E18317C914E101 /* PulsingHalo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CCBB46DEC848ED3EA885727141952ED /* PulsingHalo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1DA557E052E5CB78758DC99E6699E21C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
 		1F80BEE45AABCBAB79558BDB8A4673CE /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496053D1696656F7E1AC5058D608215F /* Query.swift */; };
 		228FF5B466D4AC4ECF52BC8A4A14E612 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 031190AE1EEB2A07B174A93D7B305E0F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2444589D17EA73DB10C40F36CE08CB62 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C98DD5C25F939CE1424C1E1535C6BF /* CoreFunctions.swift */; };
 		2A06864592BF3F96DDA84CAB7918A90F /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB5A1EFC6CAC2BA677D6A3DA977D42F /* RTree.swift */; };
+		2E47E3C2DCC0F2E600DA540A9752734A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
 		4287148B5D67CFF0707F92D9EFC1F787 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DD66F54A7AC4A44D76B6E14830202A /* Foundation.swift */; };
 		50CDF763A204B9E60D0A7E0D97C515F4 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B6CDCDFB6337CB925A15017980FF3B5D /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		573235D31F1D796684409F7FE7FDF6C6 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B90735FA7CFAC7CEFD3457B7523483 /* SQLite.swift-dummy.m */; };
 		593DA86BE47451DD3AA41D847EF0B3B8 /* Pods-microtime.tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D2A62DB691E983B255EBBA66015A3A3 /* Pods-microtime.tracker-dummy.m */; };
-		627AB2BF964FBA64D3138732F9DD4DD0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
 		687FFAA0B02999E4ACC8E19F92B6AD5A /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B6402983C6674455F211EC18FB025E /* Connection.swift */; };
 		697DD2807F151321534F435797D2BCB5 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705F605BA5805A21145A9F3B20B3D1D /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		6A43D626E239F4B86615E23E7ABF2347 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D86E3DBD6726D6A644E68804D38150D /* Value.swift */; };
 		6FA74C0750AF7ACDBEA1060073575AA0 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91516F3555EECE5F290D12970550465 /* Operators.swift */; };
 		7D2ED1FB82AE10E8BE8C9B425BFEEDAB /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A76491BBF1590A848A46B9A679A07C /* Blob.swift */; };
+		8F9D61A71BFE4CCC04AB3044B81EB754 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
 		902E26338EF4DFB64F777E0ED3C6C162 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA58973D0D58A922315E87F3967C72C /* Collation.swift */; };
-		962E3A7D70C792C2FCB5303CFE5327F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
 		98B213A566FD5463DB41D425B3EFF70B /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B789FF09E06FF44A40749FE534FBAE /* Statement.swift */; };
 		9B9CBE8D368770CDB93EFAABD4C6A1F3 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D5BEB1F37AF677325AFBF9E241F7D7 /* Setter.swift */; };
+		9BD7CA4FF27FEBA8226C94CC1E0C824D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
 		9EF2AD001555C18E0A72400DF4E92CF2 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA61B1476E2ABBF88A39C89194B3C26 /* SQLite-Bridging.m */; };
 		B532F1EBF7657B7937FC44796866D8DA /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6404FF1D323D4C841E59FA27BDEABF /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5EB49FBDA237B02F557D8382D81029D /* Pods-microtime.tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E3996FB39E46823D439574BDCA1817 /* Pods-microtime.tracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5F7D72664DCD01ABBDE21BC8AA6B6C4 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693FAA0A6D6BC0D9458D4B712F447D36 /* Expression.swift */; };
-		B9717429B77C110A74A783EF5E449F38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
 		BC9D4A8060D8301DE91FDE6B7A2FA154 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = F170151417E41126C109EDA0ACB5BB1E /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C990D1C40BE3AFFC2EE318E4AFCB860D /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE707E85DD65ED15D729E1501A1E1494 /* AggregateFunctions.swift */; };
 		CDF5C67802549DE4AC28AA1A0F63F1B3 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0ED04D4F5EA293D28B21A4770EDD9F2 /* Helpers.swift */; };
@@ -71,11 +71,11 @@
 		2700E238500EF68B314E2FC6A698EB6F /* Pods-microtime.tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-microtime.tracker.modulemap"; sourceTree = "<group>"; };
 		34B6402983C6674455F211EC18FB025E /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		39A76491BBF1590A848A46B9A679A07C /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		410CE012B3C8F809F9CD72F6B64AEC89 /* PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PulsingHalo-dummy.m"; sourceTree = "<group>"; };
 		4705F605BA5805A21145A9F3B20B3D1D /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
 		496053D1696656F7E1AC5058D608215F /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		52BBA8B52750353F9BDB3D74E00334FE /* PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
+		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		55B90735FA7CFAC7CEFD3457B7523483 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
 		5709AA17F5FD3F97CE7496566646C6A3 /* Pods-microtime.tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-microtime.tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5932BB18B859B1AA11CB440533CBBBBE /* PulsingHalo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PulsingHalo.modulemap; sourceTree = "<group>"; };
@@ -102,7 +102,6 @@
 		B6DD66F54A7AC4A44D76B6E14830202A /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = SQLite/Foundation.swift; sourceTree = "<group>"; };
 		B7CA7E5E202A7D4C9A9E36A943B5E371 /* PulsingHalo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHalo.h; path = PulsingHalo/PulsingHalo.h; sourceTree = "<group>"; };
 		BAC63F0346EA3AB3CA374B51C70E7383 /* Pods-microtime.tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-microtime.tracker-acknowledgements.plist"; sourceTree = "<group>"; };
-		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		BC3FA46A609C2B3EFD92F826E519BCC1 /* Pods_microtime_tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_microtime_tracker.framework; path = "Pods-microtime.tracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE03871EFC3F2FD5BC63BB3DD244F949 /* PulsingHalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PulsingHalo.framework; path = PulsingHalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0ED04D4F5EA293D28B21A4770EDD9F2 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = SQLite/Helpers.swift; sourceTree = "<group>"; };
@@ -113,6 +112,7 @@
 		EE707E85DD65ED15D729E1501A1E1494 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
 		F170151417E41126C109EDA0ACB5BB1E /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "SQLite/Core/SQLite-Bridging.h"; sourceTree = "<group>"; };
 		F79E50FB120116250DD1AA57BAAFB756 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		FCA58973D0D58A922315E87F3967C72C /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
 		FE6404FF1D323D4C841E59FA27BDEABF /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = SQLite/SQLite.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627AB2BF964FBA64D3138732F9DD4DD0 /* Foundation.framework in Frameworks */,
+				9BD7CA4FF27FEBA8226C94CC1E0C824D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962E3A7D70C792C2FCB5303CFE5327F8 /* Foundation.framework in Frameworks */,
+				2E47E3C2DCC0F2E600DA540A9752734A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9717429B77C110A74A783EF5E449F38 /* Foundation.framework in Frameworks */,
-				1DA557E052E5CB78758DC99E6699E21C /* QuartzCore.framework in Frameworks */,
+				0AD235E5B185E24392CD42FB3D6789CF /* Foundation.framework in Frameworks */,
+				8F9D61A71BFE4CCC04AB3044B81EB754 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +229,7 @@
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
+				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,6 +259,15 @@
 			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
+		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
+				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		A555024B6FC4245E1D0AAD0F3E464835 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,15 +276,6 @@
 			);
 			name = SQLite.swift;
 			path = SQLite.swift;
-			sourceTree = "<group>";
-		};
-		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
-				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CEB8F4F9A033E7E0783BD96F13601344 /* PulsingHalo */ = {
@@ -392,7 +392,7 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
@@ -477,42 +477,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3ED94F37ECFB1BDD2E8FA588B9E69BDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A8CF6B66646B846340165AF11AAC2F7 /* PulsingHalo.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PulsingHalo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4DA0E61E374486BC2FFFC01003B9F0B2 /* Debug */ = {
+		2367EE2A83F7DD4EE8AB0B7625ED29CB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D55AF60E49DCD00A71954B201FF35A75 /* Pods-microtime.tracker.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -538,18 +507,128 @@
 				PRODUCT_NAME = Pods_microtime_tracker;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+		2890E7FB2CB313D6D4092B17EDF5817E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26C07586752D735C68E30A49C262D9AB /* Pods-microtime.tracker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-microtime.tracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_microtime_tracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BBD5678D3C2932AA9CD902DB9BCE91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A8CF6B66646B846340165AF11AAC2F7 /* PulsingHalo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PulsingHalo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F3E2D9323F58EB5C621A04497467A6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C5E8D285C2D93A93FC5241E320F152D /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -557,10 +636,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -585,14 +667,16 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		674F699C2A026028700F24D797D1A9E8 /* Release */ = {
+		BD791D73C53729877FA246843484A773 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C5E8D285C2D93A93FC5241E320F152D /* SQLite.swift.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -614,6 +698,8 @@
 				PRODUCT_NAME = SQLite;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -621,43 +707,12 @@
 			};
 			name = Release;
 		};
-		8D42B613A3CF7EE3919C39E30142F14E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A8CF6B66646B846340165AF11AAC2F7 /* PulsingHalo.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PulsingHalo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -665,10 +720,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
@@ -693,10 +751,11 @@
 			};
 			name = Release;
 		};
-		CCF115AFCFD63CC780AB582691D0E08D /* Debug */ = {
+		CB0C9AA4BF5758C3E2D27503A6A48637 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C5E8D285C2D93A93FC5241E320F152D /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 8A8CF6B66646B846340165AF11AAC2F7 /* PulsingHalo.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -708,17 +767,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SQLite;
+				PRODUCT_NAME = PulsingHalo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -726,49 +785,14 @@
 			};
 			name = Debug;
 		};
-		D93D78C6EFBCB10FB59DB6F1FD80706F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26C07586752D735C68E30A49C262D9AB /* Pods-microtime.tracker.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-microtime.tracker/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-microtime.tracker/Pods-microtime.tracker.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_microtime_tracker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -776,8 +800,8 @@
 		7AD31ED1054241F77EFE9327149ED5EC /* Build configuration list for PBXNativeTarget "Pods-microtime.tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4DA0E61E374486BC2FFFC01003B9F0B2 /* Debug */,
-				D93D78C6EFBCB10FB59DB6F1FD80706F /* Release */,
+				2367EE2A83F7DD4EE8AB0B7625ED29CB /* Debug */,
+				2890E7FB2CB313D6D4092B17EDF5817E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -785,8 +809,8 @@
 		93ED8E456EA710423B3701D84F5FA886 /* Build configuration list for PBXNativeTarget "PulsingHalo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3ED94F37ECFB1BDD2E8FA588B9E69BDC /* Debug */,
-				8D42B613A3CF7EE3919C39E30142F14E /* Release */,
+				CB0C9AA4BF5758C3E2D27503A6A48637 /* Debug */,
+				6BBD5678D3C2932AA9CD902DB9BCE91F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -794,8 +818,8 @@
 		97504AFC32B73A3FD0F552EF6F650175 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCF115AFCFD63CC780AB582691D0E08D /* Debug */,
-				674F699C2A026028700F24D797D1A9E8 /* Release */,
+				8F3E2D9323F58EB5C621A04497467A6C /* Debug */,
+				BD791D73C53729877FA246843484A773 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
