@@ -33,15 +33,41 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        var title = ""
         
+        switch indexPath.row {
+        case 0:
+            title = "High knees"
+        case 1:
+            title = "Jumping jacks"
+        case 2:
+            title = "Squats"
+        case 3:
+            title = "Lunges"
+        case 4:
+            title = "Plank leg raises"
+        case 5:
+            title = "Climbers"
+        case 6:
+            title = "Bicycle crunches"
+        case 7:
+            title = "Leg raises"
+        case 8:
+            title = "Knee pull-ins"
+        case 9:
+            title = "Push-ups"
+        default:
+            title = "High knees"
+        }
         
+        cell.textLabel?.text = title
         
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +75,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 80
+        return 100
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
