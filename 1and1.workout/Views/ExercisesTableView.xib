@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-6k-hK4">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="FG4-yQ-60c"/>
@@ -32,10 +32,10 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="NGd-6k-hK4" secondAttribute="top" id="2a8-MX-Qb2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NGd-6k-hK4" secondAttribute="trailing" id="HXO-Sv-FIy"/>
                 <constraint firstItem="NGd-6k-hK4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W0L-aq-YUv"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NGd-6k-hK4" secondAttribute="bottom" id="bXf-oY-Zyl"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="NGd-6k-hK4" secondAttribute="top" constant="20" id="ha5-Dz-ZkT"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
