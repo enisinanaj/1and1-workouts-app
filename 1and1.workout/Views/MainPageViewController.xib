@@ -17,11 +17,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainPageViewController" customModule="_and1_workout" customModuleProvider="target">
             <connections>
-                <outlet property="minutesHand" destination="OBD-8b-Ud7" id="Unx-Hr-5iY"/>
-                <outlet property="secondsHand" destination="Mmi-Mj-ICj" id="afc-ep-o7h"/>
+                <outlet property="completedExercise" destination="iEQ-fd-QUR" id="Dnv-ne-XFg"/>
                 <outlet property="startButton" destination="pad-5K-Sk1" id="O1Q-QM-Abj"/>
-                <outlet property="stopButton" destination="o8V-xX-hNF" id="AZ0-F6-nuO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewDescriptionLabel" destination="Vx1-k4-G2w" id="cCh-65-Njx"/>
+                <outlet property="viewTitle" destination="7AP-TK-lL2" id="2io-M4-yWA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -38,17 +38,14 @@
                     <color key="textColor" red="1" green="0.069232950459999998" blue="0.193828785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When the minute is reached, take one minute of rest, then swipe left to proceede with the next exercise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-k4-G2w" userLabel="Description">
-                    <rect key="frame" x="16" y="105" width="288" height="76"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="76" id="BQO-7n-Gp9"/>
-                    </constraints>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When the minute is reached, take one minute of rest, then swipe left to proceede with the next exercise" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vx1-k4-G2w" userLabel="Description">
+                    <rect key="frame" x="16" y="105" width="288" height="74"/>
                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="18"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-ZB-0TI" userLabel="Timer Container">
-                    <rect key="frame" x="60" y="241" width="200.5" height="168.5"/>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYI-ZB-0TI" userLabel="Timer Container">
+                    <rect key="frame" x="60" y="204" width="200.5" height="168.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmi-Mj-ICj">
                             <rect key="frame" x="106.5" y="28" width="79" height="81.5"/>
@@ -93,18 +90,16 @@
                         <constraint firstAttribute="bottom" secondItem="Mmi-Mj-ICj" secondAttribute="bottom" constant="59" id="tqs-6I-ieT"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xX-hNF">
-                    <rect key="frame" x="136" y="463" width="55" height="55"/>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-fd-QUR">
+                    <rect key="frame" x="135.5" y="463" width="55" height="55"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="55" id="BcG-3h-Dgp"/>
-                        <constraint firstAttribute="height" constant="55" id="UM2-jK-WHT"/>
+                        <constraint firstAttribute="width" constant="55" id="3J1-UR-ePm"/>
+                        <constraint firstAttribute="height" constant="55" id="vuf-PI-Rei"/>
                     </constraints>
-                    <state key="normal" image="StopButton"/>
-                    <connections>
-                        <action selector="stopTimerAction:" destination="-1" eventType="touchUpInside" id="yYA-m8-kfY"/>
-                    </connections>
+                    <color key="tintColor" red="1" green="0.069232950459999998" blue="0.193828785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="Circle Check"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pad-5K-Sk1">
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pad-5K-Sk1">
                     <rect key="frame" x="136" y="463" width="55" height="55"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="55" id="Rfz-uC-WpV"/>
@@ -119,19 +114,20 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="o8V-xX-hNF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="3.5" id="4CS-3b-rfB"/>
                 <constraint firstItem="sue-TM-7C2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Lv-z1-oVF"/>
+                <constraint firstItem="iEQ-fd-QUR" firstAttribute="centerY" secondItem="pad-5K-Sk1" secondAttribute="centerY" id="7Ys-cU-2tn"/>
                 <constraint firstItem="Vx1-k4-G2w" firstAttribute="top" secondItem="7AP-TK-lL2" secondAttribute="bottom" constant="10" id="9Ff-mp-Php"/>
                 <constraint firstAttribute="bottom" secondItem="sue-TM-7C2" secondAttribute="bottom" id="D8f-wj-CBW"/>
                 <constraint firstAttribute="bottomMargin" secondItem="pad-5K-Sk1" secondAttribute="bottom" constant="50" id="HH2-Lh-qpd"/>
+                <constraint firstItem="iEQ-fd-QUR" firstAttribute="centerX" secondItem="pad-5K-Sk1" secondAttribute="centerX" id="I2D-ol-hC4"/>
                 <constraint firstItem="pad-5K-Sk1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="3.5" id="MRT-4T-ysC"/>
+                <constraint firstItem="iEQ-fd-QUR" firstAttribute="top" secondItem="pad-5K-Sk1" secondAttribute="top" id="Nsh-Tk-0j6"/>
                 <constraint firstItem="7AP-TK-lL2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="OGx-5d-QE6"/>
                 <constraint firstAttribute="trailing" secondItem="Vx1-k4-G2w" secondAttribute="trailing" constant="16" id="OtB-di-p5F"/>
-                <constraint firstAttribute="bottomMargin" secondItem="o8V-xX-hNF" secondAttribute="bottom" constant="50" id="Srp-hp-3UL"/>
                 <constraint firstItem="Vx1-k4-G2w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="XNs-7Y-5dg"/>
                 <constraint firstAttribute="trailing" secondItem="sue-TM-7C2" secondAttribute="trailing" id="mad-be-aIY"/>
                 <constraint firstItem="sue-TM-7C2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="n0f-Ol-k90"/>
-                <constraint firstItem="hYI-ZB-0TI" firstAttribute="top" secondItem="Vx1-k4-G2w" secondAttribute="bottom" constant="60" id="qZh-YB-KBf"/>
+                <constraint firstItem="hYI-ZB-0TI" firstAttribute="top" secondItem="Vx1-k4-G2w" secondAttribute="bottom" constant="25" id="qZh-YB-KBf"/>
                 <constraint firstItem="hYI-ZB-0TI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="u9S-jw-lgl"/>
                 <constraint firstItem="7AP-TK-lL2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="uzF-1m-3eq"/>
             </constraints>
@@ -140,8 +136,8 @@
         </view>
     </objects>
     <resources>
+        <image name="Circle Check" width="27" height="25"/>
         <image name="Home" width="640" height="1136"/>
         <image name="StartButton" width="140" height="140"/>
-        <image name="StopButton" width="140" height="140"/>
     </resources>
 </document>

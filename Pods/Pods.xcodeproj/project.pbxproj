@@ -7,168 +7,168 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		040F1415775A0E894ACA023BC018C316 /* PulsingHalo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A069ABABD68574D1B3E6A82F27CC37 /* PulsingHalo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		05A5DD50D0ECC1CC5DA01CDAD4FD93B6 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 98182F496C270E354158F4CE459459E3 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		0832C5E071CAAEB22E62C2A05CC9E927 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0979117D3EF8C2C9258AC46A7818706B /* Expression.swift */; };
-		0AC97AF57BDD813AC18E74487E4CD65A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
-		0C86FA2A7051753AEF0BAB0A861066EA /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF65C879C6B749F2AC23B36CB4F0C97 /* Foundation.swift */; };
-		0E99795F9D182088438A6E58492FA200 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = AAFFDF2A5AB4D5F0CC6876C0C50C7932 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10AE092B1B49987B7C3407181B3F2E19 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D10B923AAC9029D81DF8E0F4FB59182 /* Statement.swift */; };
-		19557FF19F3BEE5435045E2BEBC72EF9 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1EDEE6FB3475DA88B39C4201AD03BC2 /* FTS5.swift */; };
-		1A8C22D3CD4EBFB9D3D1092B848E0752 /* PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 13FD5CAFA940525870D4F9B265DCEB37 /* PulsingHalo-dummy.m */; };
-		1D259088F40B95995DB09E9FA3964388 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		33787234F6EF660577FAC1518E5DC723 /* YouTubePlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3CB53FB219FB5DBAAE0B02BCA439980 /* YouTubePlayer-dummy.m */; };
-		379646491545234E0FF7A669AE6E22C6 /* Pods-1and1.workout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */; };
-		37D05AB9DB3CD0F1CB6AEF91EC07912E /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CFB7B6B19373D05330518E802889D06 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3BDCAFC61B016E7744F9957A2985C88E /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748145332A10137C6C8E9DF42153DE1 /* Blob.swift */; };
-		426CF879667AEAF943D804C502D6CBC4 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 1901615247334962D21700AC170FCEAF /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D6A13AC352E6B06D4E6421122CD5EAF /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8C6F6715ED40F4B2CDFCA84724061B /* Connection.swift */; };
-		4E492F089054B2D44DB649086D64DD40 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0DC877DE6BCE051F6B8D9E9B5BFB66 /* Value.swift */; };
-		5463AD583D8A79C64F83A15DA9ABC408 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E937C6A2E8C9880445AE46747CDB28 /* FTS4.swift */; };
-		5477D75BF94BA6519EAD7DDE8829F7E0 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629F69DEBD23C84D5CCD48CB83AA23D3 /* Helpers.swift */; };
-		58D971ABB925D4D049C7AC4733B64E5A /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D4BC0FF394274528EF296BD6BFA74D88 /* SQLite.swift-dummy.m */; };
-		6DC7526096651013AEAF48A8F15664F4 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A75543EAAC0A0A3B487DE64EE15A49 /* Query.swift */; };
-		7006122099355CF9587083E9E936392D /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 64AFC6C104841C2B5A3E46CDDA438884 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70252113F0EF79FD2FC8AC1B9DF60D93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		7461EC9F4509971AA429F615536CFA3C /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DC96301884DC70DA5D475952F2AB0E /* Schema.swift */; };
-		7642398D46512188A8DC9A809B1780E7 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FFB4D42E3B96497B0E5BB8D1ABAB76 /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8238FDF6949F3FE4DB6868290C9417C8 /* YTPlayer.html in Resources */ = {isa = PBXBuildFile; fileRef = 11939A9FBC6E8D61F4B283AA2159F92B /* YTPlayer.html */; };
-		82BE8C4FE317F70C0451AABEB635E663 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948C015F61EA75C903185DBFF30A5066 /* Collation.swift */; };
-		878757E57E54B2AC427E4F0946160B27 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEE2841B1D057AF884FF5F34165D1B /* AggregateFunctions.swift */; };
-		A22A6A2554B65DC6C4A2B088977F254B /* Pods-1and1.workout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6EF8EA3782990C8482D33C78A29B319 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7A10631CBB10BCC9DD04AA82CFEC71 /* CustomFunctions.swift */; };
-		B1F519ABF7549A35CC0BA5AC4EF0F9E4 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA99FE1E4A73B86F50702B4224DC5C0 /* CoreFunctions.swift */; };
-		B7B2DE332071D7A100A9583461654C61 /* YouTubePlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC545B007DA7F531A306DC74FFF7CDBE /* YouTubePlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BB6B40EE77A34BE57FE8FFAA874E08F8 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D5D66D52FFA9FE595E433A6A88240D /* Setter.swift */; };
-		BF6BD215F0D421ADEF07A1D3A1A25408 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA30AC60F237137359692A4D3BB83A2 /* RTree.swift */; };
-		C64CBC5DE5E32C364D5C40C2F82FDF09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		C8C5FEDE139199DCBCBAA9DFEF2389C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		CF3F9DE73E80229EFDDC700A29F8E683 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 396665F0D097E1D9BE487F8AE9804B59 /* SQLite-Bridging.m */; };
-		D1A0270DF55760E60E641F0BA9A05270 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF95FD03D9E94585C4C589AB2FD784C8 /* Operators.swift */; };
-		E165CA010C2A3F16EB2F6FC1D82F0845 /* YouTubePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CE842EA2AD90F20889C7AB30B6583 /* YouTubePlayer.swift */; };
-		E9A8415E76BAEEF7969C97B17746B805 /* PulsingHalo.h in Headers */ = {isa = PBXBuildFile; fileRef = 478F0E9B802168FF60BAE3611A51D907 /* PulsingHalo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		006BE5988C1A908C326042D7EB1224AB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */; };
+		0196E120F0709A8DC97C98AB180B5740 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */; };
+		1048A0589D3F84E2D5E91E47CC9F29A2 /* PulsingHalo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10C31E77815A2FE12EDA9550A98DEA0C /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BED0E119307758920AD857E954CB7D /* Schema.swift */; };
+		10E7589E06ED8C3807FEE5304E25B20C /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20B968CA4021A7E708222057EB60F02B /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */; };
+		2A22F504B90FEA33B0846BC94B6395A5 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */; };
+		2A9D581225FF9DECDE33D7ACC4EEA04C /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3077F2E92CF2E0222F506183756651F2 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		33698CC3FE2EA3117F6EA12F1D859D6B /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */; };
+		3DFD245A70F7A3447730601538CB5C83 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */; };
+		4D4681F11469D1238CF3B12F40975220 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */; };
+		5EFFCD66E66454BB7BF88B47C7892843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		66C90097466E9D17EA9B59EA9EE3701E /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */; };
+		6D4B415127921F43E7CB2C49C51D70B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		6E2EB855159210A16492D8A666630FC8 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76E33732F2DF2DC1D474A5809470DAD5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */; };
+		77BA916E94593230FB4F84AEA796973B /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */; };
+		7DCD2C2F128971A4D65A535F532E590F /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */; };
+		85A41C04418A21C396FC7613ACD42060 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */; };
+		86CB981979767D4280E3513297FAF71C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8871CFE35996514E276147BDE1647E8C /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8887822E097EC71DE701EED462639D15 /* Pods-1and1.workout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88BC6E0DCD3ABB36A11C73BFE892C9E3 /* YXWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C4AA0D0894917ABAFB31B85A568176E /* PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */; };
+		91A2CDC95D108225AC13CCCF4FB831E7 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */; };
+		AA75D50F0987CB300CC01D297399F9DF /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */; };
+		AA9BA455C391E00605500AC3298C573E /* Pods-1and1.workout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */; };
+		B6B0BE872BB70302350CD7C5B4EA8D30 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */; };
+		BE0230F760960EE019255DB73F332EFF /* PulsingHalo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C68ED00E8965272C1D7FB4D1257752DB /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */; };
+		DC097C16E796F76CC7D13B9FD829F2FF /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */; };
+		E35BE2CE194F5766B93CB95B629AE22F /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */; };
+		E62CC1B400F1E92BEBA8476D9D6C66C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
+		E779737434FAB32C47242B703B11F0A0 /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */; };
+		EFFD660CC8EE82B4D73ABF300E1D9EB5 /* YXWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F27155CF41ECF4A5BB600DB23A926B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		F57305E29CD1D446E8FFE986E66CC392 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19F4293508719F20122A97E541ED751 /* Helpers.swift */; };
+		FAFB4CDEEA5EC0EB9B8F99AAB0C9E7FE /* YXWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */; };
+		FB11D11B453AD46CC346891B472B1D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12B847E7722831EC88BDC0D8C545F9BA /* PBXContainerItemProxy */ = {
+		15275E81A17159AE8E610B83F7820E40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DF96037A3FA46CE0D9376416BFFC10E9;
-			remoteInfo = SQLite.swift;
-		};
-		3B8B307596697BB48F6197436DA23CBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D299316D17350D6C543E9E79F97E9493;
+			remoteGlobalIDString = FD99A9AE7A70161973B12031ABFF1F9F;
 			remoteInfo = PulsingHalo;
 		};
-		E98B4D5E5839AF287ABF88A508250656 /* PBXContainerItemProxy */ = {
+		29DB016C1A5CA0EB61CCA1ABBFAB8945 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 388CAE151893B109876FA0EBE4353DAA;
-			remoteInfo = YouTubePlayer;
+			remoteGlobalIDString = E5F695E4DE80783A52A749C2966D2B44;
+			remoteInfo = YXWaveView;
+		};
+		76F9B451A0DA56426FA12D0518F289FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBE4C6C27B18FA77D4A627E15B3CB047;
+			remoteInfo = SQLite.swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		021258BC8B4A4CB10E0B2C5C0AF02593 /* YouTubePlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YouTubePlayer.xcconfig; sourceTree = "<group>"; };
-		072750A5401F86465B5720998F7C12DF /* YouTubePlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YouTubePlayer.modulemap; sourceTree = "<group>"; };
-		0979117D3EF8C2C9258AC46A7818706B /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		11939A9FBC6E8D61F4B283AA2159F92B /* YTPlayer.html */ = {isa = PBXFileReference; includeInIndex = 1; name = YTPlayer.html; path = YouTubePlayer/YouTubePlayer/YTPlayer.html; sourceTree = "<group>"; };
-		13E937C6A2E8C9880445AE46747CDB28 /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
-		13FD5CAFA940525870D4F9B265DCEB37 /* PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PulsingHalo-dummy.m"; sourceTree = "<group>"; };
-		1901615247334962D21700AC170FCEAF /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1and1_workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		05A85A81B3CFDEBBDF921A20FDB5604A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
+		110B26A8447100510D960C5031C4AA28 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-umbrella.h"; sourceTree = "<group>"; };
 		1B7D3B336BEBED26A6C1FEDD84CE273C /* Pods-1and1.workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1and1.workout.debug.xcconfig"; sourceTree = "<group>"; };
-		20BC5AB2C764CF1528FE4DA4654C21E8 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PulsingHalo-dummy.m"; sourceTree = "<group>"; };
 		23C8F45ED8EBF688A6EA27368632C9A9 /* Pods-1and1.workout-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-1and1.workout-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24624956A4A6455D16E4B95BEBDD467D /* PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PulsingHalo.xcconfig; sourceTree = "<group>"; };
-		2A249FDC77B4F65CECBD3FD46CA69898 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DA30AC60F237137359692A4D3BB83A2 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		2EF65C879C6B749F2AC23B36CB4F0C97 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		396665F0D097E1D9BE487F8AE9804B59 /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		42BEE2841B1D057AF884FF5F34165D1B /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		436CD569AE57C51C95DAA01C76C095E1 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_1and1_workout.framework; path = "Pods-1and1.workout.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXWaveView.h; path = YXWaveView/YXWaveView.h; sourceTree = "<group>"; };
+		2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		2D46BAFDC8533550DDFF46BD53378BE7 /* PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
+		2DED8571AB4926E598D98E23BAB60C8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YXWaveView.swift; path = YXWaveView/YXWaveView.swift; sourceTree = "<group>"; };
 		465EF7FF4C6C8F05FF2752F67C127EAC /* Pods-1and1.workout-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1and1.workout-resources.sh"; sourceTree = "<group>"; };
-		478F0E9B802168FF60BAE3611A51D907 /* PulsingHalo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHalo.h; path = PulsingHalo/PulsingHalo.h; sourceTree = "<group>"; };
 		47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-1and1.workout-dummy.m"; sourceTree = "<group>"; };
+		48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHalo.h; path = PulsingHalo/PulsingHalo.h; sourceTree = "<group>"; };
+		4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXWaveView.xcconfig; sourceTree = "<group>"; };
 		4EF79D0820DE0B530D3665A1D048CA15 /* Pods-1and1.workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1and1.workout.release.xcconfig"; sourceTree = "<group>"; };
-		50DDCFCCC5ABCC2A1A6BD7E4A17E3045 /* YouTubePlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YouTubePlayer.framework; path = YouTubePlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52FFB4D42E3B96497B0E5BB8D1ABAB76 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		50AC990B20D4F9430B854E1FC70A5058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PulsingHalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AABA7B2063463B84708AAB21EE02204 /* Pods-1and1.workout-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1and1.workout-frameworks.sh"; sourceTree = "<group>"; };
-		5DA99FE1E4A73B86F50702B4224DC5C0 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		5E7A10631CBB10BCC9DD04AA82CFEC71 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
 		5F36293374B575C98219673BD60CBEDC /* Pods-1and1.workout-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-1and1.workout-acknowledgements.plist"; sourceTree = "<group>"; };
-		629F69DEBD23C84D5CCD48CB83AA23D3 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		64AFC6C104841C2B5A3E46CDDA438884 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
-		6748145332A10137C6C8E9DF42153DE1 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		6836F4888766943398E251FB8A21C0E3 /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PulsingHalo.xcconfig; sourceTree = "<group>"; };
 		6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-1and1.workout-umbrella.h"; sourceTree = "<group>"; };
-		701B7C419B533DDD3FA82E8DF97B273E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72206C815888903A52BAA43D7DBE4BEA /* PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
-		754CE842EA2AD90F20889C7AB30B6583 /* YouTubePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YouTubePlayer.swift; path = YouTubePlayer/YouTubePlayer/YouTubePlayer.swift; sourceTree = "<group>"; };
-		75D5D66D52FFA9FE595E433A6A88240D /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
 		7BF31DF247A4D5C0AB5432E6F96C6CFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7DFE5D1F97A2E0350BE3EB5C8BBAA770 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		8CFB7B6B19373D05330518E802889D06 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		8F0DC877DE6BCE051F6B8D9E9B5BFB66 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		948C015F61EA75C903185DBFF30A5066 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		98182F496C270E354158F4CE459459E3 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		98533E07772CC95EAA308283775C9223 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D10B923AAC9029D81DF8E0F4FB59182 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		A2DC96301884DC70DA5D475952F2AB0E /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		AAFFDF2A5AB4D5F0CC6876C0C50C7932 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		B1EDEE6FB3475DA88B39C4201AD03BC2 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		B3CB53FB219FB5DBAAE0B02BCA439980 /* YouTubePlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YouTubePlayer-dummy.m"; sourceTree = "<group>"; };
-		B5302B50A0CCAD31AB73635749826BFA /* PulsingHalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PulsingHalo.framework; path = PulsingHalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5CA8915ABD80263DF65D17698AAD4C8 /* Pods-1and1.workout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-1and1.workout.modulemap"; sourceTree = "<group>"; };
-		CF8C6F6715ED40F4B2CDFCA84724061B /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		D4BC0FF394274528EF296BD6BFA74D88 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		D6A75543EAAC0A0A3B487DE64EE15A49 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
-		D859BBAA03F12A591359911757236D6D /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		E7A069ABABD68574D1B3E6A82F27CC37 /* PulsingHalo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-umbrella.h"; sourceTree = "<group>"; };
-		EC545B007DA7F531A306DC74FFF7CDBE /* YouTubePlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-umbrella.h"; sourceTree = "<group>"; };
-		EF95FD03D9E94585C4C589AB2FD784C8 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		F0D5CD97D446F944C04222E7DCCB26B5 /* YouTubePlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YouTubePlayer-prefix.pch"; sourceTree = "<group>"; };
-		F3F3855D64AEB5D04E7888FB48008D35 /* PulsingHalo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PulsingHalo.modulemap; sourceTree = "<group>"; };
+		8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		BF0BF02266A6D8786270838D18407E6B /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		C5CA8915ABD80263DF65D17698AAD4C8 /* Pods-1and1.workout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-1and1.workout.modulemap"; sourceTree = "<group>"; };
+		C650DB716EFD9DE593CE486950BFA32E /* YXWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-prefix.pch"; sourceTree = "<group>"; };
+		C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXWaveView-dummy.m"; sourceTree = "<group>"; };
+		D19F4293508719F20122A97E541ED751 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		DB9AC6DDA2D2640517C2CDAB9B3322B4 /* YXWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YXWaveView.modulemap; sourceTree = "<group>"; };
+		DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		DC9E3B60656C98D5F00E52BE3C5B3384 /* PulsingHalo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PulsingHalo.modulemap; sourceTree = "<group>"; };
+		E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-umbrella.h"; sourceTree = "<group>"; };
+		E7BED0E119307758920AD857E954CB7D /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		F28CD3D2F258D90032B5BAD75F718870 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
 		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1008C9F2722153D9F6A1F2619D76D57D /* Frameworks */ = {
+		23165061940DD5802A0A62728E554C72 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C64CBC5DE5E32C364D5C40C2F82FDF09 /* Foundation.framework in Frameworks */,
-				0AC97AF57BDD813AC18E74487E4CD65A /* QuartzCore.framework in Frameworks */,
+				6D4B415127921F43E7CB2C49C51D70B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		446479F939590A248C9413CEC56C7502 /* Frameworks */ = {
+		23B1E66F4D1A7E57D963798A97731255 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8C5FEDE139199DCBCBAA9DFEF2389C4 /* Foundation.framework in Frameworks */,
+				F27155CF41ECF4A5BB600DB23A926B01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83AA462FD542062457D2D686246C11C0 /* Frameworks */ = {
+		940397EE7B0ADF46D0D557E17EA722CB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70252113F0EF79FD2FC8AC1B9DF60D93 /* Foundation.framework in Frameworks */,
+				5EFFCD66E66454BB7BF88B47C7892843 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		895A9272CF169196ACFF83D799B3C1A3 /* Frameworks */ = {
+		C5E95D8E498838541C3204F1C28FA0C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D259088F40B95995DB09E9FA3964388 /* Foundation.framework in Frameworks */,
+				FB11D11B453AD46CC346891B472B1D1B /* Foundation.framework in Frameworks */,
+				E62CC1B400F1E92BEBA8476D9D6C66C1 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,17 +183,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4AC94910B0A5DC5A21D9CAD98BC60AF6 /* YouTubePlayer */ = {
-			isa = PBXGroup;
-			children = (
-				754CE842EA2AD90F20889C7AB30B6583 /* YouTubePlayer.swift */,
-				845093E8D9DF719EBE872C4CB80834C4 /* Resources */,
-				69003BAF36EE21EEAAEC5B4DC21B9A53 /* Support Files */,
-			);
-			name = YouTubePlayer;
-			path = YouTubePlayer;
-			sourceTree = "<group>";
-		};
 		4AEA3AA8B49652203B14CC4714EC7EF3 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,39 +191,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		5468A5A1B417A6ED95398F4636638BDD /* Products */ = {
+		4F241267C5334EF0EC14123BDF2193B5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				436CD569AE57C51C95DAA01C76C095E1 /* Pods_1and1_workout.framework */,
-				B5302B50A0CCAD31AB73635749826BFA /* PulsingHalo.framework */,
-				20BC5AB2C764CF1528FE4DA4654C21E8 /* SQLite.framework */,
-				50DDCFCCC5ABCC2A1A6BD7E4A17E3045 /* YouTubePlayer.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		69003BAF36EE21EEAAEC5B4DC21B9A53 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				98533E07772CC95EAA308283775C9223 /* Info.plist */,
-				072750A5401F86465B5720998F7C12DF /* YouTubePlayer.modulemap */,
-				021258BC8B4A4CB10E0B2C5C0AF02593 /* YouTubePlayer.xcconfig */,
-				B3CB53FB219FB5DBAAE0B02BCA439980 /* YouTubePlayer-dummy.m */,
-				F0D5CD97D446F944C04222E7DCCB26B5 /* YouTubePlayer-prefix.pch */,
-				EC545B007DA7F531A306DC74FFF7CDBE /* YouTubePlayer-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YouTubePlayer";
-			sourceTree = "<group>";
-		};
-		6F41CAD19B8917F2590E376737365DA5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D3D9A83903513BC2E9CC9314A12E9686 /* PulsingHalo */,
-				FDF0CDE7192BDD5AD2634133E24EE650 /* SQLite.swift */,
-				4AC94910B0A5DC5A21D9CAD98BC60AF6 /* YouTubePlayer */,
+				91AB7F4A9AE73D081B73DEEF42F65F99 /* PulsingHalo */,
+				EEF1A711CD5FDF640F7CF2DFE9E3FF27 /* SQLite.swift */,
+				B5B07A55FA5BB383715E030E6E78160B /* YXWaveView */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		58461CA5C973C1B8529FF1D177C6413E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05A85A81B3CFDEBBDF921A20FDB5604A /* Info.plist */,
+				F28CD3D2F258D90032B5BAD75F718870 /* SQLite.swift.modulemap */,
+				DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */,
+				1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */,
+				BF0BF02266A6D8786270838D18407E6B /* SQLite.swift-prefix.pch */,
+				D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -242,18 +220,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				6F41CAD19B8917F2590E376737365DA5 /* Pods */,
-				5468A5A1B417A6ED95398F4636638BDD /* Products */,
+				4F241267C5334EF0EC14123BDF2193B5 /* Pods */,
+				BA43AE4052213DBEB018D1EA3AB68116 /* Products */,
 				4AEA3AA8B49652203B14CC4714EC7EF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		845093E8D9DF719EBE872C4CB80834C4 /* Resources */ = {
+		91AB7F4A9AE73D081B73DEEF42F65F99 /* PulsingHalo */ = {
 			isa = PBXGroup;
 			children = (
-				11939A9FBC6E8D61F4B283AA2159F92B /* YTPlayer.html */,
+				4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */,
+				0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */,
+				E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */,
+				9AD398ABBDB881B8ADBE929D72040912 /* Support Files */,
 			);
-			name = Resources;
+			path = PulsingHalo;
 			sourceTree = "<group>";
 		};
 		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
@@ -265,59 +246,82 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		B60B56E04226EF0C1EB0F45E33321E67 /* standard */ = {
+		9AD398ABBDB881B8ADBE929D72040912 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				42BEE2841B1D057AF884FF5F34165D1B /* AggregateFunctions.swift */,
-				6748145332A10137C6C8E9DF42153DE1 /* Blob.swift */,
-				948C015F61EA75C903185DBFF30A5066 /* Collation.swift */,
-				CF8C6F6715ED40F4B2CDFCA84724061B /* Connection.swift */,
-				5DA99FE1E4A73B86F50702B4224DC5C0 /* CoreFunctions.swift */,
-				5E7A10631CBB10BCC9DD04AA82CFEC71 /* CustomFunctions.swift */,
-				0979117D3EF8C2C9258AC46A7818706B /* Expression.swift */,
-				2EF65C879C6B749F2AC23B36CB4F0C97 /* Foundation.swift */,
-				98182F496C270E354158F4CE459459E3 /* fts3_tokenizer.h */,
-				13E937C6A2E8C9880445AE46747CDB28 /* FTS4.swift */,
-				B1EDEE6FB3475DA88B39C4201AD03BC2 /* FTS5.swift */,
-				629F69DEBD23C84D5CCD48CB83AA23D3 /* Helpers.swift */,
-				EF95FD03D9E94585C4C589AB2FD784C8 /* Operators.swift */,
-				D6A75543EAAC0A0A3B487DE64EE15A49 /* Query.swift */,
-				2DA30AC60F237137359692A4D3BB83A2 /* RTree.swift */,
-				A2DC96301884DC70DA5D475952F2AB0E /* Schema.swift */,
-				75D5D66D52FFA9FE595E433A6A88240D /* Setter.swift */,
-				1901615247334962D21700AC170FCEAF /* SQLite.h */,
-				AAFFDF2A5AB4D5F0CC6876C0C50C7932 /* SQLite-Bridging.h */,
-				396665F0D097E1D9BE487F8AE9804B59 /* SQLite-Bridging.m */,
-				9D10B923AAC9029D81DF8E0F4FB59182 /* Statement.swift */,
-				8F0DC877DE6BCE051F6B8D9E9B5BFB66 /* Value.swift */,
-			);
-			name = standard;
-			sourceTree = "<group>";
-		};
-		D3D9A83903513BC2E9CC9314A12E9686 /* PulsingHalo */ = {
-			isa = PBXGroup;
-			children = (
-				478F0E9B802168FF60BAE3611A51D907 /* PulsingHalo.h */,
-				64AFC6C104841C2B5A3E46CDDA438884 /* PulsingHaloLayer.h */,
-				52FFB4D42E3B96497B0E5BB8D1ABAB76 /* PulsingHaloLayer.m */,
-				E8DBE9C3CAD46BCD3EAD866CDEB1A97E /* Support Files */,
-			);
-			name = PulsingHalo;
-			path = PulsingHalo;
-			sourceTree = "<group>";
-		};
-		D933ED0F67A1E15A5A1F99812E05EA2F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2A249FDC77B4F65CECBD3FD46CA69898 /* Info.plist */,
-				D859BBAA03F12A591359911757236D6D /* SQLite.swift.modulemap */,
-				7DFE5D1F97A2E0350BE3EB5C8BBAA770 /* SQLite.swift.xcconfig */,
-				D4BC0FF394274528EF296BD6BFA74D88 /* SQLite.swift-dummy.m */,
-				6836F4888766943398E251FB8A21C0E3 /* SQLite.swift-prefix.pch */,
-				8CFB7B6B19373D05330518E802889D06 /* SQLite.swift-umbrella.h */,
+				50AC990B20D4F9430B854E1FC70A5058 /* Info.plist */,
+				DC9E3B60656C98D5F00E52BE3C5B3384 /* PulsingHalo.modulemap */,
+				669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */,
+				22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */,
+				2D46BAFDC8533550DDFF46BD53378BE7 /* PulsingHalo-prefix.pch */,
+				E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
+			path = "../Target Support Files/PulsingHalo";
+			sourceTree = "<group>";
+		};
+		9E6E931CC941F9D1C92F5509C0CA8CEA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DED8571AB4926E598D98E23BAB60C8E /* Info.plist */,
+				DB9AC6DDA2D2640517C2CDAB9B3322B4 /* YXWaveView.modulemap */,
+				4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */,
+				C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */,
+				C650DB716EFD9DE593CE486950BFA32E /* YXWaveView-prefix.pch */,
+				14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YXWaveView";
+			sourceTree = "<group>";
+		};
+		B5B07A55FA5BB383715E030E6E78160B /* YXWaveView */ = {
+			isa = PBXGroup;
+			children = (
+				2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */,
+				455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */,
+				9E6E931CC941F9D1C92F5509C0CA8CEA /* Support Files */,
+			);
+			path = YXWaveView;
+			sourceTree = "<group>";
+		};
+		BA43AE4052213DBEB018D1EA3AB68116 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */,
+				58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */,
+				110B26A8447100510D960C5031C4AA28 /* SQLite.framework */,
+				0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEF5C1BCEB36F23C1F0DC28C9F868193 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */,
+				381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */,
+				F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */,
+				93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */,
+				95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */,
+				320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */,
+				4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */,
+				2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */,
+				A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */,
+				903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */,
+				C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */,
+				D19F4293508719F20122A97E541ED751 /* Helpers.swift */,
+				C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */,
+				71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */,
+				3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */,
+				E7BED0E119307758920AD857E954CB7D /* Schema.swift */,
+				0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */,
+				B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */,
+				8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */,
+				9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */,
+				48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */,
+				040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */,
+			);
+			name = standard;
 			sourceTree = "<group>";
 		};
 		E4BAC92C7438332831170C1B7737B99C /* Pods-1and1.workout */ = {
@@ -338,115 +342,86 @@
 			path = "Target Support Files/Pods-1and1.workout";
 			sourceTree = "<group>";
 		};
-		E8DBE9C3CAD46BCD3EAD866CDEB1A97E /* Support Files */ = {
+		EEF1A711CD5FDF640F7CF2DFE9E3FF27 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
-				701B7C419B533DDD3FA82E8DF97B273E /* Info.plist */,
-				F3F3855D64AEB5D04E7888FB48008D35 /* PulsingHalo.modulemap */,
-				24624956A4A6455D16E4B95BEBDD467D /* PulsingHalo.xcconfig */,
-				13FD5CAFA940525870D4F9B265DCEB37 /* PulsingHalo-dummy.m */,
-				72206C815888903A52BAA43D7DBE4BEA /* PulsingHalo-prefix.pch */,
-				E7A069ABABD68574D1B3E6A82F27CC37 /* PulsingHalo-umbrella.h */,
+				BEF5C1BCEB36F23C1F0DC28C9F868193 /* standard */,
+				58461CA5C973C1B8529FF1D177C6413E /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PulsingHalo";
-			sourceTree = "<group>";
-		};
-		FDF0CDE7192BDD5AD2634133E24EE650 /* SQLite.swift */ = {
-			isa = PBXGroup;
-			children = (
-				B60B56E04226EF0C1EB0F45E33321E67 /* standard */,
-				D933ED0F67A1E15A5A1F99812E05EA2F /* Support Files */,
-			);
-			name = SQLite.swift;
 			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0DA2F54E66E0631BF204296CC613C07B /* Headers */ = {
+		39429C8A6BD3F123DD8F1FD00574388D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A22A6A2554B65DC6C4A2B088977F254B /* Pods-1and1.workout-umbrella.h in Headers */,
+				3077F2E92CF2E0222F506183756651F2 /* fts3_tokenizer.h in Headers */,
+				10E7589E06ED8C3807FEE5304E25B20C /* SQLite-Bridging.h in Headers */,
+				6E2EB855159210A16492D8A666630FC8 /* SQLite.h in Headers */,
+				8871CFE35996514E276147BDE1647E8C /* SQLite.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		269DFE9B894EF894615851C8CBB51954 /* Headers */ = {
+		9D91D6ABA7968267C5D20D9A8E6E5100 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				040F1415775A0E894ACA023BC018C316 /* PulsingHalo-umbrella.h in Headers */,
-				E9A8415E76BAEEF7969C97B17746B805 /* PulsingHalo.h in Headers */,
-				7006122099355CF9587083E9E936392D /* PulsingHaloLayer.h in Headers */,
+				8887822E097EC71DE701EED462639D15 /* Pods-1and1.workout-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C1B5CEFB941F7177305DCEC36BD37FB /* Headers */ = {
+		E03EA9541AB8F1AF9959D57135CD26D6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7B2DE332071D7A100A9583461654C61 /* YouTubePlayer-umbrella.h in Headers */,
+				BE0230F760960EE019255DB73F332EFF /* PulsingHalo-umbrella.h in Headers */,
+				1048A0589D3F84E2D5E91E47CC9F29A2 /* PulsingHalo.h in Headers */,
+				2A9D581225FF9DECDE33D7ACC4EEA04C /* PulsingHaloLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C51D7113E3D37F99616D19380991CB7 /* Headers */ = {
+		EF12081A1A8012B59CDDD97DE715E1E3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A5DD50D0ECC1CC5DA01CDAD4FD93B6 /* fts3_tokenizer.h in Headers */,
-				0E99795F9D182088438A6E58492FA200 /* SQLite-Bridging.h in Headers */,
-				426CF879667AEAF943D804C502D6CBC4 /* SQLite.h in Headers */,
-				37D05AB9DB3CD0F1CB6AEF91EC07912E /* SQLite.swift-umbrella.h in Headers */,
+				EFFD660CC8EE82B4D73ABF300E1D9EB5 /* YXWaveView-umbrella.h in Headers */,
+				88BC6E0DCD3ABB36A11C73BFE892C9E3 /* YXWaveView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		388CAE151893B109876FA0EBE4353DAA /* YouTubePlayer */ = {
+		30C59481660B59E8EF794967F043E774 /* Pods-1and1.workout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE130FA03B05E4E25794D23CBFEA9CD3 /* Build configuration list for PBXNativeTarget "YouTubePlayer" */;
+			buildConfigurationList = 2D2E981CA12C3F33BF24594CD360764E /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */;
 			buildPhases = (
-				20B2706A9A42BC5883FD2AB23C6E7CF7 /* Sources */,
-				446479F939590A248C9413CEC56C7502 /* Frameworks */,
-				DF38672E93F6450A97A5D612BD58337E /* Resources */,
-				2C1B5CEFB941F7177305DCEC36BD37FB /* Headers */,
+				7F93F2159E590038DDFF2FA3C9C16D79 /* Sources */,
+				23B1E66F4D1A7E57D963798A97731255 /* Frameworks */,
+				9D91D6ABA7968267C5D20D9A8E6E5100 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				102CD0F6FB512166E16B1B749AD5BF32 /* PBXTargetDependency */,
+				343B572532809FAC171CBD011AC88150 /* PBXTargetDependency */,
+				F78C3DB676F389CCFA5E7DEB9E433669 /* PBXTargetDependency */,
 			);
-			name = YouTubePlayer;
-			productName = YouTubePlayer;
-			productReference = 50DDCFCCC5ABCC2A1A6BD7E4A17E3045 /* YouTubePlayer.framework */;
+			name = "Pods-1and1.workout";
+			productName = "Pods-1and1.workout";
+			productReference = 01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D299316D17350D6C543E9E79F97E9493 /* PulsingHalo */ = {
+		BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 301AEA54BAB933FAF91DFE6CAAF18662 /* Build configuration list for PBXNativeTarget "PulsingHalo" */;
+			buildConfigurationList = FC4C4B97795ABE52DE986D192B1A302F /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				4346E33509C85BB5F8C5C3A000EF6FEF /* Sources */,
-				1008C9F2722153D9F6A1F2619D76D57D /* Frameworks */,
-				269DFE9B894EF894615851C8CBB51954 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PulsingHalo;
-			productName = PulsingHalo;
-			productReference = B5302B50A0CCAD31AB73635749826BFA /* PulsingHalo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		DF96037A3FA46CE0D9376416BFFC10E9 /* SQLite.swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2396021AA7AFBC3443CFC3A4BC943CE9 /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
-			buildPhases = (
-				46C1F34653F5780534205046D2C4FE86 /* Sources */,
-				895A9272CF169196ACFF83D799B3C1A3 /* Frameworks */,
-				5C51D7113E3D37F99616D19380991CB7 /* Headers */,
+				9417768C378F783FECED187B9F043305 /* Sources */,
+				23165061940DD5802A0A62728E554C72 /* Frameworks */,
+				39429C8A6BD3F123DD8F1FD00574388D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -454,27 +429,41 @@
 			);
 			name = SQLite.swift;
 			productName = SQLite.swift;
-			productReference = 20BC5AB2C764CF1528FE4DA4654C21E8 /* SQLite.framework */;
+			productReference = 110B26A8447100510D960C5031C4AA28 /* SQLite.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E63BCCEFC3094DA06017C6766F14B397 /* Pods-1and1.workout */ = {
+		E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F2A8BCAF020227700F50E2F83ACE6B6 /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */;
+			buildConfigurationList = 278C8A9082E8D8E875F9AEC03C85EDBD /* Build configuration list for PBXNativeTarget "YXWaveView" */;
 			buildPhases = (
-				7B30B2FA2FDACCFBDE0C25C4644A0D02 /* Sources */,
-				83AA462FD542062457D2D686246C11C0 /* Frameworks */,
-				0DA2F54E66E0631BF204296CC613C07B /* Headers */,
+				6FECF8FA848E63C846E29161632B4A98 /* Sources */,
+				940397EE7B0ADF46D0D557E17EA722CB /* Frameworks */,
+				EF12081A1A8012B59CDDD97DE715E1E3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CCB82F4A52E9D497056DFE486833870C /* PBXTargetDependency */,
-				5CA098A16C6259FEA520C42B42394745 /* PBXTargetDependency */,
-				FAA00CAF0148765C113AAB148E42D7B3 /* PBXTargetDependency */,
 			);
-			name = "Pods-1and1.workout";
-			productName = "Pods-1and1.workout";
-			productReference = 436CD569AE57C51C95DAA01C76C095E1 /* Pods_1and1_workout.framework */;
+			name = YXWaveView;
+			productName = YXWaveView;
+			productReference = 0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5174D79C61908BD7D58D42583CFA0DD2 /* Build configuration list for PBXNativeTarget "PulsingHalo" */;
+			buildPhases = (
+				9728D275D764F53C80D1E4A1431626B7 /* Sources */,
+				C5E95D8E498838541C3204F1C28FA0C1 /* Frameworks */,
+				E03EA9541AB8F1AF9959D57135CD26D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulsingHalo;
+			productName = PulsingHalo;
+			productReference = 58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -484,7 +473,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -494,143 +483,97 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 5468A5A1B417A6ED95398F4636638BDD /* Products */;
+			productRefGroup = BA43AE4052213DBEB018D1EA3AB68116 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E63BCCEFC3094DA06017C6766F14B397 /* Pods-1and1.workout */,
-				D299316D17350D6C543E9E79F97E9493 /* PulsingHalo */,
-				DF96037A3FA46CE0D9376416BFFC10E9 /* SQLite.swift */,
-				388CAE151893B109876FA0EBE4353DAA /* YouTubePlayer */,
+				30C59481660B59E8EF794967F043E774 /* Pods-1and1.workout */,
+				FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */,
+				BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */,
+				E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		DF38672E93F6450A97A5D612BD58337E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8238FDF6949F3FE4DB6868290C9417C8 /* YTPlayer.html in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		20B2706A9A42BC5883FD2AB23C6E7CF7 /* Sources */ = {
+		6FECF8FA848E63C846E29161632B4A98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33787234F6EF660577FAC1518E5DC723 /* YouTubePlayer-dummy.m in Sources */,
-				E165CA010C2A3F16EB2F6FC1D82F0845 /* YouTubePlayer.swift in Sources */,
+				FAFB4CDEEA5EC0EB9B8F99AAB0C9E7FE /* YXWaveView-dummy.m in Sources */,
+				E779737434FAB32C47242B703B11F0A0 /* YXWaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4346E33509C85BB5F8C5C3A000EF6FEF /* Sources */ = {
+		7F93F2159E590038DDFF2FA3C9C16D79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A8C22D3CD4EBFB9D3D1092B848E0752 /* PulsingHalo-dummy.m in Sources */,
-				7642398D46512188A8DC9A809B1780E7 /* PulsingHaloLayer.m in Sources */,
+				AA9BA455C391E00605500AC3298C573E /* Pods-1and1.workout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46C1F34653F5780534205046D2C4FE86 /* Sources */ = {
+		9417768C378F783FECED187B9F043305 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878757E57E54B2AC427E4F0946160B27 /* AggregateFunctions.swift in Sources */,
-				3BDCAFC61B016E7744F9957A2985C88E /* Blob.swift in Sources */,
-				82BE8C4FE317F70C0451AABEB635E663 /* Collation.swift in Sources */,
-				4D6A13AC352E6B06D4E6421122CD5EAF /* Connection.swift in Sources */,
-				B1F519ABF7549A35CC0BA5AC4EF0F9E4 /* CoreFunctions.swift in Sources */,
-				A6EF8EA3782990C8482D33C78A29B319 /* CustomFunctions.swift in Sources */,
-				0832C5E071CAAEB22E62C2A05CC9E927 /* Expression.swift in Sources */,
-				0C86FA2A7051753AEF0BAB0A861066EA /* Foundation.swift in Sources */,
-				5463AD583D8A79C64F83A15DA9ABC408 /* FTS4.swift in Sources */,
-				19557FF19F3BEE5435045E2BEBC72EF9 /* FTS5.swift in Sources */,
-				5477D75BF94BA6519EAD7DDE8829F7E0 /* Helpers.swift in Sources */,
-				D1A0270DF55760E60E641F0BA9A05270 /* Operators.swift in Sources */,
-				6DC7526096651013AEAF48A8F15664F4 /* Query.swift in Sources */,
-				BF6BD215F0D421ADEF07A1D3A1A25408 /* RTree.swift in Sources */,
-				7461EC9F4509971AA429F615536CFA3C /* Schema.swift in Sources */,
-				BB6B40EE77A34BE57FE8FFAA874E08F8 /* Setter.swift in Sources */,
-				CF3F9DE73E80229EFDDC700A29F8E683 /* SQLite-Bridging.m in Sources */,
-				58D971ABB925D4D049C7AC4733B64E5A /* SQLite.swift-dummy.m in Sources */,
-				10AE092B1B49987B7C3407181B3F2E19 /* Statement.swift in Sources */,
-				4E492F089054B2D44DB649086D64DD40 /* Value.swift in Sources */,
+				0196E120F0709A8DC97C98AB180B5740 /* AggregateFunctions.swift in Sources */,
+				DC097C16E796F76CC7D13B9FD829F2FF /* Blob.swift in Sources */,
+				B6B0BE872BB70302350CD7C5B4EA8D30 /* Collation.swift in Sources */,
+				C68ED00E8965272C1D7FB4D1257752DB /* Connection.swift in Sources */,
+				7DCD2C2F128971A4D65A535F532E590F /* CoreFunctions.swift in Sources */,
+				20B968CA4021A7E708222057EB60F02B /* CustomFunctions.swift in Sources */,
+				006BE5988C1A908C326042D7EB1224AB /* Expression.swift in Sources */,
+				4D4681F11469D1238CF3B12F40975220 /* Foundation.swift in Sources */,
+				77BA916E94593230FB4F84AEA796973B /* FTS4.swift in Sources */,
+				33698CC3FE2EA3117F6EA12F1D859D6B /* FTS5.swift in Sources */,
+				F57305E29CD1D446E8FFE986E66CC392 /* Helpers.swift in Sources */,
+				76E33732F2DF2DC1D474A5809470DAD5 /* Operators.swift in Sources */,
+				66C90097466E9D17EA9B59EA9EE3701E /* Query.swift in Sources */,
+				3DFD245A70F7A3447730601538CB5C83 /* RTree.swift in Sources */,
+				10C31E77815A2FE12EDA9550A98DEA0C /* Schema.swift in Sources */,
+				91A2CDC95D108225AC13CCCF4FB831E7 /* Setter.swift in Sources */,
+				2A22F504B90FEA33B0846BC94B6395A5 /* SQLite-Bridging.m in Sources */,
+				85A41C04418A21C396FC7613ACD42060 /* SQLite.swift-dummy.m in Sources */,
+				E35BE2CE194F5766B93CB95B629AE22F /* Statement.swift in Sources */,
+				AA75D50F0987CB300CC01D297399F9DF /* Value.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B30B2FA2FDACCFBDE0C25C4644A0D02 /* Sources */ = {
+		9728D275D764F53C80D1E4A1431626B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379646491545234E0FF7A669AE6E22C6 /* Pods-1and1.workout-dummy.m in Sources */,
+				8C4AA0D0894917ABAFB31B85A568176E /* PulsingHalo-dummy.m in Sources */,
+				86CB981979767D4280E3513297FAF71C /* PulsingHaloLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5CA098A16C6259FEA520C42B42394745 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SQLite.swift;
-			target = DF96037A3FA46CE0D9376416BFFC10E9 /* SQLite.swift */;
-			targetProxy = 12B847E7722831EC88BDC0D8C545F9BA /* PBXContainerItemProxy */;
-		};
-		CCB82F4A52E9D497056DFE486833870C /* PBXTargetDependency */ = {
+		102CD0F6FB512166E16B1B749AD5BF32 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PulsingHalo;
-			target = D299316D17350D6C543E9E79F97E9493 /* PulsingHalo */;
-			targetProxy = 3B8B307596697BB48F6197436DA23CBE /* PBXContainerItemProxy */;
+			target = FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */;
+			targetProxy = 15275E81A17159AE8E610B83F7820E40 /* PBXContainerItemProxy */;
 		};
-		FAA00CAF0148765C113AAB148E42D7B3 /* PBXTargetDependency */ = {
+		343B572532809FAC171CBD011AC88150 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YouTubePlayer;
-			target = 388CAE151893B109876FA0EBE4353DAA /* YouTubePlayer */;
-			targetProxy = E98B4D5E5839AF287ABF88A508250656 /* PBXContainerItemProxy */;
+			name = SQLite.swift;
+			target = BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */;
+			targetProxy = 76F9B451A0DA56426FA12D0518F289FF /* PBXContainerItemProxy */;
+		};
+		F78C3DB676F389CCFA5E7DEB9E433669 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YXWaveView;
+			target = E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */;
+			targetProxy = 29DB016C1A5CA0EB61CCA1ABBFAB8945 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		096B764C77DA4602453D838376EA6583 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 021258BC8B4A4CB10E0B2C5C0AF02593 /* YouTubePlayer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YouTubePlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1501813EC6FFF6D27102A945A3379FBE /* Debug */ = {
+		07625D039735420085FF1AB0C36F22BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B7D3B336BEBED26A6C1FEDD84CE273C /* Pods-1and1.workout.debug.xcconfig */;
 			buildSettings = {
@@ -669,7 +612,112 @@
 			};
 			name = Debug;
 		};
-		2CA9A666EB63F647423740B773E4116F /* Release */ = {
+		168330053EB285BACA4719C68C512B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = YXWaveView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C0C2399DA9B49822927CAB915E97550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		387AA57E820FCD187EC703EF840F202F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YXWaveView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6366D06F34664DF550337609290B12E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EF79D0820DE0B530D3665A1D048CA15 /* Pods-1and1.workout.release.xcconfig */;
 			buildSettings = {
@@ -707,9 +755,9 @@
 			};
 			name = Release;
 		};
-		44905737DD50B23D2495E27153D3B61A /* Release */ = {
+		896FC83A668E856F8E56BB60CE99E5AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24624956A4A6455D16E4B95BEBDD467D /* PulsingHalo.xcconfig */;
+			baseConfigurationReference = 669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -741,41 +789,6 @@
 			};
 			name = Release;
 		};
-		6AA94EDF6E4CAD00667633D789461837 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 021258BC8B4A4CB10E0B2C5C0AF02593 /* YouTubePlayer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YouTubePlayer/YouTubePlayer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YouTubePlayer/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YouTubePlayer/YouTubePlayer.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YouTubePlayer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -786,7 +799,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -794,15 +809,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -825,87 +846,9 @@
 			};
 			name = Debug;
 		};
-		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+		98E7DAED2759BFC9FFEBC18AB5CB3563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DCAA54F8EDAF2437772FC1FF2128449F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24624956A4A6455D16E4B95BEBDD467D /* PulsingHalo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PulsingHalo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DDE79087548A33C78234E16757BCAF15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DFE5D1F97A2E0350BE3EB5C8BBAA770 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -938,58 +881,110 @@
 			};
 			name = Debug;
 		};
-		E96DA909A3E42D484A6856ADE7A69510 /* Release */ = {
+		A5B8201ACC3D5E6144ABA30322A08EED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7DFE5D1F97A2E0350BE3EB5C8BBAA770 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = 669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SQLite;
+				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PulsingHalo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F2A8BCAF020227700F50E2F83ACE6B6 /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */ = {
+		278C8A9082E8D8E875F9AEC03C85EDBD /* Build configuration list for PBXNativeTarget "YXWaveView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1501813EC6FFF6D27102A945A3379FBE /* Debug */,
-				2CA9A666EB63F647423740B773E4116F /* Release */,
+				168330053EB285BACA4719C68C512B35 /* Debug */,
+				387AA57E820FCD187EC703EF840F202F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2396021AA7AFBC3443CFC3A4BC943CE9 /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		2D2E981CA12C3F33BF24594CD360764E /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDE79087548A33C78234E16757BCAF15 /* Debug */,
-				E96DA909A3E42D484A6856ADE7A69510 /* Release */,
+				07625D039735420085FF1AB0C36F22BA /* Debug */,
+				6366D06F34664DF550337609290B12E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1003,20 +998,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		301AEA54BAB933FAF91DFE6CAAF18662 /* Build configuration list for PBXNativeTarget "PulsingHalo" */ = {
+		5174D79C61908BD7D58D42583CFA0DD2 /* Build configuration list for PBXNativeTarget "PulsingHalo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DCAA54F8EDAF2437772FC1FF2128449F /* Debug */,
-				44905737DD50B23D2495E27153D3B61A /* Release */,
+				A5B8201ACC3D5E6144ABA30322A08EED /* Debug */,
+				896FC83A668E856F8E56BB60CE99E5AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE130FA03B05E4E25794D23CBFEA9CD3 /* Build configuration list for PBXNativeTarget "YouTubePlayer" */ = {
+		FC4C4B97795ABE52DE986D192B1A302F /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				096B764C77DA4602453D838376EA6583 /* Debug */,
-				6AA94EDF6E4CAD00667633D789461837 /* Release */,
+				98E7DAED2759BFC9FFEBC18AB5CB3563 /* Debug */,
+				1C0C2399DA9B49822927CAB915E97550 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

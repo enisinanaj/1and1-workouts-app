@@ -19,13 +19,15 @@ extension NSMutableAttributedString {
 class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView?
+    var counterPageDelegate: MainPageViewController!
+    var paretController: ViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
         
-        self.tableView?.backgroundColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
+        self.tableView?.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
     }
 
     // MARK: - Table view data source
@@ -35,10 +37,13 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
             return UITableViewCell()
         }
         
-        cell.exerciseTitle.text = HardcodedModel.titles[indexPath.row]
+        let exercise = HardcodedModel.exercises[indexPath.row]
+        
+        cell.exerciseTitle.text = exercise.title
         cell.exerciseTitle.textColor = UIColor.white
-        cell.exerciseDescription.text = HardcodedModel.descriptions[indexPath.row]
-        cell.exercisePreview.image = HardcodedModel.images[indexPath.row]
+        cell.exerciseDescription.text = exercise.description
+        cell.exercisePreview.image = exercise.image
+        cell.exerciseId = exercise.id
         cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
         
         cell.exercisePreview.layer.masksToBounds = true
@@ -50,6 +55,12 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         cell.gradientView.updateConstraints()
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.counterPageDelegate?.exercise = HardcodedModel.exercises[indexPath.row]
+        self.counterPageDelegate?.updateData()
+        self.paretController?.scrollView.setContentOffset(CGPoint(x: (self.paretController?.view.frame.width)! * 2, y: 0), animated: true)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,7 +83,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
         headerView.frame.size.height = 170
-        headerView.backgroundColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
+        headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
         //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
         let startingPoint = addTitleToSectionHeaderView(headerView)

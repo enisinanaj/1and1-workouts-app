@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -47,6 +47,9 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Chevron" translatesAutoresizingMaskIntoConstraints="NO" id="0ig-Se-xeK">
+                        <rect key="frame" x="343" y="77" width="82" height="43"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="kdb-sQ-qwG" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leading" id="9pg-wE-Xdi"/>
@@ -56,6 +59,8 @@
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="leading" secondItem="kdb-sQ-qwG" secondAttribute="leading" id="Hb3-5y-3EU"/>
                     <constraint firstItem="ffZ-t9-f6v" firstAttribute="top" secondItem="5Y0-Wf-4MK" secondAttribute="bottom" constant="15" id="KBh-HW-ecT"/>
                     <constraint firstItem="5Y0-Wf-4MK" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="bottom" constant="-40" id="NwQ-6n-qfW"/>
+                    <constraint firstItem="0ig-Se-xeK" firstAttribute="centerY" secondItem="kdb-sQ-qwG" secondAttribute="centerY" id="W2b-vT-VKu"/>
+                    <constraint firstAttribute="trailing" secondItem="0ig-Se-xeK" secondAttribute="trailing" constant="20" id="Z7R-pJ-zcH"/>
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="centerY" secondItem="kdb-sQ-qwG" secondAttribute="centerY" id="ao9-Nc-cYJ"/>
                     <constraint firstAttribute="trailing" secondItem="5Y0-Wf-4MK" secondAttribute="trailing" constant="10" id="f3j-vK-2Bi"/>
                     <constraint firstItem="5Y0-Wf-4MK" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leadingMargin" constant="10" id="gPp-Cc-OM3"/>
@@ -75,4 +80,7 @@
             <point key="canvasLocation" x="188.5" y="-177"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Chevron" width="14" height="23"/>
+    </resources>
 </document>

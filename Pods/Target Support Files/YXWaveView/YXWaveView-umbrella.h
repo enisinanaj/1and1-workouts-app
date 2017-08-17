@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "YXWaveView.h"
 
-FOUNDATION_EXPORT double YouTubePlayerVersionNumber;
-FOUNDATION_EXPORT const unsigned char YouTubePlayerVersionString[];
+FOUNDATION_EXPORT double YXWaveViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char YXWaveViewVersionString[];
 

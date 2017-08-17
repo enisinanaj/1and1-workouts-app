@@ -12,182 +12,78 @@ import Foundation
 
 class MainPageViewController: UIViewController {
 
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var minutesHand: UILabel!
-    @IBOutlet weak var secondsHand: UILabel!
     @IBOutlet weak var startButton: UIButton!
-    @IBOutlet weak var stopButton: UIButton!
+    @IBOutlet weak var viewTitle: UILabel!
+    @IBOutlet weak var viewDescriptionLabel: UILabel!
+    @IBOutlet weak var completedExercise: UIButton!
     
     weak var allEntriesDelegate: AllEntriesViewController?
-    
-    var minutes = 0
-    var seconds = 0
-    var hours = 0
-    var timer: Timer!
-    
-    var timeKeeper: Double = 0.0
-    var startSeconds: Double = 0.0
-    var sectionSeconds: Double = 0.0
-    var differenceInSecconds: Double = 0.0
+    var counterViewController: CounterViewController = CounterViewController(nibName: "CounterViewController", bundle: nil)
+    var parentController: ViewController?
+    var exercise: Exercise?
     
     var running: Bool!
-    
-    func startTime(_ sender: AnyObject) {
-        running = true
-        
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-        
-        self.startSeconds = CACurrentMediaTime()
-        self.differenceInSecconds = 0.0
-        self.resetTimerCounters()
-        
-        startButton.isHidden = true
-        stopButton.isHidden = false
-    }
-    
-    func stopTime(_ sender: AnyObject) {
-        timer.invalidate()
-        running = false
-        
-        let saveEntryDialog = SaveEntryViewController(nibName: "SaveEntryViewController", bundle: nil)
-        saveEntryDialog.time = sectionSeconds
-        saveEntryDialog.timeAsText = (timeLabel!.text  ?? "").appending("H ")
-                .appending(minutesHand!.text  ?? "").appending("M ")
-                .appending(secondsHand?.text ?? "").appending("S")
-        saveEntryDialog.allEntriesDelegate = self.allEntriesDelegate
-        
-        self.resetTimerCounters()
-        sectionSeconds = getIntervalFromStartTime()
-        
-        self.present(saveEntryDialog, animated: true, completion: nil)
-        
-        stopButton.isHidden = true
-        startButton.isHidden = false
-    }
-    
-    func resetTimerCounters() {
-        minutes = 0
-        seconds = 0
-        hours = 0
-        timeLabel.text = "00"
-        minutesHand.text = "00"
-        secondsHand.text = "00"
-    }
-    
-    @IBAction func stopTimerAction(_ sender: AnyObject) {
-        stopTime(sender)
-    }
+    var introText: String = "When the minute is reached, take one minute of rest, then swipe left to proceede with the next exercise"
     
     @IBAction func startTimerAction(_ sender: AnyObject) {
-        startTime(sender)
-    }
-    
-    func update() {
-        self.timeKeeper += 1
-        incrementSeconds()
-        playBeep()
-        timeLabel.text = getAsString(timePart: hours)
-        minutesHand.text = getAsString(timePart: minutes)
-        secondsHand.text = getAsString(timePart: seconds)
-    }
-    
-    func playBeep() {
-        let interval: Double = getIntervalFromStartTime()
+        startButton.isHidden = true
         
-        print("interval in seconds: " + String(interval))
+        counterViewController.modalPresentationStyle = .overCurrentContext
+        self.present(counterViewController, animated: true, completion: nil)
         
-        if (interval == 5) {
-            //TODO: play notification aufio every half an hour?
-        }
+        counterViewController.startTime(sender)
+        counterViewController.parentController = self
     }
     
-    func getIntervalFromStartTime() -> Double {
-        return CACurrentMediaTime() - startSeconds
-    }
-    
-    func incrementMinutes() {
-        if (minutes == 59) {
-            minutes = 0
-            incrementHours()
-        } else {
-            minutes += 1
-        }
-    }
-    
-    func incrementHours() {
-        if (hours == 23) {
-            hours = 0
-        } else {
-            hours += 1
-        }
-    }
-    
-    func incrementSeconds() {
-        if (seconds == 59) {
-            seconds = 0
-            incrementMinutes()
-        } else {
-            seconds += 1
-        }
+    func completeExercise() {
+        self.startButton.isHidden = true
+        self.completedExercise.isHidden = false
+        
+        let sql = SQLiteProxy();
+        
+        let time = counterViewController.sectionSeconds
+        let seconds = counterViewController.getAsString(timePart: counterViewController.seconds)
+        let minutes = counterViewController.getAsString(timePart: counterViewController.minutes)
+        
+        let timeAsText = (minutes).appending("M ").appending(seconds).appending("S")
+        
+        sql.initDB();
+        let _ = sql.insertData(startTime: timeAsText, duration: Int64(time), info: (exercise?.title)!, category: (exercise?.description)!);
+        
+        allEntriesDelegate?.reloadData();
+        
+        self.dismiss(animated: true, completion:  nil)
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        NotificationCenter.default.addObserver(forName: NSNotification.Name.UIApplicationDidBecomeActive, object: nil, queue: OperationQueue.main, using: self.reloadTimer)
-        
-        stopButton.isHidden = true
-    }
     
-    func reloadTimer(notification: Notification) {
-        differenceInSecconds = CACurrentMediaTime() - self.startSeconds
+        self.viewDescriptionLabel.sizeToFit()
+        self.completedExercise.isHidden = true
         
-        let hoursD = floor(differenceInSecconds / (60.0 * 60.0))
-        
-        let divisorForMinutes = differenceInSecconds.truncatingRemainder(dividingBy: (60.0 * 60.0))
-        let minutesD = floor(divisorForMinutes / 60.0)
-        
-        let divisorForSeconds = divisorForMinutes.truncatingRemainder(dividingBy: 60.0)
-        let secondsD = ceil(divisorForSeconds)
-        
-        print ("application restored at: " + String(CACurrentMediaTime()))
-        print ("startTime: " + String(self.startSeconds))
-        print ("differenceInSeconds: " + String(CACurrentMediaTime() - self.startSeconds))
-        print ("hoursD: " + String(hoursD))
-        print ("minutesD: " + String(minutesD))
-        print ("secondsD: " + String(secondsD))
-        
-        if self.startSeconds > 0.0 {
-            self.seconds = Int(secondsD)
-            self.minutes = minutesD > 1 ? Int(minutesD) : self.minutes
-            self.hours = hoursD > 1 ? Int(hoursD) : self.hours
-        }
+        print("")
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-    func getAsString(timePart: NSInteger) -> String {
-        if (timePart == 0) {
-            return "00"
-        } else if (timePart > 0 && timePart < 10) {
-            return "0" + String(timePart)
-        } else {
-            return String(timePart)
-        }
+    func updateData() {
+        self.viewTitle.text = exercise?.title
+        self.viewDescriptionLabel.text = (exercise?.description)! + "\n\n" + self.introText
+        self.viewDescriptionLabel.sizeToFit()
+        self.viewDescriptionLabel.textAlignment = .justified
+        self.startButton.isHidden = false
+        self.completedExercise.isHidden = true
+        
+        counterViewController.minutes = 0
+        counterViewController.seconds = 0
+        
+        counterViewController.timeKeeper = 0.0
+        counterViewController.startSeconds = 0.0
+        counterViewController.sectionSeconds = 0.0
+        counterViewController.differenceInSecconds = 0.0
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

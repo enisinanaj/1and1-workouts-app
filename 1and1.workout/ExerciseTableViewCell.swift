@@ -28,4 +28,6 @@ class ExerciseTableViewCell: UITableViewCell {
     @IBOutlet weak var exerciseTitle: UILabel!
     @IBOutlet weak var exerciseDescription: UILabel!
     @IBOutlet weak var gradientView: GradientView!
+    
+    var exerciseId: Int!
 }

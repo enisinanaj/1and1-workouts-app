@@ -61,7 +61,9 @@ class ViewController: UIViewController {
         addTimerPage()
         addAllEntriesPage()
         
-        self.mainPage.allEntriesDelegate = self.allEntriesViewController;
+        self.mainPage.allEntriesDelegate = self.allEntriesViewController
+        self.exercisesPage.counterPageDelegate = self.mainPage
+        self.exercisesPage.paretController = self
         
         self.scrollView.contentSize = CGSize(width:
                 mainPage.view.frame.size.width +
