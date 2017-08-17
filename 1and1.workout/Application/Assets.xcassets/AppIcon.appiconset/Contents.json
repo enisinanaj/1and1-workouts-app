@@ -171,6 +171,11 @@
       "idiom" : "iphone",
       "language-direction" : "right-to-left",
       "scale" : "3x"
+    },
+    {
+      "idiom" : "ios-marketing",
+      "size" : "1024x1024",
+      "scale" : "1x"
     }
   ],
   "info" : {

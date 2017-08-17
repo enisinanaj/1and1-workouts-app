@@ -22,46 +22,24 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
+        
+        self.tableView?.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
     }
 
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        var title = ""
-        
-        switch indexPath.row {
-        case 0:
-            title = "High knees"
-        case 1:
-            title = "Jumping jacks"
-        case 2:
-            title = "Squats"
-        case 3:
-            title = "Lunges"
-        case 4:
-            title = "Plank leg raises"
-        case 5:
-            title = "Climbers"
-        case 6:
-            title = "Bicycle crunches"
-        case 7:
-            title = "Leg raises"
-        case 8:
-            title = "Knee pull-ins"
-        case 9:
-            title = "Push-ups"
-        default:
-            title = "High knees"
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as? ExerciseTableViewCell else {
+            
+            return UITableViewCell()
         }
         
-        cell.textLabel?.text = title
+        cell.exerciseTitle.text = HardcodedModel.titles[indexPath.row]
+        cell.exerciseDescription.text = HardcodedModel.descriptions[indexPath.row]
+        cell.exercisePreview.image = HardcodedModel.images[indexPath.row]
+        cell.exercisePreview.contentMode = UIViewContentMode.topLeft
         
         return cell
     }
@@ -74,15 +52,20 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         return 1
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 260
+    }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
+        return 130
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
         headerView.frame.size.height = 170
-        headerView.backgroundColor = UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
+        headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
         let startingPoint = addTitleToSectionHeaderView(headerView)
         _ = addSubtitleToSectionHeaderView(headerView, startingPoint: startingPoint)
@@ -134,7 +117,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         let subtitle = UILabel()
         subtitle.text = "1 minute each exercise / 1 minute rest afterwards"
         subtitle.frame.size.width = headerView.frame.width - 20
-        subtitle.frame.origin.x = headerView.frame.origin.x + 15
+        subtitle.frame.origin.x = headerView.frame.origin.x + 20
         subtitle.frame.origin.y = startingPoint - 5
         subtitle.numberOfLines = 1
         subtitle.adjustsFontSizeToFitWidth = true

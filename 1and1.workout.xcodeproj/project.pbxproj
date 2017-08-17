@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */; };
+		5F2C4DF61F44B9C800C9D02A /* HardcodedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */; };
+		5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */; };
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */; };
 		5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		09AB688A6C363E37FC135268 /* Pods-1and1.workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1and1.workout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-1and1.workout/Pods-1and1.workout.debug.xcconfig"; sourceTree = "<group>"; };
 		3FA72A428FAB7A67C3AE4C43 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1and1_workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
+		5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardcodedModel.swift; sourceTree = "<group>"; };
+		5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
 		5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = ../NotificationViewController.swift; sourceTree = "<group>"; };
 		5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
@@ -69,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F2C4DF41F44B9B800C9D02A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5F8E105C1DC4E1270061A226 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +104,7 @@
 		5F8E10671DC4E1270061A226 /* 1and1.workout */ = {
 			isa = PBXGroup;
 			children = (
+				5F2C4DF41F44B9B800C9D02A /* Model */,
 				A1C9C7B21DE3B4D500354D15 /* Cells */,
 				A162B4491DE1C9A900CA60B5 /* Classes */,
 				A13267B41DD8DECB00FF43F0 /* Views */,
@@ -133,6 +148,7 @@
 				A1C9C7B01DE3B4BD00354D15 /* SaveEntryViewController.xib */,
 				A1C9C79E1DE3B45D00354D15 /* TimeTableViewCell.xib */,
 				5FBB107E1F425B4400532914 /* ExercisesTableView.xib */,
+				5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -149,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C9C7B31DE3B4E000354D15 /* TimeTableViewCell.swift */,
+				5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -241,6 +258,7 @@
 				5FBB107F1F425B4400532914 /* ExercisesTableView.xib in Resources */,
 				A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */,
 				5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */,
+				5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */,
 				A1C9C7AF1DE3B49000354D15 /* Assets.xcassets in Resources */,
 				A1C9C7A11DE3B45D00354D15 /* TimeTableViewCell.xib in Resources */,
 			);
@@ -311,6 +329,8 @@
 			files = (
 				A1C9C7B41DE3B4E000354D15 /* TimeTableViewCell.swift in Sources */,
 				A1C9C7AB1DE3B47D00354D15 /* ViewController.swift in Sources */,
+				5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */,
+				5F2C4DF61F44B9C800C9D02A /* HardcodedModel.swift in Sources */,
 				5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */,
 				A1C9C7A81DE3B47D00354D15 /* MainPageViewController.swift in Sources */,
 				A1C9C7A91DE3B47D00354D15 /* SaveEntryViewController.swift in Sources */,
