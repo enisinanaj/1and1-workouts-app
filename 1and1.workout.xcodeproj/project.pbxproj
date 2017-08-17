@@ -10,11 +10,12 @@
 		5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */; };
 		5F2C4DF61F44B9C800C9D02A /* HardcodedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */; };
 		5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */; };
+		5F36DFE61F45CF3F005CD76B /* ExercisesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBB107E1F425B4400532914 /* ExercisesTableView.xib */; };
+		5F36DFE81F45E1D8005CD76B /* UIColorLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36DFE71F45E1D8005CD76B /* UIColorLib.swift */; };
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */; };
 		5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */; };
 		5FBB10731F42531800532914 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB10711F42531800532914 /* ExercisesTableViewController.swift */; };
-		5FBB107F1F425B4400532914 /* ExercisesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FBB107E1F425B4400532914 /* ExercisesTableView.xib */; };
 		A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558671DE3B52F000C4198 /* LaunchScreen.storyboard */; };
 		A155586C1DE3B52F000C4198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15558691DE3B52F000C4198 /* Main.storyboard */; };
 		A162B44B1DE1C9D900CA60B5 /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A162B44A1DE1C9D900CA60B5 /* SQLite.swift */; };
@@ -38,6 +39,7 @@
 		5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardcodedModel.swift; sourceTree = "<group>"; };
 		5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
+		5F36DFE71F45E1D8005CD76B /* UIColorLib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorLib.swift; sourceTree = "<group>"; };
 		5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationViewController.swift; path = ../NotificationViewController.swift; sourceTree = "<group>"; };
 		5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A162B44A1DE1C9D900CA60B5 /* SQLite.swift */,
+				5F36DFE71F45E1D8005CD76B /* UIColorLib.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -255,10 +258,10 @@
 				A1C9C79F1DE3B45D00354D15 /* AllEntriesViewController.xib in Resources */,
 				A1C9C7B11DE3B4BD00354D15 /* SaveEntryViewController.xib in Resources */,
 				A1C9C7A01DE3B45D00354D15 /* MainPageViewController.xib in Resources */,
-				5FBB107F1F425B4400532914 /* ExercisesTableView.xib in Resources */,
 				A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */,
 				5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */,
 				5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */,
+				5F36DFE61F45CF3F005CD76B /* ExercisesTableView.xib in Resources */,
 				A1C9C7AF1DE3B49000354D15 /* Assets.xcassets in Resources */,
 				A1C9C7A11DE3B45D00354D15 /* TimeTableViewCell.xib in Resources */,
 			);
@@ -309,11 +312,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-1and1.workout/Pods-1and1.workout-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/PulsingHalo/PulsingHalo.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PulsingHalo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,6 +335,7 @@
 				A1C9C7B41DE3B4E000354D15 /* TimeTableViewCell.swift in Sources */,
 				A1C9C7AB1DE3B47D00354D15 /* ViewController.swift in Sources */,
 				5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */,
+				5F36DFE81F45E1D8005CD76B /* UIColorLib.swift in Sources */,
 				5F2C4DF61F44B9C800C9D02A /* HardcodedModel.swift in Sources */,
 				5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */,
 				A1C9C7A81DE3B47D00354D15 /* MainPageViewController.swift in Sources */,
@@ -467,6 +473,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.1and1.workout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -483,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.1and1.workout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

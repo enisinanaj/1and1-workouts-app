@@ -14,9 +14,8 @@ class ExerciseTableViewCell: UITableViewCell {
         // Initialization
         self.backgroundColor = .clear
         self.contentView.backgroundColor = UIColor(white: 1.0, alpha: 0.0)
-        self.backgroundView = UIView();
-        self.selectedBackgroundView = UIView();
-        
+        self.backgroundView = UIView()
+        self.selectedBackgroundView = UIView()
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -28,4 +27,5 @@ class ExerciseTableViewCell: UITableViewCell {
     @IBOutlet weak var exercisePreview: UIImageView!
     @IBOutlet weak var exerciseTitle: UILabel!
     @IBOutlet weak var exerciseDescription: UILabel!
+    @IBOutlet weak var gradientView: GradientView!
 }

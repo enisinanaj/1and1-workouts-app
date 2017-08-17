@@ -32,14 +32,19 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as? ExerciseTableViewCell else {
-            
             return UITableViewCell()
         }
         
         cell.exerciseTitle.text = HardcodedModel.titles[indexPath.row]
+        cell.exerciseTitle.textColor = UIColor.white
         cell.exerciseDescription.text = HardcodedModel.descriptions[indexPath.row]
         cell.exercisePreview.image = HardcodedModel.images[indexPath.row]
-        cell.exercisePreview.contentMode = UIViewContentMode.topLeft
+        cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
+        
+        cell.frame.size.height = (cell.exercisePreview.image?.size.height)!
+        cell.gradientView.gradientLayer.colors = [UIColor.black.cgColor, UIColor.black.withAlphaComponent(0)]
+        cell.gradientView.gradientLayer.gradient = GradientPoint.bottomTop.draw()
+        cell.gradientView.updateConstraints()
         
         return cell
     }
@@ -53,7 +58,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 260
+        return 320
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

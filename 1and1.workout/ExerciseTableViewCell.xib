@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,42 +18,51 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="183" id="lnY-f8-1c2" customClass="ExerciseTableViewCell" customModule="_and1_workout" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="433" height="183"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseCell" rowHeight="330" id="lnY-f8-1c2" customClass="ExerciseTableViewCell" customModule="_and1_workout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="330"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lnY-f8-1c2" id="MdN-xJ-DeJ">
-                <rect key="frame" x="0.0" y="0.0" width="433" height="182.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lnY-f8-1c2" id="MdN-xJ-DeJ">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="330"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-sQ-qwG">
-                        <rect key="frame" x="10" y="59.5" width="260" height="260"/>
+                        <rect key="frame" x="0.0" y="-2" width="435" height="160"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="kdb-sQ-qwG" secondAttribute="height" multiplier="1:1" id="YMI-jw-omq"/>
+                            <constraint firstAttribute="height" constant="160" id="nGM-8H-UC2"/>
                         </constraints>
                     </imageView>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-Xk-mXA" customClass="GradientView" customModule="_and1_workout" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="-2" width="435" height="160"/>
+                        <accessibility key="accessibilityConfiguration" label="gradientView"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y0-Wf-4MK">
-                        <rect key="frame" x="163" y="15" width="260" height="34.5"/>
+                        <rect key="frame" x="18" y="168" width="405" height="34.5"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-t9-f6v">
-                        <rect key="frame" x="163" y="59.5" width="260" height="22"/>
+                        <rect key="frame" x="18" y="212.5" width="405" height="22"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="kdb-sQ-qwG" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leading" constant="10" id="9pg-wE-Xdi"/>
+                    <constraint firstItem="kdb-sQ-qwG" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leading" id="9pg-wE-Xdi"/>
                     <constraint firstAttribute="trailing" secondItem="ffZ-t9-f6v" secondAttribute="trailing" constant="10" id="BJQ-1X-WPM"/>
+                    <constraint firstItem="1CH-Xk-mXA" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="top" id="FlO-Hu-yYF"/>
+                    <constraint firstItem="1CH-Xk-mXA" firstAttribute="width" secondItem="kdb-sQ-qwG" secondAttribute="width" id="Glo-Bh-tlM"/>
+                    <constraint firstItem="1CH-Xk-mXA" firstAttribute="leading" secondItem="kdb-sQ-qwG" secondAttribute="leading" id="Hb3-5y-3EU"/>
                     <constraint firstItem="ffZ-t9-f6v" firstAttribute="top" secondItem="5Y0-Wf-4MK" secondAttribute="bottom" constant="10" id="KBh-HW-ecT"/>
-                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="top" secondItem="MdN-xJ-DeJ" secondAttribute="top" constant="15" id="P1i-b9-ZJS"/>
-                    <constraint firstItem="kdb-sQ-qwG" firstAttribute="top" secondItem="ffZ-t9-f6v" secondAttribute="top" id="a6r-zv-bTM"/>
-                    <constraint firstItem="kdb-sQ-qwG" firstAttribute="width" secondItem="MdN-xJ-DeJ" secondAttribute="width" multiplier="0.6" id="dtU-yC-5pK"/>
+                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="bottom" constant="10" id="NwQ-6n-qfW"/>
+                    <constraint firstItem="1CH-Xk-mXA" firstAttribute="centerY" secondItem="kdb-sQ-qwG" secondAttribute="centerY" id="ao9-Nc-cYJ"/>
                     <constraint firstAttribute="trailing" secondItem="5Y0-Wf-4MK" secondAttribute="trailing" constant="10" id="f3j-vK-2Bi"/>
-                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="width" secondItem="MdN-xJ-DeJ" secondAttribute="width" multiplier="0.6" id="fM7-Tv-aXT"/>
+                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leadingMargin" constant="10" id="gPp-Cc-OM3"/>
                     <constraint firstItem="ffZ-t9-f6v" firstAttribute="leading" secondItem="5Y0-Wf-4MK" secondAttribute="leading" id="hdd-j3-49u"/>
+                    <constraint firstItem="1CH-Xk-mXA" firstAttribute="height" secondItem="kdb-sQ-qwG" secondAttribute="height" id="m4k-1r-xcd"/>
+                    <constraint firstItem="kdb-sQ-qwG" firstAttribute="top" secondItem="MdN-xJ-DeJ" secondAttribute="topMargin" constant="-10" id="qai-qd-CdS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kdb-sQ-qwG" secondAttribute="trailing" constant="-10" id="ytJ-cK-CbM"/>
                 </constraints>
             </tableViewCellContentView>
             <accessibility key="accessibilityConfiguration" identifier="exerciseCell"/>
@@ -62,8 +70,9 @@
                 <outlet property="exerciseDescription" destination="ffZ-t9-f6v" id="EzV-ES-7nz"/>
                 <outlet property="exercisePreview" destination="kdb-sQ-qwG" id="0UV-nW-JyU"/>
                 <outlet property="exerciseTitle" destination="5Y0-Wf-4MK" id="eUg-JO-Z7n"/>
+                <outlet property="gradientView" destination="1CH-Xk-mXA" id="7tC-1V-FaG"/>
             </connections>
-            <point key="canvasLocation" x="188.5" y="-256.5"/>
+            <point key="canvasLocation" x="188.5" y="-177"/>
         </tableViewCell>
     </objects>
 </document>

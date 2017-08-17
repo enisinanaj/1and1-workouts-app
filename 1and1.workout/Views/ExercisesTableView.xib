@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,8 +20,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-6k-hK4">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-6k-hK4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="FG4-yQ-60c"/>
@@ -32,12 +31,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="NGd-6k-hK4" secondAttribute="top" id="2a8-MX-Qb2"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NGd-6k-hK4" secondAttribute="trailing" id="HXO-Sv-FIy"/>
-                <constraint firstItem="NGd-6k-hK4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="W0L-aq-YUv"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="NGd-6k-hK4" secondAttribute="bottom" id="bXf-oY-Zyl"/>
+                <constraint firstAttribute="top" secondItem="NGd-6k-hK4" secondAttribute="top" id="2a8-MX-Qb2"/>
+                <constraint firstAttribute="trailing" secondItem="NGd-6k-hK4" secondAttribute="trailing" id="HXO-Sv-FIy"/>
+                <constraint firstAttribute="bottom" secondItem="NGd-6k-hK4" secondAttribute="bottom" id="bXf-oY-Zyl"/>
+                <constraint firstItem="NGd-6k-hK4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="y9q-Kw-aQx"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>

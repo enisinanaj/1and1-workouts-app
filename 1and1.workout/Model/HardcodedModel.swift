@@ -26,13 +26,17 @@ class HardcodedModel {
     
     let i = UIImage(named: "highknees")
     
-    static let images = [UIImage(named: "highknees"),
-                         #imageLiteral(resourceName: "jumpingjacks"),
-                         #imageLiteral(resourceName: "squats"),
-                         #imageLiteral(resourceName: "lungs"),
-                         #imageLiteral(resourceName: "planklegraises"),
-                         #imageLiteral(resourceName: "climbers"), #imageLiteral(resourceName: "bicyclecsunches"),
-                         #imageLiteral(resourceName: "legraises"), #imageLiteral(resourceName: "kneepullins"), #imageLiteral(resourceName: "pushups"),#imageLiteral(resourceName: "highknees")]
+//    static let images = [UIImage(named: "highknees"),
+//                         #imageLiteral(resourceName: "jumpingjacks"),
+//                         #imageLiteral(resourceName: "squats"),
+//                         #imageLiteral(resourceName: "lungs"),
+//                         #imageLiteral(resourceName: "planklegraises"),
+//                         #imageLiteral(resourceName: "climbers"), #imageLiteral(resourceName: "bicyclecsunches"),
+//                         #imageLiteral(resourceName: "legraises"), #imageLiteral(resourceName: "kneepullins"), #imageLiteral(resourceName: "pushups"),#imageLiteral(resourceName: "highknees")]
+    
+    static let images = [#imageLiteral(resourceName: "highknees1"), #imageLiteral(resourceName: "jumpingjacks1"), #imageLiteral(resourceName: "sqauts1"), #imageLiteral(resourceName: "lunges1"), #imageLiteral(resourceName: "planklegraises1"), #imageLiteral(resourceName: "climbers1"),
+                         #imageLiteral(resourceName: "bicyclecrunches1"), #imageLiteral(resourceName: "legraises1"), #imageLiteral(resourceName: "kneepullins1"), #imageLiteral(resourceName: "pullups1")]
+
     
     static let descriptions = [
         "Start standing with feet hip-width apart. Lift up one knee so that your leg is parallel to the floor. For more intensity, job lightly or do lunges in between high knees.",

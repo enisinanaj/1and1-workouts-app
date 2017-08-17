@@ -29,7 +29,7 @@ import sqlite3
 #elseif SQLITE_SWIFT_SQLCIPHER
 import SQLCipher
 #elseif SWIFT_PACKAGE || COCOAPODS
-import SQLite3
+import CSQLite
 #endif
 
 /// A connection to SQLite.
@@ -38,12 +38,12 @@ public final class Connection {
     /// The location of a SQLite database.
     public enum Location {
 
-        /// An in-memory database (equivalent to `.uri(":memory:")`).
+        /// An in-memory database (equivalent to `.URI(":memory:")`).
         ///
         /// See: <https://www.sqlite.org/inmemorydb.html#sharedmemdb>
         case inMemory
 
-        /// A temporary, file-backed database (equivalent to `.uri("")`).
+        /// A temporary, file-backed database (equivalent to `.URI("")`).
         ///
         /// See: <https://www.sqlite.org/inmemorydb.html#temp_db>
         case temporary
@@ -93,7 +93,7 @@ public final class Connection {
     ///   - location: The location of the database. Creates a new database if it
     ///     doesn’t already exist (unless in read-only mode).
     ///
-    ///     Default: `.inMemory`.
+    ///     Default: `.InMemory`.
     ///
     ///   - readonly: Whether or not to open the database in a read-only state.
     ///
@@ -321,7 +321,7 @@ public final class Connection {
     ///
     ///   - mode: The mode in which a transaction acquires a lock.
     ///
-    ///     Default: `.deferred`
+    ///     Default: `.Deferred`
     ///
     ///   - block: A closure to run SQL statements within the transaction.
     ///     The transaction will be committed when the block returns. The block
