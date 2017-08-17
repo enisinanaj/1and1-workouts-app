@@ -25,7 +25,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         
         self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
         
-        self.tableView?.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        self.tableView?.backgroundColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
     }
 
     // MARK: - Table view data source
@@ -40,6 +40,9 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         cell.exerciseDescription.text = HardcodedModel.descriptions[indexPath.row]
         cell.exercisePreview.image = HardcodedModel.images[indexPath.row]
         cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
+        
+        cell.exercisePreview.layer.masksToBounds = true
+        cell.exercisePreview.clipsToBounds = true
         
         cell.frame.size.height = (cell.exercisePreview.image?.size.height)!
         cell.gradientView.gradientLayer.colors = [UIColor.black.cgColor, UIColor.black.withAlphaComponent(0)]
@@ -58,18 +61,18 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 320
+        return 340
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 130
+        return 105
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
         headerView.frame.size.height = 170
-        headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        headerView.backgroundColor = UIColor(red:0.87, green:0.87, blue:0.87, alpha:1.0)
         //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
         let startingPoint = addTitleToSectionHeaderView(headerView)

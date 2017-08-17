@@ -22,27 +22,27 @@
             <rect key="frame" x="0.0" y="0.0" width="433" height="330"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lnY-f8-1c2" id="MdN-xJ-DeJ">
-                <rect key="frame" x="0.0" y="0.0" width="433" height="330"/>
+                <rect key="frame" x="0.0" y="0.0" width="433" height="329.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kdb-sQ-qwG">
-                        <rect key="frame" x="0.0" y="-2" width="435" height="160"/>
+                        <rect key="frame" x="0.0" y="-2" width="435" height="200"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="160" id="nGM-8H-UC2"/>
+                            <constraint firstAttribute="height" constant="200" id="nGM-8H-UC2"/>
                         </constraints>
                     </imageView>
-                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-Xk-mXA" customClass="GradientView" customModule="_and1_workout" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="-2" width="435" height="160"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-Xk-mXA" customClass="GradientView" customModule="_and1_workout" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="-2" width="435" height="200"/>
                         <accessibility key="accessibilityConfiguration" label="gradientView"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y0-Wf-4MK">
-                        <rect key="frame" x="18" y="168" width="405" height="34.5"/>
+                        <rect key="frame" x="18" y="158" width="405" height="34.5"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-DemiBold" family="Avenir Next Condensed" pointSize="25"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffZ-t9-f6v">
-                        <rect key="frame" x="18" y="212.5" width="405" height="22"/>
+                        <rect key="frame" x="18" y="207.5" width="405" height="22"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -54,8 +54,8 @@
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="top" id="FlO-Hu-yYF"/>
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="width" secondItem="kdb-sQ-qwG" secondAttribute="width" id="Glo-Bh-tlM"/>
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="leading" secondItem="kdb-sQ-qwG" secondAttribute="leading" id="Hb3-5y-3EU"/>
-                    <constraint firstItem="ffZ-t9-f6v" firstAttribute="top" secondItem="5Y0-Wf-4MK" secondAttribute="bottom" constant="10" id="KBh-HW-ecT"/>
-                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="bottom" constant="10" id="NwQ-6n-qfW"/>
+                    <constraint firstItem="ffZ-t9-f6v" firstAttribute="top" secondItem="5Y0-Wf-4MK" secondAttribute="bottom" constant="15" id="KBh-HW-ecT"/>
+                    <constraint firstItem="5Y0-Wf-4MK" firstAttribute="top" secondItem="kdb-sQ-qwG" secondAttribute="bottom" constant="-40" id="NwQ-6n-qfW"/>
                     <constraint firstItem="1CH-Xk-mXA" firstAttribute="centerY" secondItem="kdb-sQ-qwG" secondAttribute="centerY" id="ao9-Nc-cYJ"/>
                     <constraint firstAttribute="trailing" secondItem="5Y0-Wf-4MK" secondAttribute="trailing" constant="10" id="f3j-vK-2Bi"/>
                     <constraint firstItem="5Y0-Wf-4MK" firstAttribute="leading" secondItem="MdN-xJ-DeJ" secondAttribute="leadingMargin" constant="10" id="gPp-Cc-OM3"/>
