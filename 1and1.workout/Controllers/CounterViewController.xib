@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -103,19 +102,18 @@
                 </button>
             </subviews>
             <constraints>
+                <constraint firstItem="yYb-lB-MKR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="1DR-gJ-C5W"/>
                 <constraint firstItem="yYb-lB-MKR" firstAttribute="bottom" secondItem="frj-RP-9hc" secondAttribute="top" id="5UO-YT-YaA"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HtK-JH-abr" secondAttribute="bottom" constant="50" id="8RB-oQ-77i"/>
-                <constraint firstItem="dfd-ac-DU9" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GV0-Ki-yy1"/>
+                <constraint firstAttribute="bottom" secondItem="HtK-JH-abr" secondAttribute="bottom" constant="50" id="8RB-oQ-77i"/>
+                <constraint firstItem="frj-RP-9hc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AJe-ga-VX5"/>
+                <constraint firstItem="dfd-ac-DU9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FGK-1A-RbD"/>
                 <constraint firstItem="frj-RP-9hc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HIc-vq-3Zg"/>
-                <constraint firstItem="HtK-JH-abr" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="ZXH-Bd-S37"/>
-                <constraint firstItem="yYb-lB-MKR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="coN-MJ-0TN"/>
-                <constraint firstItem="frj-RP-9hc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="220" id="dH3-n0-Qo9"/>
-                <constraint firstItem="frj-RP-9hc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fSs-a2-Hme"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="frj-RP-9hc" secondAttribute="bottom" id="h6K-rO-okx"/>
+                <constraint firstAttribute="bottom" secondItem="frj-RP-9hc" secondAttribute="bottom" id="h6K-rO-okx"/>
                 <constraint firstItem="dfd-ac-DU9" firstAttribute="top" secondItem="frj-RP-9hc" secondAttribute="top" constant="75" id="kTQ-Jt-4oV"/>
-                <constraint firstItem="yYb-lB-MKR" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="pTH-GA-SHe"/>
+                <constraint firstItem="frj-RP-9hc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="240" id="pza-IW-seX"/>
+                <constraint firstItem="HtK-JH-abr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rbI-yS-Rs0"/>
+                <constraint firstItem="yYb-lB-MKR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zfy-Xg-RyT"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="42.5" y="60.5"/>
         </view>
     </objects>
