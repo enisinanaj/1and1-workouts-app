@@ -18,6 +18,11 @@ class SQLiteProxy {
     let duration = Expression<Int64>("duration")
     let info = Expression<String?>("info")
     let category = Expression<String?>("category")
+    let date = Expression<String?>("date")
+    
+    init() {
+        initDB()
+    }
     
     func initDB() {
         let path = NSSearchPathForDirectoriesInDomains(
@@ -40,8 +45,8 @@ class SQLiteProxy {
             t.column(duration)
             t.column(info)
             t.column(category)
+            t.column(date)
         })
-        
     }
     
     func insertData(startTime: String, duration: Int64, info: String, category: String) -> Int64 {
@@ -51,19 +56,25 @@ class SQLiteProxy {
         
         let times = Table("times")
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMM yyyy"
+        let date = dateFormatter.string(from: Date())
+        
         // insert time duration
-        let insert = times.insert(self.startTime <- startTime, self.duration <- duration, self.info <- info, self.category <- category)
+        let insert = times.insert(self.startTime <- startTime,
+                                  self.duration <- duration,
+                                  self.info <- info,
+                                  self.category <- category,
+                                  self.date <- date)
         
         return try! db!.run(insert)
     }
     
     func getTimes() -> Array<Row> {
         let times = Table("times")
-        
         let result = try! db!.prepare(times)
         
         return Array(result)
-        //get all times from db
     }
     
     func getTimeByID(filterId: Int64) -> Row? {
@@ -72,7 +83,14 @@ class SQLiteProxy {
         let result = try! db!.pluck(query)
         
         return result
-        //return nil
+    }
+    
+    func getSections() -> Array<Row>? {
+        let times = Table("times")
+        let query = times.group(date)
+        let result = try! db!.prepare(query)
+        
+        return Array(result)
     }
     
     func getRowCount() -> Int {

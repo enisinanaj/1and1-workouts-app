@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -13,13 +13,18 @@
             <string>AvenirNextCondensed-Bold</string>
             <string>AvenirNextCondensed-Regular</string>
         </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CounterViewController" customModule="_and1_workout" customModuleProvider="target">
             <connections>
                 <outlet property="ShadowView" destination="yYb-lB-MKR" id="to6-Dj-T8P"/>
                 <outlet property="minuteHand" destination="4ho-Gg-xmS" id="5IA-tb-DYY"/>
+                <outlet property="restLabel" destination="ouI-Ew-axU" id="2YJ-ut-Bux"/>
                 <outlet property="secondHand" destination="4EA-dp-Q2t" id="Y3q-Kr-cGZ"/>
+                <outlet property="setLabel" destination="TET-pq-xze" id="SQd-jw-VGa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,7 +38,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-ac-DU9">
-                    <rect key="frame" x="79.5" y="315" width="215" height="128"/>
+                    <rect key="frame" x="79.5" y="290" width="215" height="128"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-Gg-xmS">
                             <rect key="frame" x="30" y="23" width="53" height="82"/>
@@ -81,6 +86,12 @@
                         <constraint firstItem="byi-qk-t2b" firstAttribute="leading" secondItem="4EA-dp-Q2t" secondAttribute="trailing" id="uCU-x9-br2"/>
                     </constraints>
                 </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TET-pq-xze">
+                    <rect key="frame" x="10" y="240" width="355" height="59"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="43"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yYb-lB-MKR" customClass="GradientView" customModule="_and1_workout" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="230" width="375" height="10"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -89,7 +100,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-JH-abr">
-                    <rect key="frame" x="160" y="562" width="55" height="55"/>
+                    <rect key="frame" x="239.5" y="562" width="55" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="aAS-7t-EaG"/>
                         <constraint firstAttribute="width" constant="55" id="mEb-Sq-ZKR"/>
@@ -100,24 +111,52 @@
                         <action selector="stopTimerAction:" destination="-1" eventType="touchUpInside" id="scX-l4-ivy"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKs-EM-fwo">
+                    <rect key="frame" x="79.5" y="562" width="66" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="Haf-PZ-RBv"/>
+                        <constraint firstAttribute="width" constant="66" id="Yz2-oP-7qf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                    <color key="tintColor" red="0.15718114644082667" green="0.56160945595854916" blue="0.11084783982812607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="Refresh"/>
+                    <connections>
+                        <action selector="restartNewSet:" destination="-1" eventType="touchUpInside" id="xNE-5J-KPq"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest for 1 minute Then pres the restart icon for a new set" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouI-Ew-axU">
+                    <rect key="frame" x="15" y="403" width="345" height="40.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <constraints>
+                <constraint firstItem="cKs-EM-fwo" firstAttribute="top" secondItem="HtK-JH-abr" secondAttribute="top" id="0g2-qd-cQE"/>
                 <constraint firstItem="yYb-lB-MKR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="1DR-gJ-C5W"/>
                 <constraint firstItem="yYb-lB-MKR" firstAttribute="bottom" secondItem="frj-RP-9hc" secondAttribute="top" id="5UO-YT-YaA"/>
                 <constraint firstAttribute="bottom" secondItem="HtK-JH-abr" secondAttribute="bottom" constant="50" id="8RB-oQ-77i"/>
                 <constraint firstItem="frj-RP-9hc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AJe-ga-VX5"/>
+                <constraint firstItem="cKs-EM-fwo" firstAttribute="leading" secondItem="dfd-ac-DU9" secondAttribute="leading" id="Bes-Ve-0nf"/>
+                <constraint firstItem="TET-pq-xze" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="CP7-uL-4F2"/>
                 <constraint firstItem="dfd-ac-DU9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FGK-1A-RbD"/>
                 <constraint firstItem="frj-RP-9hc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="HIc-vq-3Zg"/>
+                <constraint firstItem="TET-pq-xze" firstAttribute="top" secondItem="frj-RP-9hc" secondAttribute="top" id="TCC-c7-vur"/>
+                <constraint firstAttribute="trailing" secondItem="TET-pq-xze" secondAttribute="trailing" constant="10" id="VGY-2g-8Xg"/>
+                <constraint firstItem="ouI-Ew-axU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="bfr-dS-r3T"/>
                 <constraint firstAttribute="bottom" secondItem="frj-RP-9hc" secondAttribute="bottom" id="h6K-rO-okx"/>
-                <constraint firstItem="dfd-ac-DU9" firstAttribute="top" secondItem="frj-RP-9hc" secondAttribute="top" constant="75" id="kTQ-Jt-4oV"/>
+                <constraint firstAttribute="trailing" secondItem="ouI-Ew-axU" secondAttribute="trailing" constant="15" id="iR9-fC-l1g"/>
+                <constraint firstItem="dfd-ac-DU9" firstAttribute="top" secondItem="frj-RP-9hc" secondAttribute="top" constant="50" id="kTQ-Jt-4oV"/>
+                <constraint firstItem="ouI-Ew-axU" firstAttribute="top" secondItem="dfd-ac-DU9" secondAttribute="bottom" constant="-15" id="lnt-yz-lwJ"/>
+                <constraint firstItem="HtK-JH-abr" firstAttribute="trailing" secondItem="dfd-ac-DU9" secondAttribute="trailing" id="ltw-W3-0XJ"/>
                 <constraint firstItem="frj-RP-9hc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="240" id="pza-IW-seX"/>
-                <constraint firstItem="HtK-JH-abr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rbI-yS-Rs0"/>
                 <constraint firstItem="yYb-lB-MKR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zfy-Xg-RyT"/>
             </constraints>
             <point key="canvasLocation" x="42.5" y="60.5"/>
         </view>
     </objects>
     <resources>
+        <image name="Refresh" width="140" height="112"/>
         <image name="StopButton" width="140" height="140"/>
     </resources>
 </document>

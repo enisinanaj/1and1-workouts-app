@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+import AudioToolbox
 
 class CounterViewController: UIViewController {
     
@@ -16,12 +18,19 @@ class CounterViewController: UIViewController {
     var seconds = 0
     var timer: Timer!
     
+    var sets: Int = 1
+    
     var timeKeeper: Double = 0.0
     var startSeconds: Double = 0.0
     var sectionSeconds: Double = 0.0
     var differenceInSecconds: Double = 0.0
     
+    var restMinuteConsumed: Bool = false
+    var player: AVAudioPlayer?
+    
+    @IBOutlet weak var restLabel: UILabel!
     @IBOutlet weak var ShadowView: GradientView!
+    @IBOutlet weak var setLabel: UILabel!
     
     @IBOutlet weak var secondHand: UILabel!
     @IBOutlet weak var minuteHand: UILabel!
@@ -32,12 +41,29 @@ class CounterViewController: UIViewController {
         
         ShadowView.gradientLayer.colors = [UIColor.black.withAlphaComponent(0.45).cgColor, UIColor.black.withAlphaComponent(0).cgColor]
         ShadowView.gradientLayer.gradient = GradientPoint.bottomTop.draw()
+        
+        restLabel.isHidden = true
     }
     
+    @IBAction func restartNewSet(_ sender: Any) {
+        if running {
+            return
+        }
+        
+        sets = sets + 1
+        setLabel.text = "Set " + String(sets)
+        restLabel.isHidden = true
+        restMinuteConsumed = false
+        
+        self.timeKeeper = 0
+        startTime(self)
+    }
     
     @IBAction func stopTimerAction(_ sender: Any) {
-        stopTime();
-        
+        let wasRunning = running
+        parentController?.completeExercise(wasRunning!)
+        stopTime()
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,11 +84,10 @@ class CounterViewController: UIViewController {
     func stopTime() {
         timer.invalidate()
         running = false
+        restLabel.isHidden = true
         
         self.resetTimerCounters()
-        sectionSeconds = getIntervalFromStartTime()
-        parentController?.completeExercise()
-        self.dismiss(animated: true, completion: nil)
+        sectionSeconds = (parentController?.exercise?.duration)! * Double(sets)
     }
     
     func resetTimerCounters() {
@@ -73,16 +98,40 @@ class CounterViewController: UIViewController {
         secondHand.text = "00"
     }
     
+    func startRestMinute() {
+        stopTime()
+        restMinuteConsumed = true
+        startTime(self)
+        restLabel.isHidden = false
+    }
+    
     func update() {
-        if (parentController?.exercise?.duration == self.timeKeeper) {
+        if parentController?.exercise?.duration == self.timeKeeper && !self.restMinuteConsumed {
+            playSound()
+            startRestMinute()
+        } else if parentController?.exercise?.restDuration == self.timeKeeper && self.restMinuteConsumed {
             stopTime()
+        } else {
+            self.timeKeeper += 1
+            incrementSeconds()
+            
+            minuteHand.text = getAsString(timePart: minutes)
+            secondHand.text = getAsString(timePart: seconds)
         }
+    }
+    
+    func playSound() {
+        let url = Bundle.main.url(forResource: "doneBell.mp3", withExtension: nil)!
         
-        self.timeKeeper += 1
-        incrementSeconds()
-        
-        minuteHand.text = getAsString(timePart: minutes)
-        secondHand.text = getAsString(timePart: seconds)
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else {return}
+            
+            player.prepareToPlay()
+            player.play();
+        } catch let error as NSError {
+            print(error.description)
+        }
     }
 
     func getIntervalFromStartTime() -> Double {
@@ -123,6 +172,13 @@ class CounterViewController: UIViewController {
             self.seconds = Int(secondsD)
             self.minutes = minutesD > 1 ? Int(minutesD) : self.minutes
         }
+    }
+    
+    func secondsToTimeString(_ seconds: NSInteger) -> (minutes: NSInteger, seconds: NSInteger) {
+        let minutes = seconds / 60
+        let seconds = seconds % 60
+        
+        return (minutes: minutes, seconds: seconds)
     }
     
     func getAsString(timePart: NSInteger) -> String {

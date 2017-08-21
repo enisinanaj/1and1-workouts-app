@@ -35,20 +35,26 @@ class MainPageViewController: UIViewController {
         counterViewController.parentController = self
     }
     
-    func completeExercise() {
+    func completeExercise(_ wasRunning: Bool) {
         self.startButton.isHidden = true
         self.completedExercise.isHidden = false
         
         let sql = SQLiteProxy();
         
         let time = counterViewController.sectionSeconds
-        let seconds = counterViewController.getAsString(timePart: counterViewController.seconds)
-        let minutes = counterViewController.getAsString(timePart: counterViewController.minutes)
+        let tuple = counterViewController.secondsToTimeString(NSInteger(time))
+        let seconds = String(tuple.seconds)
+        let minutes = String(tuple.minutes)
         
         let timeAsText = (minutes).appending("M ").appending(seconds).appending("S")
         
-        sql.initDB();
-        let _ = sql.insertData(startTime: timeAsText, duration: Int64(time), info: (exercise?.title)!, category: (exercise?.description)!);
+        print("timeAsText: " + timeAsText)
+        print("int64Time: " + String(time))
+        
+        if !wasRunning {
+            sql.initDB();
+            let _ = sql.insertData(startTime: timeAsText, duration: Int64(time), info: (exercise?.title)!, category: (exercise?.description)!);
+        }
         
         allEntriesDelegate?.reloadData();
         

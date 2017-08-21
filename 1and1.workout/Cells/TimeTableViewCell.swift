@@ -32,7 +32,7 @@ class TimeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populate() {
+    func populate(forSection: String) {
         let sql = SQLiteProxy()
         sql.initDB()
         

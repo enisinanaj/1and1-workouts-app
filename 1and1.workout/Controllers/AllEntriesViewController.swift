@@ -75,15 +75,53 @@ extension AllEntriesViewController: UITableViewDelegate {
             self.tableView.reloadData()
         }
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        let sql = SQLiteProxy()
+        let sections = sql.getSections()
+        
+        return sections != nil ? sections!.count : 0
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        let sql = SQLiteProxy()
+        let sections = sql.getSections()
+        var result: [String] = []
+        
+        if sections == nil {
+            return nil
+        }
+        
+        for r in sections! {
+            result.append(r.get(sql.date)!)
+        }
+        
+        return result
+    }
 }
 
 
 extension AllEntriesViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sql = SQLiteProxy()
-        sql.initDB()
-        
         return sql.getRowCount()
+    }
+    
+    func getSectionKeys() -> [String]? {
+        let sql = SQLiteProxy()
+        let sections = sql.getSections()
+        var result: [String] = []
+        
+        if sections == nil {
+            return nil
+        }
+        
+        for r in sections! {
+            result.append(r.get(sql.date)!)
+        }
+        
+        return result
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -91,10 +129,11 @@ extension AllEntriesViewController: UITableViewDataSource {
             
             return UITableViewCell()
         }
+
+        let sections = getSectionKeys()
     
-        // TODO: get data from local database
         tableViewCell.id = Int64(indexPath.row)
-        tableViewCell.populate()
+        tableViewCell.populate(forSection: sections![indexPath.section])
         return tableViewCell
     }
 }

@@ -104,11 +104,13 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PulsingHalo/PulsingHalo.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YXWaveView/YXWaveView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/PulsingHalo/PulsingHalo.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YXWaveView/YXWaveView.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

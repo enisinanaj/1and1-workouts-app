@@ -90,14 +90,15 @@
                         <constraint firstAttribute="bottom" secondItem="Mmi-Mj-ICj" secondAttribute="bottom" constant="59" id="tqs-6I-ieT"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-fd-QUR">
-                    <rect key="frame" x="135.5" y="463" width="55" height="55"/>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-fd-QUR">
+                    <rect key="frame" x="133.5" y="463" width="60" height="55"/>
+                    <color key="backgroundColor" red="0.66640173500147548" green="0.68932156739999995" blue="0.68493355816261559" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="55" id="3J1-UR-ePm"/>
+                        <constraint firstAttribute="width" constant="60" id="3J1-UR-ePm"/>
                         <constraint firstAttribute="height" constant="55" id="vuf-PI-Rei"/>
                     </constraints>
-                    <color key="tintColor" red="1" green="0.069232950459999998" blue="0.193828785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" image="Circle Check"/>
+                    <color key="tintColor" red="0.1503678323" green="0.68932156739999995" blue="0.18188775830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" image="Circle Check-1"/>
                 </button>
                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pad-5K-Sk1">
                     <rect key="frame" x="136" y="463" width="55" height="55"/>
@@ -136,7 +137,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Circle Check" width="27" height="25"/>
+        <image name="Circle Check-1" width="137" height="127"/>
         <image name="Home" width="640" height="1136"/>
         <image name="StartButton" width="140" height="140"/>
     </resources>

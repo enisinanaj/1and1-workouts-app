@@ -7,180 +7,243 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006BE5988C1A908C326042D7EB1224AB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */; };
-		0196E120F0709A8DC97C98AB180B5740 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */; };
-		1048A0589D3F84E2D5E91E47CC9F29A2 /* PulsingHalo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10C31E77815A2FE12EDA9550A98DEA0C /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BED0E119307758920AD857E954CB7D /* Schema.swift */; };
-		10E7589E06ED8C3807FEE5304E25B20C /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20B968CA4021A7E708222057EB60F02B /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */; };
-		2A22F504B90FEA33B0846BC94B6395A5 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */; };
-		2A9D581225FF9DECDE33D7ACC4EEA04C /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3077F2E92CF2E0222F506183756651F2 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		33698CC3FE2EA3117F6EA12F1D859D6B /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */; };
-		3DFD245A70F7A3447730601538CB5C83 /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */; };
-		4D4681F11469D1238CF3B12F40975220 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */; };
-		5EFFCD66E66454BB7BF88B47C7892843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		66C90097466E9D17EA9B59EA9EE3701E /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */; };
-		6D4B415127921F43E7CB2C49C51D70B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		6E2EB855159210A16492D8A666630FC8 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		76E33732F2DF2DC1D474A5809470DAD5 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */; };
-		77BA916E94593230FB4F84AEA796973B /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */; };
-		7DCD2C2F128971A4D65A535F532E590F /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */; };
-		85A41C04418A21C396FC7613ACD42060 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */; };
-		86CB981979767D4280E3513297FAF71C /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8871CFE35996514E276147BDE1647E8C /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8887822E097EC71DE701EED462639D15 /* Pods-1and1.workout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88BC6E0DCD3ABB36A11C73BFE892C9E3 /* YXWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C4AA0D0894917ABAFB31B85A568176E /* PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */; };
-		91A2CDC95D108225AC13CCCF4FB831E7 /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */; };
-		AA75D50F0987CB300CC01D297399F9DF /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */; };
-		AA9BA455C391E00605500AC3298C573E /* Pods-1and1.workout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */; };
-		B6B0BE872BB70302350CD7C5B4EA8D30 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */; };
-		BE0230F760960EE019255DB73F332EFF /* PulsingHalo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C68ED00E8965272C1D7FB4D1257752DB /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */; };
-		DC097C16E796F76CC7D13B9FD829F2FF /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */; };
-		E35BE2CE194F5766B93CB95B629AE22F /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */; };
-		E62CC1B400F1E92BEBA8476D9D6C66C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */; };
-		E779737434FAB32C47242B703B11F0A0 /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */; };
-		EFFD660CC8EE82B4D73ABF300E1D9EB5 /* YXWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F27155CF41ECF4A5BB600DB23A926B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
-		F57305E29CD1D446E8FFE986E66CC392 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19F4293508719F20122A97E541ED751 /* Helpers.swift */; };
-		FAFB4CDEEA5EC0EB9B8F99AAB0C9E7FE /* YXWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */; };
-		FB11D11B453AD46CC346891B472B1D1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */; };
+		019FD08426FBB754267F98445C75B2C9 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = A59D6C1D99C355E8FA560439BB672508 /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		08C7B16A03D92F13007D131D31DB1280 /* PulsingHalo.h in Headers */ = {isa = PBXBuildFile; fileRef = A20C45A7747412721983B673B4E1135C /* PulsingHalo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12AE8A686C3D35ABFECBFB727008B0E4 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B0D2ADF8F4FC03296F8D8F7640A67 /* Value.swift */; };
+		1435565F3FBEE587169C0EF8959EE534 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165B5D6C2496CEEFD259BC5D5B398EDD /* Operators.swift */; };
+		1896EE752902B293ED82CF34CD5522B3 /* Pods-1and1.workout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */; };
+		18D44E3D918AF10BF9DCED74A78C1DAB /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323CC2368F8BACC12DBCE809D82C382D /* Collation.swift */; };
+		1E665D6352C63FDB782671165E62961F /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 465B380A3BF276A5F214A2AA2FB8DE7F /* Foundation.swift */; };
+		2162097DEC068C10050455803E50A83A /* PulsingHaloLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C4434A15139D07854CAD0A2FC3119B0 /* PulsingHaloLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F28387A9A347BA99438F0ABC0ABAF8B /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB943A52939F9934BA55C717AA225D /* Sound.swift */; };
+		33B32405DFF6B095B4A153E806D351BF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */; };
+		347C8821544CCE3D73831CA5FC58CF1B /* SwiftySound-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 621ABD14429CDBE885B6C78FC86AA5F9 /* SwiftySound-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3605714A252E396D24153A8244F927C6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */; };
+		42777FFF8B67CA7D5BA394AB14558BAC /* SwiftySound-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E475D99D6D198354018F9770E231718 /* SwiftySound-dummy.m */; };
+		4A60FC335A1128C40F0CED4F8CC63358 /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A98F7FD700AF8658E0D833627EFC0C /* CoreFunctions.swift */; };
+		53270E58BFCA643F9C9E00599A5CB2F8 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BBC0BC31A57A37068198197A24D83 /* AggregateFunctions.swift */; };
+		53D503B1624966785643BB0C94C5B05A /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C22C7BF3A71416393BC0FFE99AA86D9E /* PulsingHaloLayer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		62397DEE9A648B960A9CD02CC1E98587 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED75C9392F0617578C726DEBA2AAC85E /* SQLite.swift-dummy.m */; };
+		658EEFD2D8C39BB8FF358AC2E73DD28F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B4307DE8D1BAD952ADBC92067DE41A /* Helpers.swift */; };
+		6F92DAEB72844F3590C1EE85C99317AF /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A7AF6C53089FCCA7325DC804F70FEE /* Setter.swift */; };
+		70644B81A7A38D593259D31581AD44A9 /* YXWaveView.h in Headers */ = {isa = PBXBuildFile; fileRef = 59B03C0785BE9C1B419C9C89A801925F /* YXWaveView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A61AFEE549BAF4652439B1B67069102 /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DC952545C8F25B5B5FCAF9B44301B /* YXWaveView.swift */; };
+		7B22A3E855C77D1D08DAA10830909D9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		7BE9627885A7ABBFD8AB4BF99D2069D9 /* Pods-1and1.workout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		860E9A2B253AB8672CE2159D10AA5BA5 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4926C3A83528755DFBFCEA2F759A0CBD /* Connection.swift */; };
+		8A0F8338916C754E0716A642AF67C2B0 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76262B27E6F4A1820EEF3858A7A3ECFE /* Query.swift */; };
+		95EF234512958ADD1D78A01B8D9EB54D /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C0AB14572CBAFD11A9A43FB29DECC1 /* Blob.swift */; };
+		9AB7A19BECF3B195DE872B77E21C9E90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		A2B1D3ED848FDED2AB781B94DF74F099 /* PulsingHalo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EFC250CD8522F198EEEAA1349AA05E /* PulsingHalo-dummy.m */; };
+		A5DD55A48E679DA62A6B19A2D0536C57 /* PulsingHalo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD98E502E9F0D0D06769151B073991E /* PulsingHalo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD94285D30191054942A2CCF9B1CE120 /* YXWaveView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F910BA6C7DF5F4F2C80EB7A4875EF096 /* YXWaveView-dummy.m */; };
+		B07DAD21BBF3CB2D17E1AA99DCE284EB /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5B20294B1E983B3F09A1175D2860E6 /* Expression.swift */; };
+		B8E85964EF00CDD7F7E034B8FCB55477 /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AECD85B6BB011C46EA4EDBD10F608F /* FTS5.swift */; };
+		BCF64BB668125C0A0D2750EBF9ADD6DE /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A18CBE09CE0A958BD6E084E62CA22AB /* CustomFunctions.swift */; };
+		BFA7C46FDCB7614AD57CAB0D3991FEB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		C39542B82FFD3724A18C644EA1DAD1B0 /* SQLite-Bridging.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D7C36CDA3A89C5BA4D74AF3242882A /* SQLite-Bridging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA6F12737F191E2A19D8B251FE9B2DA5 /* SQLite-Bridging.m in Sources */ = {isa = PBXBuildFile; fileRef = D78FF3A69D3F659BD372334316494F2E /* SQLite-Bridging.m */; };
+		CEFAC0D10FED2F86D6F84C56ED2BF362 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF1014AD82C8D611F801FA6350756BB /* Schema.swift */; };
+		D92AD30FD577BE13B628EF411356AECD /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E55BC702535BB3A59137B9793C2FDC4 /* RTree.swift */; };
+		E403F6040141A6096798B03C28DE2203 /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8F9DE82F10F6C23F7E3FE9102BD63 /* Statement.swift */; };
+		EA27F0568F7A0D0DF3CD38482EE794C3 /* YXWaveView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3DAD6DAEE331A35D7AF3D2A712517E /* YXWaveView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB4ADF040D4F68EE43664DB1F0A99E55 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A85C28D46FDDBB7BBE498F5FA385CCC /* SQLite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F34F3EA0E24055AD6A3A280F71EB7AE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		F4940062062A9457DE6A2CF947BFE947 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D49F449ACBC556A18F32D51E2E1978C4 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F97E486DE689F8F62F51F73894F2C34D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D8D50722934A724B04D37C3906B97 /* Foundation.framework */; };
+		FC07C1AACDF85F3ADA50FC1E242DC8EA /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA2D8C5CDE2D431A79BA36D4C423B0D /* FTS4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		15275E81A17159AE8E610B83F7820E40 /* PBXContainerItemProxy */ = {
+		0A70DEC73AB4D8E97915BA60482DEB12 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD99A9AE7A70161973B12031ABFF1F9F;
-			remoteInfo = PulsingHalo;
-		};
-		29DB016C1A5CA0EB61CCA1ABBFAB8945 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E5F695E4DE80783A52A749C2966D2B44;
+			remoteGlobalIDString = 7145243BDEF2DEEECB1A401A3F449AC5;
 			remoteInfo = YXWaveView;
 		};
-		76F9B451A0DA56426FA12D0518F289FF /* PBXContainerItemProxy */ = {
+		2CCC8FEFA492B73DFBE151F5B153750A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BBE4C6C27B18FA77D4A627E15B3CB047;
+			remoteGlobalIDString = D95950D5832F9321A35CA282CFC0636F;
+			remoteInfo = PulsingHalo;
+		};
+		7DCCB72E12957A4EFDE853BBC6E32D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DB79AB7B7268873B7780354A262158E;
+			remoteInfo = SwiftySound;
+		};
+		DB08DF891020AB4A26A2C2C765FFB259 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2A8E1425B86BFF9F355546282B558D;
 			remoteInfo = SQLite.swift;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_1and1_workout.framework; path = "Pods-1and1.workout.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
-		05A85A81B3CFDEBBDF921A20FDB5604A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
-		0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YXWaveView.framework; path = YXWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
-		110B26A8447100510D960C5031C4AA28 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-umbrella.h"; sourceTree = "<group>"; };
+		03B27994478A87F8A8F97ABEE5D794A4 /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound.framework; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3DAD6DAEE331A35D7AF3D2A712517E /* YXWaveView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-umbrella.h"; sourceTree = "<group>"; };
+		156E32B05BB9099942803FC0B88D7385 /* YXWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YXWaveView.modulemap; sourceTree = "<group>"; };
+		165B5D6C2496CEEFD259BC5D5B398EDD /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		18AB943A52939F9934BA55C717AA225D /* Sound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sound.swift; path = Sources/Sound.swift; sourceTree = "<group>"; };
 		1B7D3B336BEBED26A6C1FEDD84CE273C /* Pods-1and1.workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1and1.workout.debug.xcconfig"; sourceTree = "<group>"; };
-		1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
-		22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PulsingHalo-dummy.m"; sourceTree = "<group>"; };
+		1CA2D8C5CDE2D431A79BA36D4C423B0D /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		1DF1014AD82C8D611F801FA6350756BB /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
 		23C8F45ED8EBF688A6EA27368632C9A9 /* Pods-1and1.workout-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-1and1.workout-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXWaveView.h; path = YXWaveView/YXWaveView.h; sourceTree = "<group>"; };
-		2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
-		2D46BAFDC8533550DDFF46BD53378BE7 /* PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
-		2DED8571AB4926E598D98E23BAB60C8E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
-		381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
-		3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
-		4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
-		455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YXWaveView.swift; path = YXWaveView/YXWaveView.swift; sourceTree = "<group>"; };
+		245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		2AD98E502E9F0D0D06769151B073991E /* PulsingHalo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-umbrella.h"; sourceTree = "<group>"; };
+		2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		2F5B20294B1E983B3F09A1175D2860E6 /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		2F5BBC0BC31A57A37068198197A24D83 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		323CC2368F8BACC12DBCE809D82C382D /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		373566AA0D57B5680E5B5CCCFB902EDE /* YXWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-prefix.pch"; sourceTree = "<group>"; };
+		465B380A3BF276A5F214A2AA2FB8DE7F /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
 		465EF7FF4C6C8F05FF2752F67C127EAC /* Pods-1and1.workout-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1and1.workout-resources.sh"; sourceTree = "<group>"; };
 		47FABBE8FEBB95BE93EED550872D3777 /* Pods-1and1.workout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-1and1.workout-dummy.m"; sourceTree = "<group>"; };
-		48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
-		4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHalo.h; path = PulsingHalo/PulsingHalo.h; sourceTree = "<group>"; };
-		4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXWaveView.xcconfig; sourceTree = "<group>"; };
+		4926C3A83528755DFBFCEA2F759A0CBD /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
 		4EF79D0820DE0B530D3665A1D048CA15 /* Pods-1and1.workout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-1and1.workout.release.xcconfig"; sourceTree = "<group>"; };
-		50AC990B20D4F9430B854E1FC70A5058 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PulsingHalo.framework; path = PulsingHalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52C0AB14572CBAFD11A9A43FB29DECC1 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		59B03C0785BE9C1B419C9C89A801925F /* YXWaveView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXWaveView.h; path = YXWaveView/YXWaveView.h; sourceTree = "<group>"; };
 		5AABA7B2063463B84708AAB21EE02204 /* Pods-1and1.workout-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-1and1.workout-frameworks.sh"; sourceTree = "<group>"; };
+		5C4434A15139D07854CAD0A2FC3119B0 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
+		5E48DB803BC690D5F61E2949AFD8AB58 /* PulsingHalo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-prefix.pch"; sourceTree = "<group>"; };
 		5F36293374B575C98219673BD60CBEDC /* Pods-1and1.workout-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-1and1.workout-acknowledgements.plist"; sourceTree = "<group>"; };
-		62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
-		669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PulsingHalo.xcconfig; sourceTree = "<group>"; };
+		621ABD14429CDBE885B6C78FC86AA5F9 /* SwiftySound-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-umbrella.h"; sourceTree = "<group>"; };
+		62EFC250CD8522F198EEEAA1349AA05E /* PulsingHalo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PulsingHalo-dummy.m"; sourceTree = "<group>"; };
 		6AD793F020DEA2D75696EB36163A0124 /* Pods-1and1.workout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-1and1.workout-umbrella.h"; sourceTree = "<group>"; };
-		71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		6E475D99D6D198354018F9770E231718 /* SwiftySound-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftySound-dummy.m"; sourceTree = "<group>"; };
+		74DC4B4032FFBAEF79F235575676E38A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761D8D50722934A724B04D37C3906B97 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76262B27E6F4A1820EEF3858A7A3ECFE /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		7A18CBE09CE0A958BD6E084E62CA22AB /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		7A4B0D2ADF8F4FC03296F8D8F7640A67 /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
 		7BF31DF247A4D5C0AB5432E6F96C6CFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
-		903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		84B4307DE8D1BAD952ADBC92067DE41A /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		88BA01793D57B74D87413EBC6D330EAD /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		8A85C28D46FDDBB7BBE498F5FA385CCC /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
-		95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
-		9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
-		A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
-		B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
-		BF0BF02266A6D8786270838D18407E6B /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		9E55BC702535BB3A59137B9793C2FDC4 /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		A20C45A7747412721983B673B4E1135C /* PulsingHalo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PulsingHalo.h; path = PulsingHalo/PulsingHalo.h; sourceTree = "<group>"; };
+		A4EFC8D8E54F4C0FC4A4898508AEC12E /* SwiftySound-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftySound-prefix.pch"; sourceTree = "<group>"; };
+		A59D6C1D99C355E8FA560439BB672508 /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		AC052DC2D0425AF14EF91B394A2BE06C /* SwiftySound.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.xcconfig; sourceTree = "<group>"; };
+		B0477CD865EE4D35F5CA3E23410762D4 /* YXWaveView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YXWaveView.framework; path = YXWaveView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B25DC952545C8F25B5B5FCAF9B44301B /* YXWaveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YXWaveView.swift; path = YXWaveView/YXWaveView.swift; sourceTree = "<group>"; };
+		B3148D770A830C7DBDCCD9E5BB37D95A /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		BC63844952ECF6DC72DD78F065B33CC2 /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftySound.modulemap; sourceTree = "<group>"; };
+		C22C7BF3A71416393BC0FFE99AA86D9E /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
+		C2A98F7FD700AF8658E0D833627EFC0C /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		C55681F0E3063B9B773DEAB42FD03F29 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
 		C5CA8915ABD80263DF65D17698AAD4C8 /* Pods-1and1.workout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-1and1.workout.modulemap"; sourceTree = "<group>"; };
-		C650DB716EFD9DE593CE486950BFA32E /* YXWaveView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXWaveView-prefix.pch"; sourceTree = "<group>"; };
-		C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
-		C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
-		C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXWaveView-dummy.m"; sourceTree = "<group>"; };
-		D19F4293508719F20122A97E541ED751 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
-		D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
-		DB9AC6DDA2D2640517C2CDAB9B3322B4 /* YXWaveView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YXWaveView.modulemap; sourceTree = "<group>"; };
-		DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
-		DC9E3B60656C98D5F00E52BE3C5B3384 /* PulsingHalo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PulsingHalo.modulemap; sourceTree = "<group>"; };
-		E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PulsingHalo-umbrella.h"; sourceTree = "<group>"; };
-		E7BED0E119307758920AD857E954CB7D /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
-		E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PulsingHaloLayer.m; path = PulsingHalo/PulsingHaloLayer.m; sourceTree = "<group>"; };
-		F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
-		F28CD3D2F258D90032B5BAD75F718870 /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
-		FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C9D7C36CDA3A89C5BA4D74AF3242882A /* SQLite-Bridging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SQLite-Bridging.h"; path = "Sources/SQLiteObjc/include/SQLite-Bridging.h"; sourceTree = "<group>"; };
+		CB235CE9C7D73E21F31A8B738BC1A62D /* PulsingHalo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PulsingHalo.modulemap; sourceTree = "<group>"; };
+		D49F449ACBC556A18F32D51E2E1978C4 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		D57F148EFF73436B894C1461BF7F4FC0 /* YXWaveView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXWaveView.xcconfig; sourceTree = "<group>"; };
+		D78FF3A69D3F659BD372334316494F2E /* SQLite-Bridging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SQLite-Bridging.m"; path = "Sources/SQLiteObjc/SQLite-Bridging.m"; sourceTree = "<group>"; };
+		D9C0CF4F12A5C146C749BDE68EBDAF4C /* PulsingHalo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PulsingHalo.xcconfig; sourceTree = "<group>"; };
+		D9D8F9DE82F10F6C23F7E3FE9102BD63 /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		E34D640775F25126BBD6DF036988DD57 /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SQLite.framework; path = SQLite.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4488FA1F2F1A27AC128CD7376FDD8C1 /* PulsingHalo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PulsingHalo.framework; path = PulsingHalo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47397339D24205744E2E568B817D454 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4A7AF6C53089FCCA7325DC804F70FEE /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		E9B0A36A3517B5AD5909545D92243D05 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED75C9392F0617578C726DEBA2AAC85E /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		EFB65549D765A4A5197A751994091C99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D3DA4CC7036C1444CCE566A86AAEF3 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_1and1_workout.framework; path = "Pods-1and1.workout.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F910BA6C7DF5F4F2C80EB7A4875EF096 /* YXWaveView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXWaveView-dummy.m"; sourceTree = "<group>"; };
+		F9AECD85B6BB011C46EA4EDBD10F608F /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23165061940DD5802A0A62728E554C72 /* Frameworks */ = {
+		3C93D1E41C57943D6BB6D278DE8B118C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D4B415127921F43E7CB2C49C51D70B8 /* Foundation.framework in Frameworks */,
+				3605714A252E396D24153A8244F927C6 /* AVFoundation.framework in Frameworks */,
+				F34F3EA0E24055AD6A3A280F71EB7AE5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23B1E66F4D1A7E57D963798A97731255 /* Frameworks */ = {
+		5526FD4684F10E9E708F49F37BAF38FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F27155CF41ECF4A5BB600DB23A926B01 /* Foundation.framework in Frameworks */,
+				BFA7C46FDCB7614AD57CAB0D3991FEB0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		940397EE7B0ADF46D0D557E17EA722CB /* Frameworks */ = {
+		63DB9EB386AEB08B6335D8E6A7C8CD10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EFFCD66E66454BB7BF88B47C7892843 /* Foundation.framework in Frameworks */,
+				9AB7A19BECF3B195DE872B77E21C9E90 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C5E95D8E498838541C3204F1C28FA0C1 /* Frameworks */ = {
+		BD91C616458D8213BB0C5D5B16912F3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB11D11B453AD46CC346891B472B1D1B /* Foundation.framework in Frameworks */,
-				E62CC1B400F1E92BEBA8476D9D6C66C1 /* QuartzCore.framework in Frameworks */,
+				7B22A3E855C77D1D08DAA10830909D9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8ECEBEB76F969431A40670782CE2649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F97E486DE689F8F62F51F73894F2C34D /* Foundation.framework in Frameworks */,
+				33B32405DFF6B095B4A153E806D351BF /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		0FC853979458A682FFA87B9899B88B3B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				978007DCB56F415BE390E0F949D4D4E5 /* iOS */,
+				0FD0BC14A4F1BA3A744F1FBEB6426842 /* PulsingHalo */,
+				914D1E5727820C87E0564D7580D1F224 /* SQLite.swift */,
+				CB75357D07F3D3CB9EBAE3200BC8FBB5 /* SwiftySound */,
+				BD75A115FA4FBC81B2C4928956A5A1ED /* YXWaveView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0FD0BC14A4F1BA3A744F1FBEB6426842 /* PulsingHalo */ = {
+			isa = PBXGroup;
+			children = (
+				A20C45A7747412721983B673B4E1135C /* PulsingHalo.h */,
+				5C4434A15139D07854CAD0A2FC3119B0 /* PulsingHaloLayer.h */,
+				C22C7BF3A71416393BC0FFE99AA86D9E /* PulsingHaloLayer.m */,
+				97123DB0A5AA42B0A5A4C7F525F8F6C1 /* Support Files */,
+			);
+			name = PulsingHalo;
+			path = PulsingHalo;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				355756B4D6E57923CF53178ADC49B985 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		355756B4D6E57923CF53178ADC49B985 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				245E91C8FE776D2761522153D79F185A /* AVFoundation.framework */,
+				761D8D50722934A724B04D37C3906B97 /* Foundation.framework */,
+				2DB69EC7FE96AB3BA18338762A00BD2F /* QuartzCore.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		4AEA3AA8B49652203B14CC4714EC7EF3 /* Targets Support Files */ = {
@@ -191,139 +254,86 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4F241267C5334EF0EC14123BDF2193B5 /* Pods */ = {
+		554C8471CABC4106154B28FA2471190F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91AB7F4A9AE73D081B73DEEF42F65F99 /* PulsingHalo */,
-				EEF1A711CD5FDF640F7CF2DFE9E3FF27 /* SQLite.swift */,
-				B5B07A55FA5BB383715E030E6E78160B /* YXWaveView */,
+				F8D3DA4CC7036C1444CCE566A86AAEF3 /* Pods_1and1_workout.framework */,
+				E4488FA1F2F1A27AC128CD7376FDD8C1 /* PulsingHalo.framework */,
+				E34D640775F25126BBD6DF036988DD57 /* SQLite.framework */,
+				03B27994478A87F8A8F97ABEE5D794A4 /* SwiftySound.framework */,
+				B0477CD865EE4D35F5CA3E23410762D4 /* YXWaveView.framework */,
 			);
-			name = Pods;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		58461CA5C973C1B8529FF1D177C6413E /* Support Files */ = {
+		5EF193F983023E1D7EC1759316D14C01 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				05A85A81B3CFDEBBDF921A20FDB5604A /* Info.plist */,
-				F28CD3D2F258D90032B5BAD75F718870 /* SQLite.swift.modulemap */,
-				DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */,
-				1D7BCA9C66FCFF8EC84CD2922E8CE07A /* SQLite.swift-dummy.m */,
-				BF0BF02266A6D8786270838D18407E6B /* SQLite.swift-prefix.pch */,
-				D474A5B76F781F9F23C7F059326A17AB /* SQLite.swift-umbrella.h */,
+				E9B0A36A3517B5AD5909545D92243D05 /* Info.plist */,
+				BC63844952ECF6DC72DD78F065B33CC2 /* SwiftySound.modulemap */,
+				AC052DC2D0425AF14EF91B394A2BE06C /* SwiftySound.xcconfig */,
+				6E475D99D6D198354018F9770E231718 /* SwiftySound-dummy.m */,
+				A4EFC8D8E54F4C0FC4A4898508AEC12E /* SwiftySound-prefix.pch */,
+				621ABD14429CDBE885B6C78FC86AA5F9 /* SwiftySound-umbrella.h */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SQLite.swift";
+			path = "../Target Support Files/SwiftySound";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				4F241267C5334EF0EC14123BDF2193B5 /* Pods */,
-				BA43AE4052213DBEB018D1EA3AB68116 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				0FC853979458A682FFA87B9899B88B3B /* Pods */,
+				554C8471CABC4106154B28FA2471190F /* Products */,
 				4AEA3AA8B49652203B14CC4714EC7EF3 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		91AB7F4A9AE73D081B73DEEF42F65F99 /* PulsingHalo */ = {
+		914D1E5727820C87E0564D7580D1F224 /* SQLite.swift */ = {
 			isa = PBXGroup;
 			children = (
-				4A1D451C11EA0D4655C4AB6D962EAD46 /* PulsingHalo.h */,
-				0FEFACDE828EA811D47A005D417ADDA8 /* PulsingHaloLayer.h */,
-				E8C3468D5982C1CCDFFDC7B11B7144FE /* PulsingHaloLayer.m */,
-				9AD398ABBDB881B8ADBE929D72040912 /* Support Files */,
+				EEDCE483EB057F1DBCAAD94715C849BF /* standard */,
+				EF95D3B38052C0A823F3EC3F8CDA7F33 /* Support Files */,
 			);
-			name = PulsingHalo;
-			path = PulsingHalo;
+			name = SQLite.swift;
+			path = SQLite.swift;
 			sourceTree = "<group>";
 		};
-		978007DCB56F415BE390E0F949D4D4E5 /* iOS */ = {
+		97123DB0A5AA42B0A5A4C7F525F8F6C1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				54F9A0E952988935C32EDDB1429D7133 /* Foundation.framework */,
-				FC2770B482BFE91273C8560623F1422C /* QuartzCore.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		9AD398ABBDB881B8ADBE929D72040912 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				50AC990B20D4F9430B854E1FC70A5058 /* Info.plist */,
-				DC9E3B60656C98D5F00E52BE3C5B3384 /* PulsingHalo.modulemap */,
-				669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */,
-				22DC7D738C0016268A041F6403DC02D8 /* PulsingHalo-dummy.m */,
-				2D46BAFDC8533550DDFF46BD53378BE7 /* PulsingHalo-prefix.pch */,
-				E74B33E10714D515F7A9CDF6F7D3FDD5 /* PulsingHalo-umbrella.h */,
+				EFB65549D765A4A5197A751994091C99 /* Info.plist */,
+				CB235CE9C7D73E21F31A8B738BC1A62D /* PulsingHalo.modulemap */,
+				D9C0CF4F12A5C146C749BDE68EBDAF4C /* PulsingHalo.xcconfig */,
+				62EFC250CD8522F198EEEAA1349AA05E /* PulsingHalo-dummy.m */,
+				5E48DB803BC690D5F61E2949AFD8AB58 /* PulsingHalo-prefix.pch */,
+				2AD98E502E9F0D0D06769151B073991E /* PulsingHalo-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PulsingHalo";
 			sourceTree = "<group>";
 		};
-		9E6E931CC941F9D1C92F5509C0CA8CEA /* Support Files */ = {
+		BD75A115FA4FBC81B2C4928956A5A1ED /* YXWaveView */ = {
 			isa = PBXGroup;
 			children = (
-				2DED8571AB4926E598D98E23BAB60C8E /* Info.plist */,
-				DB9AC6DDA2D2640517C2CDAB9B3322B4 /* YXWaveView.modulemap */,
-				4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */,
-				C881A195ECC048D88201522DBCF583D8 /* YXWaveView-dummy.m */,
-				C650DB716EFD9DE593CE486950BFA32E /* YXWaveView-prefix.pch */,
-				14F243E1A5D388E0A572E7F9BA0CDA11 /* YXWaveView-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YXWaveView";
-			sourceTree = "<group>";
-		};
-		B5B07A55FA5BB383715E030E6E78160B /* YXWaveView */ = {
-			isa = PBXGroup;
-			children = (
-				2A909856F91E5BAF2E6CDEDE15EE87BB /* YXWaveView.h */,
-				455F193E1404360B1F55F67416A2354D /* YXWaveView.swift */,
-				9E6E931CC941F9D1C92F5509C0CA8CEA /* Support Files */,
+				59B03C0785BE9C1B419C9C89A801925F /* YXWaveView.h */,
+				B25DC952545C8F25B5B5FCAF9B44301B /* YXWaveView.swift */,
+				F2ED0A0ED09171E142B1C54FF83415FA /* Support Files */,
 			);
 			name = YXWaveView;
 			path = YXWaveView;
 			sourceTree = "<group>";
 		};
-		BA43AE4052213DBEB018D1EA3AB68116 /* Products */ = {
+		CB75357D07F3D3CB9EBAE3200BC8FBB5 /* SwiftySound */ = {
 			isa = PBXGroup;
 			children = (
-				01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */,
-				58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */,
-				110B26A8447100510D960C5031C4AA28 /* SQLite.framework */,
-				0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */,
+				18AB943A52939F9934BA55C717AA225D /* Sound.swift */,
+				5EF193F983023E1D7EC1759316D14C01 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BEF5C1BCEB36F23C1F0DC28C9F868193 /* standard */ = {
-			isa = PBXGroup;
-			children = (
-				62594CE8159A5AC3357F1FF2C29D6A35 /* AggregateFunctions.swift */,
-				381590E0D489FC91C9A87F10BE288FE0 /* Blob.swift */,
-				F1067D5AA522CBA3316493B056F6F423 /* Collation.swift */,
-				93FC547B4B45B542E1D89D83B952C13B /* Connection.swift */,
-				95C13C94C26C717FF971C44108154AD5 /* CoreFunctions.swift */,
-				320A68B825B05728D2052EA38233DA52 /* CustomFunctions.swift */,
-				4373BA16E78AF7C7EDA48EFBE40B087A /* Expression.swift */,
-				2B16687C22D256CF635DE0F66FF6FC18 /* Foundation.swift */,
-				A1EB69215B7EDDEE99B94D6BADB3975F /* fts3_tokenizer.h */,
-				903ECEE66BE52F2E27A86D8448585D6E /* FTS4.swift */,
-				C6AB5A1EAFFC70CE38EBDC89BB827E7D /* FTS5.swift */,
-				D19F4293508719F20122A97E541ED751 /* Helpers.swift */,
-				C853769A4E5FDBDB64AFCACBF5ADE1D8 /* Operators.swift */,
-				71602D38DDD43B99D59C2642BC4DBEA9 /* Query.swift */,
-				3F063497F3353C604D164E3E9C5CE2B9 /* RTree.swift */,
-				E7BED0E119307758920AD857E954CB7D /* Schema.swift */,
-				0C029BA573680CF8EF8BC5202B9677EE /* Setter.swift */,
-				B57911DC521EA8FCCCE6308822361B91 /* SQLite.h */,
-				8A6D53DFD4F6215AE1F65CDAF8DD2258 /* SQLite-Bridging.h */,
-				9BEF54EE4CE69DDC805686F6600CBEEF /* SQLite-Bridging.m */,
-				48F317F1FB929B6EBA0B2B7981A7A75D /* Statement.swift */,
-				040767CCBB5FE88352C9B94962C6BF54 /* Value.swift */,
-			);
-			name = standard;
+			name = SwiftySound;
+			path = SwiftySound;
 			sourceTree = "<group>";
 		};
 		E4BAC92C7438332831170C1B7737B99C /* Pods-1and1.workout */ = {
@@ -344,104 +354,160 @@
 			path = "Target Support Files/Pods-1and1.workout";
 			sourceTree = "<group>";
 		};
-		EEF1A711CD5FDF640F7CF2DFE9E3FF27 /* SQLite.swift */ = {
+		EEDCE483EB057F1DBCAAD94715C849BF /* standard */ = {
 			isa = PBXGroup;
 			children = (
-				BEF5C1BCEB36F23C1F0DC28C9F868193 /* standard */,
-				58461CA5C973C1B8529FF1D177C6413E /* Support Files */,
+				2F5BBC0BC31A57A37068198197A24D83 /* AggregateFunctions.swift */,
+				52C0AB14572CBAFD11A9A43FB29DECC1 /* Blob.swift */,
+				323CC2368F8BACC12DBCE809D82C382D /* Collation.swift */,
+				4926C3A83528755DFBFCEA2F759A0CBD /* Connection.swift */,
+				C2A98F7FD700AF8658E0D833627EFC0C /* CoreFunctions.swift */,
+				7A18CBE09CE0A958BD6E084E62CA22AB /* CustomFunctions.swift */,
+				2F5B20294B1E983B3F09A1175D2860E6 /* Expression.swift */,
+				465B380A3BF276A5F214A2AA2FB8DE7F /* Foundation.swift */,
+				A59D6C1D99C355E8FA560439BB672508 /* fts3_tokenizer.h */,
+				1CA2D8C5CDE2D431A79BA36D4C423B0D /* FTS4.swift */,
+				F9AECD85B6BB011C46EA4EDBD10F608F /* FTS5.swift */,
+				84B4307DE8D1BAD952ADBC92067DE41A /* Helpers.swift */,
+				165B5D6C2496CEEFD259BC5D5B398EDD /* Operators.swift */,
+				76262B27E6F4A1820EEF3858A7A3ECFE /* Query.swift */,
+				9E55BC702535BB3A59137B9793C2FDC4 /* RTree.swift */,
+				1DF1014AD82C8D611F801FA6350756BB /* Schema.swift */,
+				E4A7AF6C53089FCCA7325DC804F70FEE /* Setter.swift */,
+				8A85C28D46FDDBB7BBE498F5FA385CCC /* SQLite.h */,
+				C9D7C36CDA3A89C5BA4D74AF3242882A /* SQLite-Bridging.h */,
+				D78FF3A69D3F659BD372334316494F2E /* SQLite-Bridging.m */,
+				D9D8F9DE82F10F6C23F7E3FE9102BD63 /* Statement.swift */,
+				7A4B0D2ADF8F4FC03296F8D8F7640A67 /* Value.swift */,
 			);
-			name = SQLite.swift;
-			path = SQLite.swift;
+			name = standard;
+			sourceTree = "<group>";
+		};
+		EF95D3B38052C0A823F3EC3F8CDA7F33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74DC4B4032FFBAEF79F235575676E38A /* Info.plist */,
+				C55681F0E3063B9B773DEAB42FD03F29 /* SQLite.swift.modulemap */,
+				B3148D770A830C7DBDCCD9E5BB37D95A /* SQLite.swift.xcconfig */,
+				ED75C9392F0617578C726DEBA2AAC85E /* SQLite.swift-dummy.m */,
+				88BA01793D57B74D87413EBC6D330EAD /* SQLite.swift-prefix.pch */,
+				D49F449ACBC556A18F32D51E2E1978C4 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		F2ED0A0ED09171E142B1C54FF83415FA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47397339D24205744E2E568B817D454 /* Info.plist */,
+				156E32B05BB9099942803FC0B88D7385 /* YXWaveView.modulemap */,
+				D57F148EFF73436B894C1461BF7F4FC0 /* YXWaveView.xcconfig */,
+				F910BA6C7DF5F4F2C80EB7A4875EF096 /* YXWaveView-dummy.m */,
+				373566AA0D57B5680E5B5CCCFB902EDE /* YXWaveView-prefix.pch */,
+				0D3DAD6DAEE331A35D7AF3D2A712517E /* YXWaveView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YXWaveView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		39429C8A6BD3F123DD8F1FD00574388D /* Headers */ = {
+		0E513087723AD68B09F2C6E1C2E5A370 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3077F2E92CF2E0222F506183756651F2 /* fts3_tokenizer.h in Headers */,
-				10E7589E06ED8C3807FEE5304E25B20C /* SQLite-Bridging.h in Headers */,
-				6E2EB855159210A16492D8A666630FC8 /* SQLite.h in Headers */,
-				8871CFE35996514E276147BDE1647E8C /* SQLite.swift-umbrella.h in Headers */,
+				019FD08426FBB754267F98445C75B2C9 /* fts3_tokenizer.h in Headers */,
+				C39542B82FFD3724A18C644EA1DAD1B0 /* SQLite-Bridging.h in Headers */,
+				EB4ADF040D4F68EE43664DB1F0A99E55 /* SQLite.h in Headers */,
+				F4940062062A9457DE6A2CF947BFE947 /* SQLite.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D91D6ABA7968267C5D20D9A8E6E5100 /* Headers */ = {
+		6EA12581CB227D73F1DB7A0C16306403 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8887822E097EC71DE701EED462639D15 /* Pods-1and1.workout-umbrella.h in Headers */,
+				EA27F0568F7A0D0DF3CD38482EE794C3 /* YXWaveView-umbrella.h in Headers */,
+				70644B81A7A38D593259D31581AD44A9 /* YXWaveView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E03EA9541AB8F1AF9959D57135CD26D6 /* Headers */ = {
+		A51865F04E5F18C7EE7119B31CEE132D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE0230F760960EE019255DB73F332EFF /* PulsingHalo-umbrella.h in Headers */,
-				1048A0589D3F84E2D5E91E47CC9F29A2 /* PulsingHalo.h in Headers */,
-				2A9D581225FF9DECDE33D7ACC4EEA04C /* PulsingHaloLayer.h in Headers */,
+				347C8821544CCE3D73831CA5FC58CF1B /* SwiftySound-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EF12081A1A8012B59CDDD97DE715E1E3 /* Headers */ = {
+		CDF040DDF8283AEEC912F78C5A4CD187 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFFD660CC8EE82B4D73ABF300E1D9EB5 /* YXWaveView-umbrella.h in Headers */,
-				88BC6E0DCD3ABB36A11C73BFE892C9E3 /* YXWaveView.h in Headers */,
+				7BE9627885A7ABBFD8AB4BF99D2069D9 /* Pods-1and1.workout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA8D4C5A4E76984CF3C57F5B6BA8406 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5DD55A48E679DA62A6B19A2D0536C57 /* PulsingHalo-umbrella.h in Headers */,
+				08C7B16A03D92F13007D131D31DB1280 /* PulsingHalo.h in Headers */,
+				2162097DEC068C10050455803E50A83A /* PulsingHaloLayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		30C59481660B59E8EF794967F043E774 /* Pods-1and1.workout */ = {
+		22FDF2B6AFF014C0323E0C8C380422E5 /* Pods-1and1.workout */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D2E981CA12C3F33BF24594CD360764E /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */;
+			buildConfigurationList = 57A6CE65454A9DB2E455D357D302BE13 /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */;
 			buildPhases = (
-				7F93F2159E590038DDFF2FA3C9C16D79 /* Sources */,
-				23B1E66F4D1A7E57D963798A97731255 /* Frameworks */,
-				9D91D6ABA7968267C5D20D9A8E6E5100 /* Headers */,
+				6ACF0F5B8FFD18B5D8BD15C9D9FA75AC /* Sources */,
+				5526FD4684F10E9E708F49F37BAF38FC /* Frameworks */,
+				CDF040DDF8283AEEC912F78C5A4CD187 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				102CD0F6FB512166E16B1B749AD5BF32 /* PBXTargetDependency */,
-				343B572532809FAC171CBD011AC88150 /* PBXTargetDependency */,
-				F78C3DB676F389CCFA5E7DEB9E433669 /* PBXTargetDependency */,
+				191E27BD392B5A367FBBF0F49881CFAD /* PBXTargetDependency */,
+				18F76BE5AC3485004D15A82176F8CA4B /* PBXTargetDependency */,
+				6C7B06D3852B0FA5F13C878DC7DA1257 /* PBXTargetDependency */,
+				5AAFBBE9FE11C5565CBD74E51FADC680 /* PBXTargetDependency */,
 			);
 			name = "Pods-1and1.workout";
 			productName = "Pods-1and1.workout";
-			productReference = 01FDDD0F050EEC099330E3222F1B1023 /* Pods_1and1_workout.framework */;
+			productReference = F8D3DA4CC7036C1444CCE566A86AAEF3 /* Pods_1and1_workout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */ = {
+		6DB79AB7B7268873B7780354A262158E /* SwiftySound */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC4C4B97795ABE52DE986D192B1A302F /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildConfigurationList = FB76952E21EC41B24AFC85929D0EDEF6 /* Build configuration list for PBXNativeTarget "SwiftySound" */;
 			buildPhases = (
-				9417768C378F783FECED187B9F043305 /* Sources */,
-				23165061940DD5802A0A62728E554C72 /* Frameworks */,
-				39429C8A6BD3F123DD8F1FD00574388D /* Headers */,
+				142348500F2AF91183961F006A49E2E4 /* Sources */,
+				3C93D1E41C57943D6BB6D278DE8B118C /* Frameworks */,
+				A51865F04E5F18C7EE7119B31CEE132D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SQLite.swift;
-			productName = SQLite.swift;
-			productReference = 110B26A8447100510D960C5031C4AA28 /* SQLite.framework */;
+			name = SwiftySound;
+			productName = SwiftySound;
+			productReference = 03B27994478A87F8A8F97ABEE5D794A4 /* SwiftySound.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */ = {
+		7145243BDEF2DEEECB1A401A3F449AC5 /* YXWaveView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 278C8A9082E8D8E875F9AEC03C85EDBD /* Build configuration list for PBXNativeTarget "YXWaveView" */;
+			buildConfigurationList = E66F1E6ACC3534CD9B773D3E9CD20D5C /* Build configuration list for PBXNativeTarget "YXWaveView" */;
 			buildPhases = (
-				6FECF8FA848E63C846E29161632B4A98 /* Sources */,
-				940397EE7B0ADF46D0D557E17EA722CB /* Frameworks */,
-				EF12081A1A8012B59CDDD97DE715E1E3 /* Headers */,
+				CD0856CE40B7762EEEED3C0905871F09 /* Sources */,
+				BD91C616458D8213BB0C5D5B16912F3C /* Frameworks */,
+				6EA12581CB227D73F1DB7A0C16306403 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -449,16 +515,33 @@
 			);
 			name = YXWaveView;
 			productName = YXWaveView;
-			productReference = 0C44ED5E6DB13C6AAECFE9CEB356E150 /* YXWaveView.framework */;
+			productReference = B0477CD865EE4D35F5CA3E23410762D4 /* YXWaveView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */ = {
+		CE2A8E1425B86BFF9F355546282B558D /* SQLite.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5174D79C61908BD7D58D42583CFA0DD2 /* Build configuration list for PBXNativeTarget "PulsingHalo" */;
+			buildConfigurationList = 2A08FEDA917B007BC2DEB1D05589C5BE /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
 			buildPhases = (
-				9728D275D764F53C80D1E4A1431626B7 /* Sources */,
-				C5E95D8E498838541C3204F1C28FA0C1 /* Frameworks */,
-				E03EA9541AB8F1AF9959D57135CD26D6 /* Headers */,
+				CF56382EA4FB07B3EE4FF6CDA9830C77 /* Sources */,
+				63DB9EB386AEB08B6335D8E6A7C8CD10 /* Frameworks */,
+				0E513087723AD68B09F2C6E1C2E5A370 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = E34D640775F25126BBD6DF036988DD57 /* SQLite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D95950D5832F9321A35CA282CFC0636F /* PulsingHalo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4686F46F10D226EC19D39FEB3B510747 /* Build configuration list for PBXNativeTarget "PulsingHalo" */;
+			buildPhases = (
+				FDBEAC89535E08089F9C739FDB8A963D /* Sources */,
+				D8ECEBEB76F969431A40670782CE2649 /* Frameworks */,
+				DEA8D4C5A4E76984CF3C57F5B6BA8406 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -466,7 +549,7 @@
 			);
 			name = PulsingHalo;
 			productName = PulsingHalo;
-			productReference = 58E9A68FCB91EB31C8C227B241B25EDA /* PulsingHalo.framework */;
+			productReference = E4488FA1F2F1A27AC128CD7376FDD8C1 /* PulsingHalo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -486,97 +569,147 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = BA43AE4052213DBEB018D1EA3AB68116 /* Products */;
+			productRefGroup = 554C8471CABC4106154B28FA2471190F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30C59481660B59E8EF794967F043E774 /* Pods-1and1.workout */,
-				FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */,
-				BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */,
-				E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */,
+				22FDF2B6AFF014C0323E0C8C380422E5 /* Pods-1and1.workout */,
+				D95950D5832F9321A35CA282CFC0636F /* PulsingHalo */,
+				CE2A8E1425B86BFF9F355546282B558D /* SQLite.swift */,
+				6DB79AB7B7268873B7780354A262158E /* SwiftySound */,
+				7145243BDEF2DEEECB1A401A3F449AC5 /* YXWaveView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6FECF8FA848E63C846E29161632B4A98 /* Sources */ = {
+		142348500F2AF91183961F006A49E2E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAFB4CDEEA5EC0EB9B8F99AAB0C9E7FE /* YXWaveView-dummy.m in Sources */,
-				E779737434FAB32C47242B703B11F0A0 /* YXWaveView.swift in Sources */,
+				2F28387A9A347BA99438F0ABC0ABAF8B /* Sound.swift in Sources */,
+				42777FFF8B67CA7D5BA394AB14558BAC /* SwiftySound-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F93F2159E590038DDFF2FA3C9C16D79 /* Sources */ = {
+		6ACF0F5B8FFD18B5D8BD15C9D9FA75AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9BA455C391E00605500AC3298C573E /* Pods-1and1.workout-dummy.m in Sources */,
+				1896EE752902B293ED82CF34CD5522B3 /* Pods-1and1.workout-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9417768C378F783FECED187B9F043305 /* Sources */ = {
+		CD0856CE40B7762EEEED3C0905871F09 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0196E120F0709A8DC97C98AB180B5740 /* AggregateFunctions.swift in Sources */,
-				DC097C16E796F76CC7D13B9FD829F2FF /* Blob.swift in Sources */,
-				B6B0BE872BB70302350CD7C5B4EA8D30 /* Collation.swift in Sources */,
-				C68ED00E8965272C1D7FB4D1257752DB /* Connection.swift in Sources */,
-				7DCD2C2F128971A4D65A535F532E590F /* CoreFunctions.swift in Sources */,
-				20B968CA4021A7E708222057EB60F02B /* CustomFunctions.swift in Sources */,
-				006BE5988C1A908C326042D7EB1224AB /* Expression.swift in Sources */,
-				4D4681F11469D1238CF3B12F40975220 /* Foundation.swift in Sources */,
-				77BA916E94593230FB4F84AEA796973B /* FTS4.swift in Sources */,
-				33698CC3FE2EA3117F6EA12F1D859D6B /* FTS5.swift in Sources */,
-				F57305E29CD1D446E8FFE986E66CC392 /* Helpers.swift in Sources */,
-				76E33732F2DF2DC1D474A5809470DAD5 /* Operators.swift in Sources */,
-				66C90097466E9D17EA9B59EA9EE3701E /* Query.swift in Sources */,
-				3DFD245A70F7A3447730601538CB5C83 /* RTree.swift in Sources */,
-				10C31E77815A2FE12EDA9550A98DEA0C /* Schema.swift in Sources */,
-				91A2CDC95D108225AC13CCCF4FB831E7 /* Setter.swift in Sources */,
-				2A22F504B90FEA33B0846BC94B6395A5 /* SQLite-Bridging.m in Sources */,
-				85A41C04418A21C396FC7613ACD42060 /* SQLite.swift-dummy.m in Sources */,
-				E35BE2CE194F5766B93CB95B629AE22F /* Statement.swift in Sources */,
-				AA75D50F0987CB300CC01D297399F9DF /* Value.swift in Sources */,
+				AD94285D30191054942A2CCF9B1CE120 /* YXWaveView-dummy.m in Sources */,
+				7A61AFEE549BAF4652439B1B67069102 /* YXWaveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9728D275D764F53C80D1E4A1431626B7 /* Sources */ = {
+		CF56382EA4FB07B3EE4FF6CDA9830C77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C4AA0D0894917ABAFB31B85A568176E /* PulsingHalo-dummy.m in Sources */,
-				86CB981979767D4280E3513297FAF71C /* PulsingHaloLayer.m in Sources */,
+				53270E58BFCA643F9C9E00599A5CB2F8 /* AggregateFunctions.swift in Sources */,
+				95EF234512958ADD1D78A01B8D9EB54D /* Blob.swift in Sources */,
+				18D44E3D918AF10BF9DCED74A78C1DAB /* Collation.swift in Sources */,
+				860E9A2B253AB8672CE2159D10AA5BA5 /* Connection.swift in Sources */,
+				4A60FC335A1128C40F0CED4F8CC63358 /* CoreFunctions.swift in Sources */,
+				BCF64BB668125C0A0D2750EBF9ADD6DE /* CustomFunctions.swift in Sources */,
+				B07DAD21BBF3CB2D17E1AA99DCE284EB /* Expression.swift in Sources */,
+				1E665D6352C63FDB782671165E62961F /* Foundation.swift in Sources */,
+				FC07C1AACDF85F3ADA50FC1E242DC8EA /* FTS4.swift in Sources */,
+				B8E85964EF00CDD7F7E034B8FCB55477 /* FTS5.swift in Sources */,
+				658EEFD2D8C39BB8FF358AC2E73DD28F /* Helpers.swift in Sources */,
+				1435565F3FBEE587169C0EF8959EE534 /* Operators.swift in Sources */,
+				8A0F8338916C754E0716A642AF67C2B0 /* Query.swift in Sources */,
+				D92AD30FD577BE13B628EF411356AECD /* RTree.swift in Sources */,
+				CEFAC0D10FED2F86D6F84C56ED2BF362 /* Schema.swift in Sources */,
+				6F92DAEB72844F3590C1EE85C99317AF /* Setter.swift in Sources */,
+				CA6F12737F191E2A19D8B251FE9B2DA5 /* SQLite-Bridging.m in Sources */,
+				62397DEE9A648B960A9CD02CC1E98587 /* SQLite.swift-dummy.m in Sources */,
+				E403F6040141A6096798B03C28DE2203 /* Statement.swift in Sources */,
+				12AE8A686C3D35ABFECBFB727008B0E4 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDBEAC89535E08089F9C739FDB8A963D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B1D3ED848FDED2AB781B94DF74F099 /* PulsingHalo-dummy.m in Sources */,
+				53D503B1624966785643BB0C94C5B05A /* PulsingHaloLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		102CD0F6FB512166E16B1B749AD5BF32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = PulsingHalo;
-			target = FD99A9AE7A70161973B12031ABFF1F9F /* PulsingHalo */;
-			targetProxy = 15275E81A17159AE8E610B83F7820E40 /* PBXContainerItemProxy */;
-		};
-		343B572532809FAC171CBD011AC88150 /* PBXTargetDependency */ = {
+		18F76BE5AC3485004D15A82176F8CA4B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SQLite.swift;
-			target = BBE4C6C27B18FA77D4A627E15B3CB047 /* SQLite.swift */;
-			targetProxy = 76F9B451A0DA56426FA12D0518F289FF /* PBXContainerItemProxy */;
+			target = CE2A8E1425B86BFF9F355546282B558D /* SQLite.swift */;
+			targetProxy = DB08DF891020AB4A26A2C2C765FFB259 /* PBXContainerItemProxy */;
 		};
-		F78C3DB676F389CCFA5E7DEB9E433669 /* PBXTargetDependency */ = {
+		191E27BD392B5A367FBBF0F49881CFAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PulsingHalo;
+			target = D95950D5832F9321A35CA282CFC0636F /* PulsingHalo */;
+			targetProxy = 2CCC8FEFA492B73DFBE151F5B153750A /* PBXContainerItemProxy */;
+		};
+		5AAFBBE9FE11C5565CBD74E51FADC680 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = YXWaveView;
-			target = E5F695E4DE80783A52A749C2966D2B44 /* YXWaveView */;
-			targetProxy = 29DB016C1A5CA0EB61CCA1ABBFAB8945 /* PBXContainerItemProxy */;
+			target = 7145243BDEF2DEEECB1A401A3F449AC5 /* YXWaveView */;
+			targetProxy = 0A70DEC73AB4D8E97915BA60482DEB12 /* PBXContainerItemProxy */;
+		};
+		6C7B06D3852B0FA5F13C878DC7DA1257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftySound;
+			target = 6DB79AB7B7268873B7780354A262158E /* SwiftySound */;
+			targetProxy = 7DCCB72E12957A4EFDE853BBC6E32D29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		07625D039735420085FF1AB0C36F22BA /* Debug */ = {
+		087EF265CA319C4E3986402BB9C52999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C0CF4F12A5C146C749BDE68EBDAF4C /* PulsingHalo.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PulsingHalo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4268A6D6E04677C78F93734B8C564E6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B7D3B336BEBED26A6C1FEDD84CE273C /* Pods-1and1.workout.debug.xcconfig */;
 			buildSettings = {
@@ -615,9 +748,9 @@
 			};
 			name = Debug;
 		};
-		168330053EB285BACA4719C68C512B35 /* Debug */ = {
+		59C1569AEB5E6046CF8D1CD8136643D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */;
+			baseConfigurationReference = D9C0CF4F12A5C146C749BDE68EBDAF4C /* PulsingHalo.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -631,18 +764,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = YXWaveView;
+				PRODUCT_NAME = PulsingHalo;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -650,9 +782,44 @@
 			};
 			name = Debug;
 		};
-		1C0C2399DA9B49822927CAB915E97550 /* Release */ = {
+		6909A3FAEAF49B254347781C6F60014C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = D57F148EFF73436B894C1461BF7F4FC0 /* YXWaveView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = YXWaveView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7FACB91C565FFD8F45E12C74480F019C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3148D770A830C7DBDCCD9E5BB37D95A /* SQLite.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -685,42 +852,42 @@
 			};
 			name = Release;
 		};
-		387AA57E820FCD187EC703EF840F202F /* Release */ = {
+		869045A2556EEAE2D2AFB344BE4E1CAB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D9A860EC4641C938B09575970AF4B18 /* YXWaveView.xcconfig */;
+			baseConfigurationReference = AC052DC2D0425AF14EF91B394A2BE06C /* SwiftySound.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftySound/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = YXWaveView;
+				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftySound;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		6366D06F34664DF550337609290B12E1 /* Release */ = {
+		8FF675B03C9899DA3A1351D24F4C2301 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EF79D0820DE0B530D3665A1D048CA15 /* Pods-1and1.workout.release.xcconfig */;
 			buildSettings = {
@@ -751,40 +918,6 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		896FC83A668E856F8E56BB60CE99E5AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PulsingHalo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -841,9 +974,9 @@
 			};
 			name = Debug;
 		};
-		98E7DAED2759BFC9FFEBC18AB5CB3563 /* Debug */ = {
+		B0F144E0C69AA6CB2F5A29E42CEACF42 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC9741E2BC87F06C5FB3B094102C4D83 /* SQLite.swift.xcconfig */;
+			baseConfigurationReference = D57F148EFF73436B894C1461BF7F4FC0 /* YXWaveView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -857,52 +990,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/YXWaveView/YXWaveView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YXWaveView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MODULEMAP_FILE = "Target Support Files/YXWaveView/YXWaveView.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SQLite;
+				PRODUCT_NAME = YXWaveView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A5B8201ACC3D5E6144ABA30322A08EED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 669BD648BF3EFDFE384AB766C70D2E50 /* PulsingHalo.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PulsingHalo/PulsingHalo-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PulsingHalo/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PulsingHalo/PulsingHalo.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = PulsingHalo;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -954,23 +1053,84 @@
 			};
 			name = Release;
 		};
+		C4399D98331C963AAA245F994E947817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC052DC2D0425AF14EF91B394A2BE06C /* SwiftySound.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftySound/SwiftySound-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftySound/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftySound/SwiftySound.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftySound;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8B06B52611623FE210348775C705DA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3148D770A830C7DBDCCD9E5BB37D95A /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SQLite.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SQLite.swift/SQLite.swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SQLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		278C8A9082E8D8E875F9AEC03C85EDBD /* Build configuration list for PBXNativeTarget "YXWaveView" */ = {
+		2A08FEDA917B007BC2DEB1D05589C5BE /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				168330053EB285BACA4719C68C512B35 /* Debug */,
-				387AA57E820FCD187EC703EF840F202F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D2E981CA12C3F33BF24594CD360764E /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				07625D039735420085FF1AB0C36F22BA /* Debug */,
-				6366D06F34664DF550337609290B12E1 /* Release */,
+				F8B06B52611623FE210348775C705DA5 /* Debug */,
+				7FACB91C565FFD8F45E12C74480F019C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -984,20 +1144,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5174D79C61908BD7D58D42583CFA0DD2 /* Build configuration list for PBXNativeTarget "PulsingHalo" */ = {
+		4686F46F10D226EC19D39FEB3B510747 /* Build configuration list for PBXNativeTarget "PulsingHalo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A5B8201ACC3D5E6144ABA30322A08EED /* Debug */,
-				896FC83A668E856F8E56BB60CE99E5AE /* Release */,
+				59C1569AEB5E6046CF8D1CD8136643D5 /* Debug */,
+				087EF265CA319C4E3986402BB9C52999 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC4C4B97795ABE52DE986D192B1A302F /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+		57A6CE65454A9DB2E455D357D302BE13 /* Build configuration list for PBXNativeTarget "Pods-1and1.workout" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98E7DAED2759BFC9FFEBC18AB5CB3563 /* Debug */,
-				1C0C2399DA9B49822927CAB915E97550 /* Release */,
+				4268A6D6E04677C78F93734B8C564E6F /* Debug */,
+				8FF675B03C9899DA3A1351D24F4C2301 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E66F1E6ACC3534CD9B773D3E9CD20D5C /* Build configuration list for PBXNativeTarget "YXWaveView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0F144E0C69AA6CB2F5A29E42CEACF42 /* Debug */,
+				6909A3FAEAF49B254347781C6F60014C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB76952E21EC41B24AFC85929D0EDEF6 /* Build configuration list for PBXNativeTarget "SwiftySound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				869045A2556EEAE2D2AFB344BE4E1CAB /* Debug */,
+				C4399D98331C963AAA245F994E947817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

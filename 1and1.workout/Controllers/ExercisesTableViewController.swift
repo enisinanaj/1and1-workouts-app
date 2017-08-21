@@ -132,6 +132,21 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         return title.frame.origin.y + title.bounds.height
     }
     
+//    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+//        return 80
+//    }
+    
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.frame.size.width = self.view.frame.width
+//        headerView.frame.size.height = 170
+//        headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+//
+//        addDescriptionLabel(headerView, startingPoint: 10)
+//
+//        return headerView
+//    }
+    
     func addSubtitleToSectionHeaderView(_ headerView: UIView, startingPoint: CGFloat) -> CGFloat {
         let subtitle = UILabel()
         subtitle.text = "1 minute each exercise / 1 minute rest afterwards"
