@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "SQLite.h"
-#import "SQLite-Bridging.h"
+#import "YXWaveView.h"
 
-FOUNDATION_EXPORT double SQLiteVersionNumber;
-FOUNDATION_EXPORT const unsigned char SQLiteVersionString[];
+FOUNDATION_EXPORT double YXWaveViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char YXWaveViewVersionString[];
 
