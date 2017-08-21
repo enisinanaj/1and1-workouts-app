@@ -83,7 +83,71 @@ extension AllEntriesViewController: UITableViewDelegate {
         return sections != nil ? sections!.count : 0
     }
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.frame.size.width = self.view.frame.width
+        headerView.frame.size.height = tableView.sectionHeaderHeight
+        headerView.frame.origin.x = 0
+        headerView.frame.origin.y = 0
+        headerView.backgroundColor = UIColor(colorLiteralRed: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+        
+        let title = UILabel()
+        title.text = getSectionTitle(section)
+        title.frame.origin.x = 10
+        title.frame.origin.y = 5
+        title.frame.size.width = self.view.frame.width - 120
+        title.frame.size.height = tableView.sectionHeaderHeight - 5
+        title.font = UIFont(name: "HelveticaNeue-Light", size: 16)
+        
+        let editButton = UIButton()
+        editButton.setTitle("Clear", for: .normal)
+        editButton.frame.origin.x = self.view.frame.width - 110
+        editButton.frame.origin.y = 18
+        editButton.frame.size.width = 70
+        editButton.setTitleColor(UIColor.red, for: .normal)
+        editButton.showsTouchWhenHighlighted = true
+        editButton.isEnabled = true
+        editButton.addTarget(self, action: #selector(self.sectionEditButtonPressed(_:)), for: .touchUpInside)
+        
+        headerView.addSubview(editButton)
+        headerView.addSubview(title)
+        
+        return headerView
+    }
+    
+    func sectionEditButtonPressed(_ sender: UIButton) {
+        
+        print ("event raised")
+        
+        let refreshAlert = UIAlertController(title: "Refresh", message: "All data will be lost.", preferredStyle: UIAlertControllerStyle.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle Ok logic here")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.frame.size.width = self.view.frame.width
+        footerView.frame.size.height = tableView.sectionFooterHeight
+        footerView.frame.origin.x = 0
+        footerView.frame.origin.y = 0
+        footerView.backgroundColor = UIColor.white
+        
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 30
+    }
+
+    func getSectionTitle(_ section: Int) -> String? {
         let sql = SQLiteProxy()
         let sections = sql.getSections()
         var result: [String] = []
@@ -96,7 +160,7 @@ extension AllEntriesViewController: UITableViewDelegate {
             result.append(r.get(sql.date)!)
         }
         
-        return result
+        return result[section]
     }
 }
 
@@ -105,7 +169,10 @@ extension AllEntriesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sql = SQLiteProxy()
-        return sql.getRowCount()
+        let sections = getSectionKeys()
+        let rows = sql.getRows(forSection: sections![section])
+      
+        return rows.count
     }
     
     func getSectionKeys() -> [String]? {
@@ -122,6 +189,10 @@ extension AllEntriesViewController: UITableViewDataSource {
         }
         
         return result
+    }
+    
+    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Delete"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

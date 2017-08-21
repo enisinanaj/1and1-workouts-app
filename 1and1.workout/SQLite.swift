@@ -85,18 +85,43 @@ class SQLiteProxy {
         return result
     }
     
+    func insertDummy() {
+        if (nil == self.times) {
+            createTable()
+        }
+        
+        let times = Table("times")
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMM yyyy"
+        
+        let dateFromString = dateFormatter.date(from: "20 Aug 2017")
+        let date = dateFormatter.string(from: dateFromString!)
+        
+        // insert time duration
+        let insert = times.insert(self.startTime <- "01M 30S",
+                                  self.duration <- 60,
+                                  self.info <- "INFO HERE",
+                                  self.category <- "IS THIS A CAT",
+                                  self.date <- date)
+        
+        try! db!.run(insert)
+    }
+    
     func getSections() -> Array<Row>? {
         let times = Table("times")
-        let query = times.group(date)
+        let query = times.group(date).order(self.id .desc)
         let result = try! db!.prepare(query)
         
         return Array(result)
     }
     
-    func getRowCount() -> Int {
+    func getRows(forSection: String) -> Array<Row> {
         let times = Table("times")
+        let query = times.filter(date == forSection).order(self.id .desc)
+        let result = try! db!.prepare(query)
         
-        return try! db!.scalar(times.count)
+        return Array(result)
     }
     
     func deleteRow(id: Int64) {
