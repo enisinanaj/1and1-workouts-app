@@ -135,4 +135,10 @@ class SQLiteProxy {
         _ = try! db!.run(times.drop(ifExists: true))
         self.times = nil
     }
+    
+    func deleteRows(forSection: String) {
+        let times = Table("times")
+        let row = times.filter(self.date == forSection)
+        _ = try! db!.run(row.delete())
+    }
 }

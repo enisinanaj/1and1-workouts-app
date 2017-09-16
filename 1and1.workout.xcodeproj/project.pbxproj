@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F12D0B11F4B76D00040AF6E /* ClearSectionUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F12D0B01F4B76D00040AF6E /* ClearSectionUIButton.swift */; };
 		5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */; };
 		5F2C4DF61F44B9C800C9D02A /* HardcodedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */; };
 		5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		09AB688A6C363E37FC135268 /* Pods-1and1.workout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-1and1.workout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-1and1.workout/Pods-1and1.workout.debug.xcconfig"; sourceTree = "<group>"; };
 		3FA72A428FAB7A67C3AE4C43 /* Pods_1and1_workout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_1and1_workout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F12D0B01F4B76D00040AF6E /* ClearSectionUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearSectionUIButton.swift; sourceTree = "<group>"; };
 		5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseTableViewCell.xib; sourceTree = "<group>"; };
 		5F2C4DF51F44B9C800C9D02A /* HardcodedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardcodedModel.swift; sourceTree = "<group>"; };
 		5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				A1C9C7A31DE3B47D00354D15 /* MainPageViewController.swift */,
 				A1C9C7A61DE3B47D00354D15 /* ViewController.swift */,
 				5FBB10711F42531800532914 /* ExercisesTableViewController.swift */,
+				5F12D0B01F4B76D00040AF6E /* ClearSectionUIButton.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1C9C7B41DE3B4E000354D15 /* TimeTableViewCell.swift in Sources */,
+				5F12D0B11F4B76D00040AF6E /* ClearSectionUIButton.swift in Sources */,
 				A1C9C7AB1DE3B47D00354D15 /* ViewController.swift in Sources */,
 				5F2C4DF81F44C4AE00C9D02A /* ExerciseTableViewCell.swift in Sources */,
 				5F36DFE81F45E1D8005CD76B /* UIColorLib.swift in Sources */,
@@ -434,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -485,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -498,6 +502,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09AB688A6C363E37FC135268 /* Pods-1and1.workout.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6M95A8XHH3;
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";
@@ -515,6 +521,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 609029F3E09845ED0A283DE5 /* Pods-1and1.workout.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6M95A8XHH3;
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";

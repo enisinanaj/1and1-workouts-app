@@ -99,13 +99,16 @@ extension AllEntriesViewController: UITableViewDelegate {
         title.frame.size.height = tableView.sectionHeaderHeight - 5
         title.font = UIFont(name: "HelveticaNeue-Light", size: 16)
         
-        let editButton = UIButton()
+        let editButton = ClearSectionUIButton()
         editButton.setTitle("Clear", for: .normal)
-        editButton.frame.origin.x = self.view.frame.width - 110
-        editButton.frame.origin.y = 18
+        editButton.frame.origin.x = self.view.frame.width - 100
+        editButton.frame.origin.y = 10
         editButton.frame.size.width = 70
+        editButton.frame.size.height = 20
+        editButton.backgroundColor = UIColor.black.withAlphaComponent(0)
         editButton.setTitleColor(UIColor.red, for: .normal)
         editButton.showsTouchWhenHighlighted = true
+        editButton.sectionName = title.text
         editButton.isEnabled = true
         editButton.addTarget(self, action: #selector(self.sectionEditButtonPressed(_:)), for: .touchUpInside)
         
@@ -116,13 +119,14 @@ extension AllEntriesViewController: UITableViewDelegate {
     }
     
     func sectionEditButtonPressed(_ sender: UIButton) {
-        
-        print ("event raised")
-        
-        let refreshAlert = UIAlertController(title: "Refresh", message: "All data will be lost.", preferredStyle: UIAlertControllerStyle.alert)
+        let refreshAlert = UIAlertController(title: "Clear",
+                                             message: "All exercises stored for this date will be removed!",
+                                             preferredStyle: UIAlertControllerStyle.alert)
         
         refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
-            print("Handle Ok logic here")
+            let sql = SQLiteProxy()
+            sql.deleteRows(forSection: (sender as! ClearSectionUIButton).sectionName!)
+            self.tableView.reloadData()
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -141,6 +145,13 @@ extension AllEntriesViewController: UITableViewDelegate {
         footerView.backgroundColor = UIColor.white
         
         return footerView
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .delete {
+            print("delete")
+            tableView.reloadData()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -191,13 +202,8 @@ extension AllEntriesViewController: UITableViewDataSource {
         return result
     }
     
-    func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
-        return "Delete"
-    }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as? TimeTableViewCell else {
-            
             return UITableViewCell()
         }
 

@@ -29,18 +29,18 @@ class CounterViewController: UIViewController {
     var player: AVAudioPlayer?
     
     @IBOutlet weak var restLabel: UILabel!
-    @IBOutlet weak var ShadowView: GradientView!
     @IBOutlet weak var setLabel: UILabel!
     
     @IBOutlet weak var secondHand: UILabel!
     @IBOutlet weak var minuteHand: UILabel!
     var running: Bool!
-
+    @IBOutlet weak var baseWindowView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ShadowView.gradientLayer.colors = [UIColor.black.withAlphaComponent(0.45).cgColor, UIColor.black.withAlphaComponent(0).cgColor]
-        ShadowView.gradientLayer.gradient = GradientPoint.bottomTop.draw()
+        baseWindowView.layer.cornerRadius = 5
+//      baseWindowView.frame.origin.y = baseWindowView.frame.origin.y + 10
         
         restLabel.isHidden = true
     }

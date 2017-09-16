@@ -82,7 +82,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
-        headerView.frame.size.height = 170
+        headerView.frame.size.height = 150
         headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
         //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
@@ -98,7 +98,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         title.text = "1&1"
         title.frame.size.width = 100
         title.frame.origin.x = headerView.frame.origin.x + 10
-        title.frame.origin.y = headerView.frame.origin.y + 25
+        title.frame.origin.y = headerView.frame.origin.y + 15
         title.numberOfLines = 0
         
         var fontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptorFamilyAttribute: "Helvetica Neue",
