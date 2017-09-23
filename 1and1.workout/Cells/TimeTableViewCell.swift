@@ -16,6 +16,8 @@ class TimeTableViewCell: UITableViewCell {
     @IBOutlet weak var date: UILabel!
     var id: Int64 = 0
     
+    var rows: [Row] = []
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization 
@@ -32,18 +34,36 @@ class TimeTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func getRow(at index: Int64) -> Row? {
+        var i: Int64 = 0
+        
+        for r in rows {
+            if (i == index) {
+                return r
+            } else {
+                i += 1
+            }
+        }
+        
+        return nil
+    }
+    
     func populate(forSection: String) {
-        let sql = SQLiteProxy()
-        sql.initDB()
+        if rows.count == 0 {
+            let sql = SQLiteProxy()
+            rows = sql.getRows(forSection: forSection)
+        }
         
         let startTime = Expression<String>("start_time")
         let category = Expression<String?>("category")
         let description = Expression<String?>("info")
+        let idExpression = Expression<Int64?>("id")
         
-        let row: Row? = sql.getTimeByID(filterId: self.id);
+        let row = getRow(at: self.id)
         self.subject.text = row!.get(category)
         self.date.text = row!.get(startTime)
         self.timeLabel.text = row!.get(description)
+        self.id = row!.get(idExpression)!
     }
     
 }
