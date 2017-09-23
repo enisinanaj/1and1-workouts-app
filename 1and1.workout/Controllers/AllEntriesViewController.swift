@@ -83,7 +83,83 @@ extension AllEntriesViewController: UITableViewDelegate {
         return sections != nil ? sections!.count : 0
     }
     
-    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.frame.size.width = self.view.frame.width
+        headerView.frame.size.height = tableView.sectionHeaderHeight
+        headerView.frame.origin.x = 0
+        headerView.frame.origin.y = 0
+        headerView.backgroundColor = UIColor.black //(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+        
+        let title = UILabel()
+        title.text = getSectionTitle(section)
+        title.textColor = UIColor.white
+        title.frame.origin.x = 10
+        title.frame.origin.y = 5
+        title.frame.size.width = self.view.frame.width - 120
+        title.frame.size.height = tableView.sectionHeaderHeight - 5
+        title.font = UIFont(name: "HelveticaNeue", size: 16)
+        
+        let editButton = ClearSectionUIButton()
+        editButton.setTitle("Clear", for: .normal)
+        editButton.frame.origin.x = self.view.frame.width - 100
+        editButton.frame.origin.y = 10
+        editButton.frame.size.width = 70
+        editButton.frame.size.height = 20
+        editButton.backgroundColor = UIColor.black.withAlphaComponent(0)
+        editButton.setTitleColor(UIColor.red, for: .normal)
+        editButton.showsTouchWhenHighlighted = true
+        editButton.sectionName = title.text
+        editButton.isEnabled = true
+        editButton.addTarget(self, action: #selector(self.sectionEditButtonPressed(_:)), for: .touchUpInside)
+        
+        headerView.addSubview(editButton)
+        headerView.addSubview(title)
+        
+        return headerView
+    }
+    
+    @objc func sectionEditButtonPressed(_ sender: UIButton) {
+        let refreshAlert = UIAlertController(title: "Clear",
+                                             message: "All exercises stored for this date will be removed!",
+                                             preferredStyle: UIAlertControllerStyle.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            let sql = SQLiteProxy()
+            sql.deleteRows(forSection: (sender as! ClearSectionUIButton).sectionName!)
+            self.tableView.reloadData()
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        present(refreshAlert, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.frame.size.width = self.view.frame.width
+        footerView.frame.size.height = tableView.sectionFooterHeight
+        footerView.frame.origin.x = 0
+        footerView.frame.origin.y = 0
+        footerView.backgroundColor = UIColor.black
+        
+        return footerView
+    }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .delete {
+            print("delete")
+            tableView.reloadData()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 30
+    }
+
+    func getSectionTitle(_ section: Int) -> String? {
         let sql = SQLiteProxy()
         let sections = sql.getSections()
         var result: [String] = []
@@ -96,7 +172,7 @@ extension AllEntriesViewController: UITableViewDelegate {
             result.append(r.get(sql.date)!)
         }
         
-        return result
+        return result[section]
     }
 }
 
@@ -105,7 +181,10 @@ extension AllEntriesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let sql = SQLiteProxy()
-        return sql.getRowCount()
+        let sections = getSectionKeys()
+        let rows = sql.getRows(forSection: sections![section])
+      
+        return rows.count
     }
     
     func getSectionKeys() -> [String]? {
@@ -126,7 +205,6 @@ extension AllEntriesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: "timeCell", for: indexPath) as? TimeTableViewCell else {
-            
             return UITableViewCell()
         }
 
