@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,6 +22,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CounterViewController" customModule="_and1_workout" customModuleProvider="target">
             <connections>
                 <outlet property="baseWindowView" destination="frj-RP-9hc" id="WX1-dE-sXB"/>
+                <outlet property="counterBaseView" destination="frj-RP-9hc" id="cKs-TX-3UE"/>
                 <outlet property="minuteHand" destination="4ho-Gg-xmS" id="5IA-tb-DYY"/>
                 <outlet property="restLabel" destination="ouI-Ew-axU" id="2YJ-ut-Bux"/>
                 <outlet property="secondHand" destination="4EA-dp-Q2t" id="Y3q-Kr-cGZ"/>
@@ -35,8 +36,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="frj-RP-9hc">
-                    <rect key="frame" x="10" y="240" width="356" height="427"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="15" y="240" width="345" height="427"/>
+                    <color key="backgroundColor" red="0.20813097205333209" green="0.20779747827135317" blue="0.2136227839601037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-ac-DU9" userLabel="Countdown">
                     <rect key="frame" x="79.5" y="290" width="215" height="128"/>
@@ -47,7 +48,7 @@
                                 <constraint firstAttribute="width" constant="53" id="2eP-JU-ixL"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="60"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc1-6D-gia">
@@ -62,7 +63,7 @@
                                 <constraint firstAttribute="width" constant="53" id="Iic-LB-PkP"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="59"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byi-qk-t2b">
@@ -88,9 +89,9 @@
                     </constraints>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TET-pq-xze">
-                    <rect key="frame" x="20" y="240" width="336" height="59"/>
-                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="43"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="25" y="240" width="325" height="51"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="43"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtK-JH-abr">
@@ -119,9 +120,9 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest for 1 minute Then pres the restart icon for a new set" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouI-Ew-axU">
-                    <rect key="frame" x="15" y="403" width="345" height="40.5"/>
-                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="15" y="403" width="345" height="45"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
@@ -132,7 +133,7 @@
                 <constraint firstItem="frj-RP-9hc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AJe-ga-VX5"/>
                 <constraint firstItem="cKs-EM-fwo" firstAttribute="leading" secondItem="dfd-ac-DU9" secondAttribute="leading" id="Bes-Ve-0nf"/>
                 <constraint firstItem="dfd-ac-DU9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FGK-1A-RbD"/>
-                <constraint firstItem="frj-RP-9hc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.95" id="HIc-vq-3Zg"/>
+                <constraint firstItem="frj-RP-9hc" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.92" id="HIc-vq-3Zg"/>
                 <constraint firstItem="TET-pq-xze" firstAttribute="trailing" secondItem="frj-RP-9hc" secondAttribute="trailing" constant="-10" id="JTC-oG-FTP"/>
                 <constraint firstItem="TET-pq-xze" firstAttribute="top" secondItem="frj-RP-9hc" secondAttribute="top" id="TCC-c7-vur"/>
                 <constraint firstItem="ouI-Ew-axU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="bfr-dS-r3T"/>

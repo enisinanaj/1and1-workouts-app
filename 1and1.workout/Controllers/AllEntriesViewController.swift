@@ -89,15 +89,16 @@ extension AllEntriesViewController: UITableViewDelegate {
         headerView.frame.size.height = tableView.sectionHeaderHeight
         headerView.frame.origin.x = 0
         headerView.frame.origin.y = 0
-        headerView.backgroundColor = UIColor(colorLiteralRed: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+        headerView.backgroundColor = UIColor.black //(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
         
         let title = UILabel()
         title.text = getSectionTitle(section)
+        title.textColor = UIColor.white
         title.frame.origin.x = 10
         title.frame.origin.y = 5
         title.frame.size.width = self.view.frame.width - 120
         title.frame.size.height = tableView.sectionHeaderHeight - 5
-        title.font = UIFont(name: "HelveticaNeue-Light", size: 16)
+        title.font = UIFont(name: "HelveticaNeue", size: 16)
         
         let editButton = ClearSectionUIButton()
         editButton.setTitle("Clear", for: .normal)
@@ -118,7 +119,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         return headerView
     }
     
-    func sectionEditButtonPressed(_ sender: UIButton) {
+    @objc func sectionEditButtonPressed(_ sender: UIButton) {
         let refreshAlert = UIAlertController(title: "Clear",
                                              message: "All exercises stored for this date will be removed!",
                                              preferredStyle: UIAlertControllerStyle.alert)
@@ -142,7 +143,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         footerView.frame.size.height = tableView.sectionFooterHeight
         footerView.frame.origin.x = 0
         footerView.frame.origin.y = 0
-        footerView.backgroundColor = UIColor.white
+        footerView.backgroundColor = UIColor.black
         
         return footerView
     }

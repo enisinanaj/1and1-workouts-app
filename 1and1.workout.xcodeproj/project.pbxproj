@@ -244,6 +244,7 @@
 					5F8E10641DC4E1270061A226 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 6M95A8XHH3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -509,10 +510,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.1and1.workout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.1and1workouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -528,10 +530,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.1and1.workout;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.1and1workouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

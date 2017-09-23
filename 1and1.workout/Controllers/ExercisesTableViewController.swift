@@ -10,8 +10,8 @@ import UIKit
 
 extension NSMutableAttributedString {
     func withFont(_ font: UIFont) -> NSMutableAttributedString {
-        self.removeAttribute(NSFontAttributeName, range: NSRange(location: 0, length: self.length))
-        self.addAttributes([NSFontAttributeName: font], range: NSRange(location: 0, length: self.length))
+        self.removeAttribute(NSAttributedStringKey.font, range: NSRange(location: 0, length: self.length))
+        self.addAttributes([NSAttributedStringKey.font: font], range: NSRange(location: 0, length: self.length))
         return self
     }
 }
@@ -20,14 +20,14 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var tableView: UITableView?
     var counterPageDelegate: MainPageViewController!
-    var paretController: ViewController?
+    var parentController: ViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
         
-        self.tableView?.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        self.tableView?.backgroundColor = UIColor.black // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
     }
 
     // MARK: - Table view data source
@@ -60,7 +60,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.counterPageDelegate?.exercise = HardcodedModel.exercises[indexPath.row]
         self.counterPageDelegate?.updateData()
-        self.paretController?.scrollView.setContentOffset(CGPoint(x: (self.paretController?.view.frame.width)! * 2, y: 0), animated: true)
+        self.parentController?.scrollView.setContentOffset(CGPoint(x: (self.parentController?.view.frame.width)! * 2, y: 0), animated: true)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -83,7 +83,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
         headerView.frame.size.height = 150
-        headerView.backgroundColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        headerView.backgroundColor = UIColor.black // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
         //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
         let startingPoint = addTitleToSectionHeaderView(headerView)
@@ -101,10 +101,10 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         title.frame.origin.y = headerView.frame.origin.y + 15
         title.numberOfLines = 0
         
-        var fontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptorFamilyAttribute: "Helvetica Neue",
-                                                               UIFontDescriptorSizeAttribute: 47.0,
-                                                               UIFontDescriptorTraitsAttribute:
-                                                                [UIFontWeightTrait: UIFontWeightHeavy]])
+        let fontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptor.AttributeName.family: "Helvetica Neue",
+                                                               UIFontDescriptor.AttributeName.size: 47.0,
+                                                               UIFontDescriptor.AttributeName.traits:
+                                                                [UIFontDescriptor.TraitKey.weight: UIFont.Weight.heavy]])
         
         title.font = UIFont(descriptor: fontDescriptor, size: 47.0)
         title.textColor = UIColor(displayP3Red: 0.98, green: 0.05, blue: 0.17, alpha: 1)
@@ -114,16 +114,11 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         titlePart.text = "WORKOUT"
         titlePart.frame.size.width = 250
         titlePart.frame.origin.x = title.frame.origin.x + title.frame.width + 5
-        titlePart.frame.origin.y = headerView.frame.origin.y + 30
+        titlePart.frame.origin.y = headerView.frame.origin.y + 15
         titlePart.numberOfLines = 0
         
-        fontDescriptor = UIFontDescriptor(fontAttributes: [UIFontDescriptorFamilyAttribute: "Helvetica Neue",
-                                                               UIFontDescriptorSizeAttribute: 40,
-                                                               UIFontDescriptorTraitsAttribute:
-                                                                [UIFontWeightTrait: UIFontWeightRegular]])
-        
-        titlePart.font = UIFont(descriptor: fontDescriptor, size: 40)
-        titlePart.textColor = UIColor.black
+        titlePart.font = UIFont(descriptor: fontDescriptor, size: 47)
+        titlePart.textColor = UIColor.white
         titlePart.sizeToFit()
         
         headerView.addSubview(titlePart)
@@ -158,8 +153,8 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         subtitle.minimumScaleFactor = 0.5
         subtitle.adjustsFontForContentSizeCategory = true
         
-        subtitle.font = UIFont(name:"AvenirNextCondensed-Regular" , size: 16)
-        subtitle.textColor = UIColor.black //UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
+        subtitle.font = UIFont(name:"AvenirNextCondensed-Regular" , size: 18)
+        subtitle.textColor = UIColor.white //UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
         
         headerView.addSubview(subtitle)
         subtitle.sizeToFit()
@@ -177,7 +172,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         descriptionInTitle.frame.origin.x = headerView.frame.origin.x + 15
         descriptionInTitle.frame.origin.y = startingPoint + 20
         descriptionInTitle.numberOfLines = 0
-        descriptionInTitle.textColor = UIColor.black // UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
+        descriptionInTitle.textColor = UIColor.white // UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
         
         headerView.addSubview(descriptionInTitle)
         descriptionInTitle.sizeToFit()
@@ -200,7 +195,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         attributedText.append(NSMutableAttributedString(string: "6 sets").withFont(font!))
         attributedText.append(NSMutableAttributedString(string: "\nrest between sets for up to 3 minutes").withFont(font!))
         
-        attributedText.addAttributes([NSParagraphStyleAttributeName: paragraphStyle],
+        attributedText.addAttributes([NSAttributedStringKey.paragraphStyle: paragraphStyle],
                                      range: NSRange(location: 0, length: attributedText.length))
         
         return attributedText
