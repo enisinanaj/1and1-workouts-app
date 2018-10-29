@@ -18,6 +18,8 @@ class ExerciseTableViewCell: UITableViewCell {
         self.selectedBackgroundView = UIView()
     }
     
+    @IBOutlet weak var cardView: UIView!
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

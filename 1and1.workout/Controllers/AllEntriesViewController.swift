@@ -93,7 +93,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         
         let title = UILabel()
         title.text = getSectionTitle(section)
-        title.textColor = UIColor.white
+        title.textColor = UIColor.black
         title.frame.origin.x = 10
         title.frame.origin.y = 5
         title.frame.size.width = self.view.frame.width - 120

@@ -27,7 +27,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         
         self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
         
-        self.tableView?.backgroundColor = UIColor.black // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        self.tableView?.backgroundColor = UIColor.white // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
     }
 
     // MARK: - Table view data source
@@ -44,10 +44,17 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         cell.exerciseDescription.text = exercise.description
         cell.exercisePreview.image = exercise.image
         cell.exerciseId = exercise.id
+        cell.exercisePreview.layer.cornerRadius = 20
         cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
         
         cell.exercisePreview.layer.masksToBounds = true
         cell.exercisePreview.clipsToBounds = true
+        
+        cell.cardView.layer.cornerRadius = 20.0
+        cell.cardView.layer.shadowColor = UIColor.gray.cgColor
+        cell.cardView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+        cell.cardView.layer.shadowRadius = 12.0
+        cell.cardView.layer.shadowOpacity = 0.7
         
         cell.frame.size.height = (cell.exercisePreview.image?.size.height)!
         cell.gradientView.gradientLayer.colors = [UIColor.black.cgColor, UIColor.black.withAlphaComponent(0)]
@@ -83,7 +90,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         let headerView = UIView()
         headerView.frame.size.width = self.view.frame.width
         headerView.frame.size.height = 150
-        headerView.backgroundColor = UIColor.black // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
+        headerView.backgroundColor = UIColor.white // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
         //UIColor.white //UIColor(red:0.35, green:0.67, blue:0.89, alpha:1.0)
         
         let startingPoint = addTitleToSectionHeaderView(headerView)
@@ -118,7 +125,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         titlePart.numberOfLines = 0
         
         titlePart.font = UIFont(descriptor: fontDescriptor, size: 47)
-        titlePart.textColor = UIColor.white
+        titlePart.textColor = UIColor.black
         titlePart.sizeToFit()
         
         headerView.addSubview(titlePart)
@@ -154,7 +161,7 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         subtitle.adjustsFontForContentSizeCategory = true
         
         subtitle.font = UIFont(name:"AvenirNextCondensed-Regular" , size: 18)
-        subtitle.textColor = UIColor.white //UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
+        subtitle.textColor = UIColor.black //UIColor(displayP3Red: 1, green: 1, blue: 1, alpha: 1)
         
         headerView.addSubview(subtitle)
         subtitle.sizeToFit()
