@@ -6,11 +6,14 @@ target '1and1.workout' do
   use_frameworks!
 
   # Pods
-  pod 'SQLite.swift', :git => 'https://github.com/stephencelis/SQLite.swift.git', :branch => 'swift-4'
+  # pod 'SQLite.swift', :git => 'https://github.com/stephencelis/SQLite.swift.git', :branch => 'swift-4'
   # pod 'SQLite.swift', '~> 0.11.3'
+  pod 'SQLite.swift', '~> 0.11.5'
   pod 'PulsingHalo'
   # pod "youtube-ios-player-helper", "~> 0.1.1"
   # pod 'YouTubePlayer'
-  pod 'YXWaveView'
+  #pod 'YXWaveView'
   pod 'SwiftySound'
+  pod 'mopub-ios-sdk'
+  
 end

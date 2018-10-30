@@ -44,10 +44,10 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         cell.exerciseDescription.text = exercise.description
         cell.exercisePreview.image = exercise.image
         cell.exerciseId = exercise.id
-        cell.exercisePreview.layer.cornerRadius = 20
-        cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
         
-        cell.exercisePreview.layer.masksToBounds = true
+        cell.exercisePreview.contentMode = UIViewContentMode.scaleAspectFill
+        //cell.exercisePreview.layer.masksToBounds = true
+        cell.exercisePreview.layer.cornerRadius = 20
         cell.exercisePreview.clipsToBounds = true
         
         cell.cardView.layer.cornerRadius = 20.0
@@ -59,6 +59,8 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         cell.frame.size.height = (cell.exercisePreview.image?.size.height)!
         cell.gradientView.gradientLayer.colors = [UIColor.black.cgColor, UIColor.black.withAlphaComponent(0)]
         cell.gradientView.gradientLayer.gradient = GradientPoint.bottomTop.draw()
+        cell.gradientView.layer.cornerRadius = 20
+        cell.gradientView.clipsToBounds = true
         cell.gradientView.updateConstraints()
         
         return cell

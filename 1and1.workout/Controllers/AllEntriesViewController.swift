@@ -89,7 +89,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         headerView.frame.size.height = tableView.sectionHeaderHeight
         headerView.frame.origin.x = 0
         headerView.frame.origin.y = 0
-        headerView.backgroundColor = UIColor.black //(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
+        headerView.backgroundColor = UIColor.white //(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
         
         let title = UILabel()
         title.text = getSectionTitle(section)
@@ -106,7 +106,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         editButton.frame.origin.y = 10
         editButton.frame.size.width = 70
         editButton.frame.size.height = 20
-        editButton.backgroundColor = UIColor.black.withAlphaComponent(0)
+        editButton.backgroundColor = UIColor.white.withAlphaComponent(0)
         editButton.setTitleColor(UIColor.red, for: .normal)
         editButton.showsTouchWhenHighlighted = true
         editButton.sectionName = title.text
@@ -143,7 +143,7 @@ extension AllEntriesViewController: UITableViewDelegate {
         footerView.frame.size.height = tableView.sectionFooterHeight
         footerView.frame.origin.x = 0
         footerView.frame.origin.y = 0
-        footerView.backgroundColor = UIColor.black
+        footerView.backgroundColor = UIColor.white
         
         return footerView
     }
@@ -169,7 +169,11 @@ extension AllEntriesViewController: UITableViewDelegate {
         }
         
         for r in sections! {
-            result.append(r.get(sql.date)!)
+            do {
+                try result.append(r.get(sql.date)!)
+            } catch {
+                
+            }
         }
         
         return result[section]
@@ -197,7 +201,11 @@ extension AllEntriesViewController: UITableViewDataSource {
         }
         
         for r in sections! {
-            result.append(r.get(sql.date)!)
+            do {
+                try result.append(r.get(sql.date)!)
+            } catch {
+                
+            }
         }
         
         return result

@@ -28,7 +28,6 @@ class CounterViewController: UIViewController {
     var restMinuteConsumed: Bool = false
     var player: AVAudioPlayer?
     
-    @IBOutlet weak var counterBaseView: UIView!
     @IBOutlet weak var restLabel: UILabel!
     @IBOutlet weak var setLabel: UILabel!
     
@@ -40,19 +39,13 @@ class CounterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //baseWindowView.layer.cornerRadius = 5
-        baseWindowView.frame.origin.y = baseWindowView.frame.origin.y + 10
-        //counterBaseView.layer.shadowColor = UIColor.black.cgColor
-        counterBaseView.layer.shadowOffset = counterBaseView.frame.size
-        counterBaseView.layer.shadowRadius = 100
-        counterBaseView.layer.shadowPath = UIBezierPath(rect: counterBaseView.bounds).cgPath
-        counterBaseView.layer.shouldRasterize = true
-        
-        counterBaseView.layer.cornerRadius = 20.0
-        counterBaseView.layer.shadowColor = UIColor.black.cgColor
-        //counterBaseView.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
-        //counterBaseView.layer.shadowRadius = 12.0
-        //counterBaseView.layer.shadowOpacity = 0.7
+        baseWindowView.layer.cornerRadius = 20.0
+        baseWindowView.backgroundColor = UIColor.white
+        baseWindowView.layer.shadowOffset = .zero
+        baseWindowView.layer.shadowOpacity = 0.2
+        baseWindowView.layer.shadowRadius = 10
+        baseWindowView.layer.shadowColor = UIColor.black.cgColor
+        baseWindowView.layer.masksToBounds = false
         
         restLabel.isHidden = true
     }

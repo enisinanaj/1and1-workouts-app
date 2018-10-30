@@ -60,10 +60,14 @@ class TimeTableViewCell: UITableViewCell {
         let idExpression = Expression<Int64?>("id")
         
         let row = getRow(at: self.id)
-        self.subject.text = row!.get(category)
-        self.date.text = row!.get(startTime)
-        self.timeLabel.text = row!.get(description)
-        self.id = row!.get(idExpression)!
+        do {
+            self.subject.text = try row!.get(category)
+            self.date.text = try row!.get(startTime)
+            self.timeLabel.text = try row!.get(description)
+            self.id = try row!.get(idExpression)!
+        } catch {
+            
+        }
     }
     
 }
