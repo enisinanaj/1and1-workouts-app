@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import pop
 
 class ExerciseTableViewCell: UITableViewCell {
     override func awakeFromNib() {
@@ -22,8 +23,16 @@ class ExerciseTableViewCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
         // Configure the view for the selected state
+    }
+    
+    @objc func viewPressed() {
+        let springAnimation = POPSpringAnimation(propertyNamed: kPOPLayerSize)
+        springAnimation?.toValue = NSValue(cgSize: CGSize(width: self.layer.visibleRect.width - 50, height: self.layer.visibleRect.height - 50))
+        springAnimation?.springBounciness = CGFloat(20)
+        springAnimation?.delegate = self
+        springAnimation?.name = "POPLayerSize"
+        self.layer.pop_add(springAnimation, forKey: "POPLayerSize")
     }
     
     @IBOutlet weak var exercisePreview: UIImageView!

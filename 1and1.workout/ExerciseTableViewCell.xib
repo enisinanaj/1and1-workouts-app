@@ -27,6 +27,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1CH-Xk-mXA" customClass="GradientView" customModule="_and1_workout" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="289.5"/>
                                 <accessibility key="accessibilityConfiguration" label="gradientView"/>
+                                <gestureRecognizers/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Y0-Wf-4MK">
                                 <rect key="frame" x="15" y="200.5" width="393" height="30"/>
@@ -45,6 +46,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="1CH-Xk-mXA" firstAttribute="leading" secondItem="kdb-sQ-qwG" secondAttribute="leading" id="2Ri-Ii-sZI"/>
                             <constraint firstItem="5Y0-Wf-4MK" firstAttribute="width" secondItem="kdb-sQ-qwG" secondAttribute="width" id="2h3-ao-1uI"/>
@@ -67,6 +69,7 @@
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <gestureRecognizers/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="gXV-2O-OOc" secondAttribute="bottom" constant="20" id="L70-xs-UD5"/>
                     <constraint firstItem="gXV-2O-OOc" firstAttribute="top" secondItem="MdN-xJ-DeJ" secondAttribute="top" constant="20" id="cjd-De-OCe"/>

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import pop
+import GoogleMobileAds
 
 extension NSMutableAttributedString {
     func withFont(_ font: UIFont) -> NSMutableAttributedString {
@@ -26,13 +28,29 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
         super.viewDidLoad()
         
         self.tableView?.register(UINib.init(nibName: "ExerciseTableViewCell", bundle: nil) , forCellReuseIdentifier: "exerciseCell")
-        
+        self.tableView?.register(UINib.init(nibName: "AdTableViewCell", bundle: nil) , forCellReuseIdentifier: "advertCell")
         self.tableView?.backgroundColor = UIColor.white // (red:0.97, green:0.97, blue:0.97, alpha:1.0)
     }
 
     // MARK: - Table view data source
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if (indexPath.row == 3 || indexPath.row == 7 || indexPath.row == 10) {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "advertCell", for: indexPath) as? AdTableViewCell else {
+                return UITableViewCell()
+            }
+            
+            let bannerView: GADBannerView = GADBannerView(adSize: kGADAdSizeMediumRectangle)
+            bannerView.adUnitID = "ca-app-pub-6514681921761516/2093700473"
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
+            cell.addSubview(bannerView)
+            cell.addBannerViewToView(bannerView)
+            
+            return cell
+        }
+        
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "exerciseCell", for: indexPath) as? ExerciseTableViewCell else {
             return UITableViewCell()
         }
@@ -67,13 +85,21 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        /*let cell = tableView.cellForRow(at: indexPath) as! ExerciseTableViewCell
+        cell.viewPressed()*/
+        
+        if (indexPath.row == 3 || indexPath.row == 7 || indexPath.row == 10) {
+            return
+        }
+        
         self.counterPageDelegate?.exercise = HardcodedModel.exercises[indexPath.row]
         self.counterPageDelegate?.updateData()
         self.parentController?.scrollView.setContentOffset(CGPoint(x: (self.parentController?.view.frame.width)! * 2, y: 0), animated: true)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 13
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -81,6 +107,11 @@ class ExercisesTableViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if (indexPath.row == 3 || indexPath.row == 7 || indexPath.row == 10) {
+            return 255
+        }
+        
         return 340
     }
     

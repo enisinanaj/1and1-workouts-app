@@ -19,6 +19,8 @@
 		5F4DA0AC1DCE4347004013E0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4DA0AB1DCE4347004013E0 /* libsqlite3.tbd */; };
 		5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8CD78E1DF6126E0003B73A /* NotificationViewController.swift */; };
 		5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */; };
+		5FB1F86B226BA22D00CB7897 /* AdTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1F869226BA22D00CB7897 /* AdTableViewCell.swift */; };
+		5FB1F86C226BA22D00CB7897 /* AdTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1F86A226BA22D00CB7897 /* AdTableViewCell.xib */; };
 		5FBB10731F42531800532914 /* ExercisesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FBB10711F42531800532914 /* ExercisesTableViewController.swift */; };
 		5FCF47E51F4A1ADC006522F8 /* doneBell.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF47E41F4A1ADB006522F8 /* doneBell.mp3 */; };
 		5FEC8F001F4AC435005307BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEC8EFF1F4AC435005307BD /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		5F8CD78F1DF6126E0003B73A /* NotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		5F8E10651DC4E1270061A226 /* 1and1.workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1and1.workout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8E10741DC4E1270061A226 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB1F869226BA22D00CB7897 /* AdTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdTableViewCell.swift; path = Cells/AdTableViewCell.swift; sourceTree = "<group>"; };
+		5FB1F86A226BA22D00CB7897 /* AdTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AdTableViewCell.xib; path = Cells/AdTableViewCell.xib; sourceTree = "<group>"; };
 		5FBB10711F42531800532914 /* ExercisesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewController.swift; sourceTree = "<group>"; };
 		5FBB107E1F425B4400532914 /* ExercisesTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExercisesTableView.xib; path = Views/ExercisesTableView.xib; sourceTree = "<group>"; };
 		5FCF47E41F4A1ADB006522F8 /* doneBell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doneBell.mp3; sourceTree = "<group>"; };
@@ -168,6 +172,7 @@
 				5FBB107E1F425B4400532914 /* ExercisesTableView.xib */,
 				5F2C4DF21F44AF2500C9D02A /* ExerciseTableViewCell.xib */,
 				5F2C4DFC1F4628E700C9D02A /* CounterViewController.xib */,
+				5FB1F86A226BA22D00CB7897 /* AdTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			children = (
 				A1C9C7B31DE3B4E000354D15 /* TimeTableViewCell.swift */,
 				5F2C4DF71F44C4AE00C9D02A /* ExerciseTableViewCell.swift */,
+				5FB1F869226BA22D00CB7897 /* AdTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -279,6 +286,7 @@
 				A155586B1DE3B52F000C4198 /* LaunchScreen.storyboard in Resources */,
 				5F8CD7911DF6126E0003B73A /* NotificationViewController.xib in Resources */,
 				5F2C4DFE1F4628E700C9D02A /* CounterViewController.xib in Resources */,
+				5FB1F86C226BA22D00CB7897 /* AdTableViewCell.xib in Resources */,
 				5F2C4DF31F44AF2500C9D02A /* ExerciseTableViewCell.xib in Resources */,
 				5F36DFE61F45CF3F005CD76B /* ExercisesTableView.xib in Resources */,
 				A1C9C7A11DE3B45D00354D15 /* TimeTableViewCell.xib in Resources */,
@@ -313,17 +321,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-1and1.workout/Pods-1and1.workout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PulsingHalo/PulsingHalo.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
 				"${BUILT_PRODUCTS_DIR}/mopub-ios-sdk/MoPub.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PulsingHalo.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoPub.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -346,6 +360,7 @@
 				5F8CD7901DF6126E0003B73A /* NotificationViewController.swift in Sources */,
 				A1C9C7A81DE3B47D00354D15 /* MainPageViewController.swift in Sources */,
 				5F2C4DFD1F4628E700C9D02A /* CounterViewController.swift in Sources */,
+				5FB1F86B226BA22D00CB7897 /* AdTableViewCell.swift in Sources */,
 				A1C9C7A71DE3B47D00354D15 /* AllEntriesViewController.swift in Sources */,
 				5F2C4DFA1F45F9E700C9D02A /* Exercise.swift in Sources */,
 				A1C9C7AD1DE3B48800354D15 /* AppDelegate.swift in Sources */,
@@ -494,7 +509,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.1and1workouts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.adrev.1and1workouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -514,7 +529,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/1and1.workout/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.1and1workouts;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newlinecode.apps.adrev.1and1workouts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;

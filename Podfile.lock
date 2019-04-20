@@ -1,4 +1,28 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.43.0):
+    - GoogleAppMeasurement (~> 5.7)
+  - GoogleAppMeasurement (5.8.1):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GoogleUtilities/Network (~> 5.2)
+    - "GoogleUtilities/NSData+zlib (~> 5.2)"
+    - nanopb (~> 0.3)
+  - GoogleUtilities/AppDelegateSwizzler (5.7.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.7.0)
+  - GoogleUtilities/Logger (5.7.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.7.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.7.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (5.7.0)"
+  - GoogleUtilities/Reachability (5.7.0):
+    - GoogleUtilities/Logger
   - mopub-ios-sdk (5.4.0):
     - mopub-ios-sdk/MoPubSDK (= 5.4.0)
   - mopub-ios-sdk/Avid (5.4.0):
@@ -10,6 +34,12 @@ PODS:
     - mopub-ios-sdk/Avid
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/Moat
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - pop (1.0.12)
   - PulsingHalo (0.2.7)
   - SQLite.swift (0.11.5):
     - SQLite.swift/standard (= 0.11.5)
@@ -17,24 +47,36 @@ PODS:
   - SwiftySound (0.7.0)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - mopub-ios-sdk
+  - pop
   - PulsingHalo
   - SQLite.swift (~> 0.11.5)
   - SwiftySound
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
     - mopub-ios-sdk
+    - nanopb
+    - pop
     - PulsingHalo
     - SQLite.swift
     - SwiftySound
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: e911f5544fc6488f8372a183627a802c8bdb5e36
+  GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
+  GoogleUtilities: 273e67030e0de313e7304f6dcfa96fc5214f6c23
   mopub-ios-sdk: 6e331c6cf6052426a750568578f55dd3de0a67f1
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PulsingHalo: cef238431ade844de848eae0c3452b7e1592a054
   SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
   SwiftySound: bca0bb721690fb65249f4776cb0875abd98e9941
 
-PODFILE CHECKSUM: f54b4189fdd4f44b9fdc1f3a924a56a2637f2f27
+PODFILE CHECKSUM: 40e45ccd9c71ae0aebe9d1a4b67aaf76e2974f01
 
 COCOAPODS: 1.5.0

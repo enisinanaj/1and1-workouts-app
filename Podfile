@@ -13,7 +13,10 @@ target '1and1.workout' do
   # pod "youtube-ios-player-helper", "~> 0.1.1"
   # pod 'YouTubePlayer'
   #pod 'YXWaveView'
+  
+  pod 'pop'
   pod 'SwiftySound'
   pod 'mopub-ios-sdk'
+  pod 'Google-Mobile-Ads-SDK'
   
 end
